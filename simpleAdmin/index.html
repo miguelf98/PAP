@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Responsive Admin</title>
+	<!-- BOOTSTRAP STYLES-->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+     <!-- GOOGLE FONTS-->
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+</head>
+
+<body>
+<!--
+    <?php include_once "food.svg";?>
+          -->
+    <div id="wrapper">
+         <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="adjust-nav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <!-- PHP ICON <svg class="icon" id="logo">
+                            <use xlink:href="#sandwich"/>
+                        </svg> -->
+                        <img src="images/store.png" style="width: 80px;">
+                    </a>
+                    
+                </div>
+
+                <span class="logout-spn" >
+                  <div id="accountInfoContainer">
+                      <img id="accountImage" src="images/user.png">
+                      <div id="accountNome">João Sousa</div>
+                      <div id="accountGuita"><b>10&euro;</b></div>
+                  </div>
+
+                </span>
+            </div>
+        </div>
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-side" role="navigation" >
+            <div class="sidebar-collapse" >
+                <div id="faturaContainer">
+                    <table class="table-fill">
+                        <thead>
+                        <tr>
+                            <th class="text-left">Nome</th>
+                            <th class="text-center">Qntd</th>
+                            <th class="text-right">Total</th>
+                        </tr>
+                        </thead>
+                        <tbody class="table-hover">
+                        <tr>
+                            <td class="text-left">Croissant</td>
+                            <td class="text-center">1</td>
+                            <td class="text-left">0,50&euro;</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Ucal</td>
+                            <td class="text-center">1</td>
+                            <td class="text-left">1&euro;</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Tosta Mista</td>
+                            <td class="text-center">1</td>
+                            <td class="text-left">0,35&euro;</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Água</td>
+                            <td class="text-center">1</td>
+                            <td class="text-left">50&euro;</td>
+                        </tr>
+                        <tr>
+                            <td class="text-left">Leite Achocolatado</td>
+                            <td class="text-center">1</td>
+                            <td class="text-left">0,25&euro;</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="font-size: 15px;">4 produtos</td>
+                            <td style="font-size: 15px;">52,60&euro;</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper" style="margin-top: 100px;">
+            <div id="page-inner">
+
+                <!-- ITULO DA P?GINA A SER USADA (categorias, bebidas, comida quente) -->
+                <div class="row">
+                    <div class="col-lg-12" style="margin-left:5px;">
+                     <h2>Categorias</h2>
+                    </div>
+                </div>
+                <hr/>
+                <!-- TITULO END -->
+
+                <!-- ICONS DE CATEGORIA DE PRODUTOS -->
+                <div class="row text-center pad-top">
+                  <div class="col-lg-2 col-md-2 col-sm-2 col-xs-6">
+                      <div class="div-square">
+                           <a href="blank.html" >
+                                <i class="fa fa-circle-o-notch fa-5x"></i>
+                                <h4>Check Data</h4>
+                            </a>
+                      </div>
+                  </div>
+                </div>
+                <!-- ICON END -->
+            </div>
+        </div>
+    <div class="footer">
+      
+    
+            <div class="row">
+                <div class="col-lg-12" >
+                     Yeezy 4 Prez 2020 <a href="http://binarytheme.com" style="color:#fff;" target="_blank">www.binarytheme.com</a>
+                </div>
+            </div>
+        </div>
+
+
+
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+</body>
+</html>
