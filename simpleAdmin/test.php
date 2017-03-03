@@ -1,189 +1,83 @@
 <link rel="stylesheet" href="assets/css/custom.css">
 <style>@import url(http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100);
 
-body {
+    @import url(http://fonts.googleapis.com/css?family=Roboto);
 
-font-family: "Roboto", helvetica, arial, sans-serif;
+    .loginmodal-container {
+        padding: 30px;
+        max-width: 350px;
+        width: 100% !important;
+        background-color: #F7F7F7;
+        margin: 0 auto;
+        border-radius: 2px;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+    }
 
-}
+    .loginmodal-container h1 {
+        text-align: center;
+        font-size: 1.8em;
+    }
 
-div.table-title {
-display: block;
-margin: auto;
-max-width: 300px;
-padding:5px;
-width: 100%;
-}
+    .loginmodal-container input[type=submit] {
+        width: 100%;
+        display: block;
+        margin-bottom: 10px;
+        position: relative;
+    }
 
-.table-title h3 {
-color: #fafafa;
-font-size: 30px;
-font-weight: 400;
-font-style:normal;
-font-family: "Roboto", helvetica, arial, sans-serif;
-text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
-text-transform:uppercase;
-}
+    .loginmodal-container input[type=text], input[type=password] {
+        height: 44px;
+        font-size: 16px;
+        width: 100%;
+        margin-bottom: 10px;
+        -webkit-appearance: none;
+        background: #fff;
+        border: 1px solid #d9d9d9;
+        border-top: 1px solid #c0c0c0;
+        padding: 0 8px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
 
+    .loginmodal-container input[type=text]:hover, input[type=password]:hover {
+        border: 1px solid #b9b9b9;
+        border-top: 1px solid #a0a0a0;
+        -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+        -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+        box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+    }
 
-/*** Table Styles **/
+    .loginmodal-submit {
+        border: 0px;
+        color: #fff;
+        text-shadow: 0 1px rgba(0,0,0,0.1);
+        background-color: #4d90fe;
+        padding: 17px 0px;
+        font-size: 14px;
+    }
 
-.table-fill {
-background: white;
-border-radius:3px;
-border-collapse: collapse;
-height: 320px;
-margin: auto;
-padding:5px;
-width: 100%;
-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-animation: float 5s infinite;
-}
+    .loginmodal-submit:hover {
+        border: 0px;
+        text-shadow: 0 1px rgba(0,0,0,0.3);
+        background-color: #357ae8;
+    }
 
-th {
-color:#D5DDE5;;
-background:#1b1e24;
-border-bottom:4px solid #9ea7af;
-border-right: 1px solid #343a45;
-font-size:20px;
-font-weight: 100;
-padding:5px;
-text-align:left;
-text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-vertical-align:middle;
-}
+    .loginmodal-container a {
+        text-decoration: none;
+        color: #666;
+        font-weight: 400;
+        text-align: center;
+        display: inline-block;
+        opacity: 0.6;
+        transition: opacity ease 0.5s;
+    }
 
-th:first-child {
-border-top-left-radius:3px;
-}
-
-th:last-child {
-border-top-right-radius:3px;
-border-right:none;
-}
-
-tr {
-border-top: 1px solid #C1C3D1;
-border-bottom: 1px solid #C1C3D1;
-color:#666B85;
-font-size:12px;
-font-weight:normal;
-text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
-}
-
-tr:hover td {
-background:#4E5066;
-color:#FFFFFF;
-border-top: 1px solid #22262e;
-border-bottom: 1px solid #22262e;
-}
-
-tr:first-child {
-border-top:none;
-}
-
-tr:last-child {
-border-bottom:none;
-}
-
-tr:nth-child(odd) td {
-background:#EBEBEB;
-}
-
-tr:nth-child(odd):hover td {
-background:#4E5066;
-}
-
-tr:last-child td:first-child {
-border-bottom-left-radius:3px;
-}
-
-tr:last-child td:last-child {
-border-bottom-right-radius:3px;
-}
-
-td {
-background:#FFFFFF;
-padding:5px;
-text-align:left;
-vertical-align:middle;
-font-weight:300;
-font-size:18px;
-text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
-border-right: 1px solid #C1C3D1;
-}
-
-td:last-child {
-border-right: 0px;
-}
-
-th.text-left {
-text-align: left;
-}
-
-th.text-center {
-text-align: center;
-}
-
-th.text-right {
-text-align: right;
-}
-
-td.text-left {
-text-align: left;
-}
-
-td.text-center {
-text-align: center;
-}
-
-td.text-right {
-text-align: right;
-}
+    .login-help{
+        font-size: 12px;
+    }
 
 </style>
 
-<nav class="navbar-default navbar-side" role="navigation" >
-    <div class="sidebar-collapse" >
-        <div id="faturaContainer">
-            <table class="table-fill">
-                <thead>
-                <tr>
-                    <th class="text-left">Nome</th>
-                    <th class="text-center">Qntd</th>
-                    <th class="text-right">Total</th>
-                </tr>
-                </thead>
-                <tbody class="table-hover">
-                <tr>
-                    <td class="text-left">Croissant</td>
-                    <td class="text-center">1</td>
-                    <td class="text-left">0,50&euro;</td>
-                </tr>
-                <tr>
-                    <td class="text-left">Ucal</td>
-                    <td class="text-center">1</td>
-                    <td class="text-left">1&euro;</td>
-                </tr>
-                <tr>
-                    <td class="text-left">Tosta Mista</td>
-                    <td class="text-center">1</td>
-                    <td class="text-left">0,35&euro;</td>
-                </tr>
-                <tr>
-                    <td class="text-left">Água</td>
-                    <td class="text-center">1</td>
-                    <td class="text-left">50&euro;</td>
-                </tr>
-                <tr>
-                    <td class="text-left">Leite Achocolatado</td>
-                    <td class="text-center">1</td>
-                    <td class="text-left">0,25&euro;</td>
-                </tr>
-                </tbody>
-            </table>
 
-        </div>
-    </div>
 
-</nav>

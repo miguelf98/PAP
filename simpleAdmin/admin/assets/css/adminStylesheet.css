@@ -1,0 +1,12 @@
+#adminContainer{
+	display: block;
+	position: absolute;
+	margin-left: 330px;
+	margin-top: 19px;
+}
+
+.chartContainer{
+	width: 400px;
+	height: 400px;
+	border: 1px solid black;
+}
