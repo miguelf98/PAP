@@ -23,6 +23,7 @@
     <div id="adminContainer">
         <div class="chartContainer">
             <canvas id="totalSalesChart" width="400" height="400"></canvas>
+
         </div>
     <div>
 

@@ -1,4 +1,8 @@
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+
+    <!-- #CAN -->
+
     <symbol id="can" viewBox="0 0 49 49">
         <title>can</title>
         <path style="fill:#E22F37;"
@@ -14,6 +18,8 @@
         <polygon style="fill:#E6E6E6;" points="39.5,32 9.5,42 9.5,20 39.5,10 "/>
         <polygon style="fill:#F9D70B;" points="39.5,28 9.5,38 9.5,24 39.5,14 "/>
     </symbol>
+
+
     <symbol id="food" viewBox="0 0 56 56">
         <title>food</title>
         <path style="fill:#EEAF4B;"
