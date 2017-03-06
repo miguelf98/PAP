@@ -2,6 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd85e1fb-4573-43ee-912e-39a122f6b3eb" name="Default" comment="aaa">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/assets/css/less/animated.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/assets/css/less/bordered-pulled.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/assets/css/less/core.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/assets/css/less/fixed-width.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/assets/css/less/font-awesome.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/assets/css/less/icons.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/assets/css/less/larger.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/assets/css/less/list.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/assets/css/less/mixins.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/assets/css/less/path.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/assets/css/less/rotated-flipped.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/assets/css/less/screen-reader.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/assets/css/less/stacked.less" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/assets/css/less/variables.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="PAP.iws" />
@@ -305,12 +319,12 @@
       <workItem from="1488462776920" duration="5253000" />
       <workItem from="1488530838697" duration="740000" />
       <workItem from="1488534459764" duration="2619000" />
-      <workItem from="1488797513714" duration="2221000" />
+      <workItem from="1488797513714" duration="2336000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50911000" />
+    <option name="totallyTimeSpent" value="51026000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1288" height="1004" extended-state="6" />
