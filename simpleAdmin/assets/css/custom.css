@@ -111,8 +111,6 @@ min-height: 115px;
     color:#fff;
     padding:20px 50px 20px 50px;
     padding-left:20px;
-    margin-top: -50px; /* negative value of footer height */
-    clear:both;
 }
 
 
@@ -483,10 +481,13 @@ td.text-right {
 
 #divPrincipal {
     margin-top: 125px;
-    min-height: 600px;
     width: 100%;
     text-align: center;
-    padding-bottom: 150px;
+    display: flex;
+    min-height: 80vh;
+    flex-direction: column;
+
+
 }
 
 

@@ -28,6 +28,16 @@ function drawTop($pageId){
 }
 
 
+function validateSession($userId){
+    if (isset($userId)){
+        header('location: login.php');
+    }
+    else{
+
+    }
+}
+
+
 function drawSideBar($pageId){?>
     <nav class="navbar-default navbar-side" role="navigation" >
             <div class="sidebar-collapse">
