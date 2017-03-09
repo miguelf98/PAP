@@ -1,5 +1,7 @@
 <?php
 function drawTop($pageId){
+    session_start();
+
     ?>
     <div class="navbar navbar-inverse navbar-fixed-top" style="<?php if($pageId == 1){echo "background-color:  #4caf50;";}?>">
             <div class="adjust-nav">
@@ -15,13 +17,15 @@ function drawTop($pageId){
                 </div>
                  <span class="logout-spn" >
                 </span>
-
-                <span class="logout-spn" style="position: absolute; right: 0;">
-                  <div id="accountInfoContainer" >
-                      <img id="accountImage" src="../images/user.png">
-                      <div id="accountNome">João Sousa</div>
-                  </div>
-                </span>
+                <?php if (isset($_SESSION['userId'])){ ?>
+                    <span class="logout-spn" style="position: absolute; right: 0;">
+                      <div id="accountInfoContainer" >
+                          <img id="accountImage" src="../images/user.png">
+                          <div id="accountNome">João Sousa</div>
+                          <a href="logout.php">Logout</a>
+                      </div>
+                    </span>
+                <?php }?>
             </div>
         </div>
 <?php
@@ -29,7 +33,7 @@ function drawTop($pageId){
 
 
 function validateSession($userId){
-    if (isset($userId)){
+    if (!isset($userId)){
         header('location: login.php');
     }
     else{

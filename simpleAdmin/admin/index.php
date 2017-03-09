@@ -1,4 +1,5 @@
 <?php include_once "includes/body.inc.php"?>
+<?php session_start(); ?>
 <?php validateSession($_SESSION['userId']); ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -23,8 +24,7 @@
 
     <div id="adminContainer">
         <div class="chartContainer">
-            <pre><?php session_start();
-                print_r($_SESSION)?></pre>
+            <pre><?php print_r($_SESSION);?></pre>
         </div>
     <div>
 
