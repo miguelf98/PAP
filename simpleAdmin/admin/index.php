@@ -1,6 +1,8 @@
 <?php include_once "includes/body.inc.php"?>
 <?php session_start(); ?>
 <?php validateSession($_SESSION['userId']) ?>
+
+
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>

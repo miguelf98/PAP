@@ -1,13 +1,17 @@
 <?php
-$con = mysqli_connect("localhost","root","","mydb");
-print_r($_POST['userName']);
-print_r(md5($_POST['password']));
+include_once "includes/config.inc.php";
+$con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
+
+$username = $_POST['userName'];
+$password = $_POST['password'];
+$options = ['cost' => 12];
+$pwhash = password_hash($password, PASSWORD_BCRYPT, $options);
 
 $sql = "INSERT INTO users";
-$sql .= "VALUES (0,'".$_POST['userName']."','".md5($_POST['password'])."','admin')";
+$sql .= " VALUES (0, '".$username."','".$pwhash."','admin')";
+echo '<pre>';
+echo $sql;
+
 mysqli_query($con,$sql);
-
-
-/* TODO USER INSERT INTO */
 
 ?>
