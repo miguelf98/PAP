@@ -1,7 +1,7 @@
 <?php
-function drawTop($pageId){
-    session_start();
 
+
+function drawTop($pageId){
     ?>
     <div class="navbar navbar-inverse navbar-fixed-top" style="<?php if($pageId == 1){echo "background-color:  #4caf50;";}?>">
             <div class="adjust-nav">

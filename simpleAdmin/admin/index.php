@@ -1,6 +1,6 @@
 <?php include_once "includes/body.inc.php"?>
 <?php session_start(); ?>
-<?php validateSession($_SESSION['userId']); ?>
+<?php validateSession($_SESSION['userId']) ?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -14,7 +14,6 @@
 
 </head>
 <body>
-
     <?php drawSideBar(1); ?>
 
     <div id="wrapper">
@@ -24,7 +23,7 @@
 
     <div id="adminContainer">
         <div class="chartContainer">
-            <pre><?php print_r($_SESSION);?></pre>
+            <?php print_r($_SESSION);?>
         </div>
     <div>
 

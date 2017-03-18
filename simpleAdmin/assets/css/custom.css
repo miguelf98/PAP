@@ -371,7 +371,7 @@ td.text-right {
 
 .productRow{
     width: 100%;
-    height:160px;
+    height: auto;
 }
 
 .productRow svg{
