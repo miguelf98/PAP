@@ -1,6 +1,5 @@
 <?php include_once "includes/body.inc.php"?>
-<?php include_once "includes/config.inc.php"?>
-<?php include_once "includes/functions.inc.php"?>
+
 <?php session_start(); ?>
 <?php validateSession($_SESSION['userId']) ?>
 
@@ -35,9 +34,10 @@ $query = mysqli_query($con,$sql);
 
     <div id="adminContainer">
         <div class="tableContainer">
+            <a href="newUser.php">Novo Utilizador</a>
             <table class="adminTable">
                 <tr>
-                    <th>userId</th>
+                    <th>userID</th>
                     <th>user Name</th>
                     <th>user PW</th>
                     <th>user Permission</th>
@@ -47,7 +47,7 @@ $query = mysqli_query($con,$sql);
                     echo '<tr>';
                     echo '<td>'.$user['userId'].'</td>';
                     echo '<td>'.$user['userName'].'</td>';
-                    echo '<td>'.shortenPassword($user['userPassword']).'...</td>';
+                    echo '<td>'.shortenPassword($user['userPW']).'...</td>';
                     echo '<td>'.$user['userPermission'].'</td>';
                     echo '</tr>';
 

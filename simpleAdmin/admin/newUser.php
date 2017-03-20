@@ -1,17 +1,52 @@
-<?php
-include_once "includes/config.inc.php";
-$con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
+<?php include_once "includes/body.inc.php"?>
+<?php session_start(); ?>
+<?php validateSession($_SESSION['userId']) ?>
 
-$username = $_POST['userName'];
-$password = $_POST['password'];
-$options = ['cost' => 12];
-$pwhash = password_hash($password, PASSWORD_BCRYPT, $options);
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Administration</title>
+    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+    <link href="../assets/css/font-awesome.css" rel="stylesheet" />
+    <link href="../assets/css/custom.css" rel="stylesheet" />
+    <link href="assets/css/adminStylesheet.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
 
-$sql = "INSERT INTO users";
-$sql .= " VALUES (0, '".$username."','".$pwhash."','admin')";
-echo '<pre>';
-echo $sql;
+</head>
+<body>
+    <?php drawSideBar(CMENUUSERS); ?>
 
-mysqli_query($con,$sql);
+    <div id="wrapper">
+        <?php drawTop(1);?>
+    </div>
 
-?>
+
+    <div id="adminContainer">
+
+
+        <div>
+            <div class="cardDiv">
+                <div class="cardTitle"><span class="cardTitleSpan">Adicionar um novo utilizador</span></div>
+
+                <div class="cardContent">
+                    <div class="loginmodal-container" style="background-color: inherit; box-shadow: none;">
+                        <form>
+                            <input type="text" name="user" placeholder="Username">
+                            <input type="password" name="pass" placeholder="Password">
+                            <select name="" id=""></select>
+                            <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div>
+
+
+    <script src="../assets/js/jquery-1.10.2.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/custom.js"></script>
+
+</body>
+</html>
