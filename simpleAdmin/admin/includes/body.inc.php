@@ -1,6 +1,7 @@
 <?php
 include_once "config.inc.php";
 include_once "functions.inc.php";
+$con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
 
 function drawTop($pageId){
     ?>

@@ -14,6 +14,10 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
 
 </head>
+<?php
+$sql = "SELECT * FROM permissions";
+$query = mysqli_query($con,$sql);
+?>
 <body>
     <?php drawSideBar(CMENUUSERS); ?>
 
@@ -31,11 +35,16 @@
 
                 <div class="cardContent">
                     <div class="loginmodal-container" style="background-color: inherit; box-shadow: none;">
-                        <form>
+                        <form action="confirmNewUser.php" method="post">
                             <input type="text" name="user" placeholder="Username">
                             <input type="password" name="pass" placeholder="Password">
-                            <select name="" id=""></select>
-                            <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+                            <select name="permission" id="permissions"><?php
+                                while($permission = mysqli_fetch_assoc($query)){
+                                echo '<option value="'.$permission['permissionId'].'">'.$permission['permissionName'].'</option>';
+                                }
+
+                            ?></select>
+                            <input type="submit" name="login" class="login loginmodal-submit" value="Registar" style="height: 25px; line-height: 1px; margin-top: 25px;">
                         </form>
                     </div>
                 </div>
