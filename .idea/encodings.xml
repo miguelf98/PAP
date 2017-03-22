@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/simpleAdmin/admin/categorias.php" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/simpleAdmin/admin/includes/body.inc.php" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/simpleAdmin/admin/index.php" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/simpleAdmin/admin/login.php" charset="ISO-8859-1" />
-    <file url="file://$PROJECT_DIR$/simpleAdmin/admin/usersNew.php" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/simpleAdmin/admin/users.php" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/simpleAdmin/assets/css/custom.css" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/simpleAdmin/index.html" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/simpleAdmin/loja.php" charset="ISO-8859-1" />

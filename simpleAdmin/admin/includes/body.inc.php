@@ -45,18 +45,24 @@ function validateSession($userId){
 
 
 function drawSideBar($pageId){?>
-    <nav class="navbar-default navbar-side" role="navigation" >
+    <nav class="navbar-default navbar-side" role="navigation" style="width: 200px;">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
                     <!-- SIDEBAR LINK 1 -->
-                    <li <?php if($pageId == 1){echo 'class="active-link"';}?> >
+                    <li <?php if($pageId == CMENUDASHBOARD){echo 'class="active-link"';}?> >
                         <a href="index.php" ><i class="fa fa-desktop "></i>Dashboard</a>
                     </li>
 
                     <!-- SIDEBAR LINK 2 -->
-                    <li <?php if($pageId == 2){echo 'class="active-link"';}?>>
+                    <li <?php if($pageId == CMENUUSERS){echo 'class="active-link"';}?>>
                         <a href="users.php"><i class="fa fa-table "></i>Users</a>
                     </li>
+
+                    <!-- SIDEBAR LINK 3 -->
+                    <li <?php if($pageId == CMENUCATEGORIAS){echo 'class="active-link"';}?>>
+                        <a href="categorias.php"><i class="fa fa-table "></i>Categorias</a>
+                    </li>
+                    <li class="active-link"></li>
                 </ul>
             </div>
         </nav>

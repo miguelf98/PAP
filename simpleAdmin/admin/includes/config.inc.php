@@ -5,6 +5,7 @@ define("DBPW", "");
 define("DBNAME", "mydb");
 define("CMENUDASHBOARD", 1);
 define("CMENUUSERS", 2);
+define("CMENUCATEGORIAS", 3);
 
 
 

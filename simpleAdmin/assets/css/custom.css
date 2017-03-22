@@ -70,6 +70,7 @@ body {
 	
 	background:#78909c;
 	outline:0;
+    width: 185px;
 }
 
 .navbar-side {
@@ -94,6 +95,7 @@ min-height: 115px;
 
 .active-link {
     background-color:#546e7a;
+    width: 185px;
 }
     
 /*==============================================
@@ -266,7 +268,7 @@ tr {
     font-weight:normal;
 }
 
-tr:hover td {
+#facturaContainer tr:hover td {
     transition:.05s;
     background:#e53935;
     color:#FFFFFF;
@@ -286,7 +288,7 @@ tr:nth-child(odd) td {
     background:#EBEBEB;
 }
 
-tr:nth-child(odd):hover td {
+#facturaContainer tr:nth-child(odd):hover td {
     background:#e53935;
 }
 

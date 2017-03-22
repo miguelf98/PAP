@@ -8,6 +8,9 @@
 $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
 $sql = "SELECT * FROM users";
 $query = mysqli_query($con,$sql);
+$count = mysqli_num_rows($query);
+
+$sql2 = "SELECT * FROM permissions WHERE "
 
 
 ?>
@@ -32,27 +35,43 @@ $query = mysqli_query($con,$sql);
     </div>
 
 
-    <div id="adminContainer">
+    <div id="adminContainer" style="border: 1px solid black; float: left;">
         <div class="tableContainer">
-            <a href="newUser.php">Novo Utilizador</a>
+            <a href="newUser.php" class="button"> + Utilizador</a>
+
             <table class="adminTable">
                 <tr>
+                    <th style="width: 100px;"></th>
                     <th>userID</th>
                     <th>user Name</th>
                     <th>user PW</th>
                     <th>user Permission</th>
                 </tr>
 
-                <?php while($user = mysqli_fetch_assoc($query)){
-                    echo '<tr>';
-                    echo '<td>'.$user['userId'].'</td>';
-                    echo '<td>'.$user['userName'].'</td>';
-                    echo '<td>'.shortenPassword($user['userPW']).'...</td>';
-                    echo '<td>'.$user['userPermission'].'</td>';
-                    echo '</tr>';
+                <?php
 
-                }?>
+                if ($count > 0){
+                    while($user = mysqli_fetch_assoc($query)){
+                        $sql2 = "SELECT * FROM permissions WHERE permissionId = ". $user['userPermissionId'];
+                        $query2 = mysqli_query($con,$sql2);
+                        $permission = mysqli_fetch_array($query2);
+                        echo '<tr>';
+                        echo '<td> <a class="editLink" href="userEdit?id=' .$user['userId']. '">E</a> </td>';
+                        echo '<td><span>' .$user['userId']. '</span></td>';
+                        echo '<td>' .$user['userName']. '</td>';
+                        echo '<td>' .shortenPassword($user['userPW']). '...</td>';
+                        echo '<td>' .$permission['permissionName']. ' (' .$permission['permissionLevel']. ')</td>';
+                        echo '</tr>';
+
+                    }
+                }else{
+                    echo '<tr>';
+                    echo '<td colspan="5" style="text-align: center;">Não existem registos</td>';
+                    echo '</tr>';
+                }
+                ?>
             </table>
+            <span><?php echo $count;?> registo<?php if($count > 1){echo 's';}?></span>
         </div>
     <div>
 

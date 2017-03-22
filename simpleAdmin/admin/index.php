@@ -16,7 +16,7 @@
 
 </head>
 <body>
-    <?php drawSideBar(1); ?>
+    <?php drawSideBar(CMENUDASHBOARD); ?>
 
     <div id="wrapper">
         <?php drawTop(1);?>
