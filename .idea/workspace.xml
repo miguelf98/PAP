@@ -2,14 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd85e1fb-4573-43ee-912e-39a122f6b3eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/assets/css/adminStylesheet.css" afterPath="$PROJECT_DIR$/simpleAdmin/admin/assets/css/adminStylesheet.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/confirmLogin.php" afterPath="$PROJECT_DIR$/simpleAdmin/admin/confirmLogin.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/includes/body.inc.php" afterPath="$PROJECT_DIR$/simpleAdmin/admin/includes/body.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/includes/config.inc.php" afterPath="$PROJECT_DIR$/simpleAdmin/admin/includes/config.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/index.php" afterPath="$PROJECT_DIR$/simpleAdmin/admin/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/newUser.php" afterPath="$PROJECT_DIR$/simpleAdmin/admin/newUser.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/users.php" afterPath="$PROJECT_DIR$/simpleAdmin/admin/users.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/assets/css/bootstrap.css" afterPath="$PROJECT_DIR$/simpleAdmin/assets/css/bootstrap.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/assets/css/custom.css" afterPath="$PROJECT_DIR$/simpleAdmin/assets/css/custom.css" />
     </list>
     <list id="0fd6f1d4-2f92-4eea-b545-e438901108fd" name="Failed commit: Default" comment="asd" />
@@ -40,43 +38,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="users.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="confirmNewUser.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/confirmNewUser.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+              <folding>
+                <marker date="1490623654758" expanded="true" signature="107:164" ph="SELECT * FRO... permissions" />
+                <marker date="1490623654758" expanded="true" signature="107:165" ph="SELECT * FRO... permissions" />
+                <marker date="1490623654758" expanded="true" signature="344:361" ph="INSERT INTO users... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="confirmLogin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/confirmLogin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+              <folding>
+                <marker date="1490602206983" expanded="true" signature="105:159" ph="SELECT * FRO... users" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="users.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/users.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="74" column="14" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
+            <state relative-caret-position="136">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="33" />
               <folding>
-                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1490188558599" expanded="true" signature="224:243" ph="SELECT * FRO... users" />
-                <marker date="1490188558599" expanded="true" signature="324:355" ph="SELECT * FRO... permissions" />
-                <marker date="1490188558599" expanded="true" signature="1688:1734" ph="SELECT * FRO... permissions" />
-                <marker date="1490188558599" expanded="true" signature="1688:1735" ph="SELECT * FRO... permissions" />
-                <marker date="1490188558599" expanded="true" signature="2545:2564" ph="..." />
-                <marker date="1490188558599" expanded="true" signature="2796:2983" ph="..." />
+                <marker date="1490369117835" expanded="true" signature="224:243" ph="SELECT * FRO... users" />
+                <marker date="1490369117835" expanded="true" signature="1620:1666" ph="SELECT * FRO... permissions" />
+                <marker date="1490369117835" expanded="true" signature="1620:1667" ph="SELECT * FRO... permissions" />
+                <marker date="1490369117835" expanded="true" signature="2477:2496" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newUser.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/newUser.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-              <folding>
-                <marker date="1490095388601" expanded="true" signature="721:746" ph="SELECT * FRO... permissions" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adminStylesheet.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/assets/css/adminStylesheet.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -84,20 +82,30 @@
       <file leaf-file-name="categorias.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/categorias.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-              <folding />
+            <state relative-caret-position="144">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="33" />
+              <folding>
+                <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1490623828482" expanded="true" signature="771:795" ph="SELECT * FRO... categorias" />
+                <marker date="1490623828482" expanded="true" signature="1558:1602" ph="SELECT * FRO... categorias" />
+                <marker date="1490623828482" expanded="true" signature="1558:1603" ph="SELECT * FRO... categorias" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="body.inc.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="body.inc.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/includes/body.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="64" column="39" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
+            <state relative-caret-position="459">
+              <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding>
-                <element signature="e#1650#1671#0#HTML" expanded="true" />
+                <element signature="e#339#376#0#HTML" expanded="true" />
+                <element signature="e#571#636#0#HTML" expanded="true" />
+                <marker date="1490624777190" expanded="true" signature="163:195" ph="SELECT * FRO... users" />
+                <marker date="1490624777190" expanded="true" signature="163:197" ph="SELECT * FRO... users" />
+                <marker date="1490624777190" expanded="true" signature="163:198" ph="SELECT * FRO... users" />
+                <marker date="1490624777190" expanded="true" signature="163:326" ph="SELECT * FRO... users" />
               </folding>
             </state>
           </provider>
@@ -106,9 +114,23 @@
       <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simpleAdmin/assets/css/custom.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+            <state relative-caret-position="300">
+              <caret line="148" column="23" selection-start-line="148" selection-start-column="23" selection-end-line="148" selection-end-column="23" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/test.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="123" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="123" />
+              <folding>
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#span#0;n#!!top" expanded="true" />
+                <marker date="1490624409148" expanded="true" signature="63:98" ph="SELECT * FRO... users" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,7 +154,6 @@
         <option value="$USER_HOME$/AppData/Local/Temp/My icons collection-SVG-Sprites-Demo.html" />
         <option value="$PROJECT_DIR$/simpleAdmin/admin/blank.html" />
         <option value="$PROJECT_DIR$/simpleAdmin/test.php" />
-        <option value="$PROJECT_DIR$/simpleAdmin/admin/confirmLogin.php" />
         <option value="$PROJECT_DIR$/simpleAdmin/food.svg" />
         <option value="$PROJECT_DIR$/simpleAdmin/index.php" />
         <option value="$PROJECT_DIR$/simpleAdmin/index.html" />
@@ -144,17 +165,18 @@
         <option value="$PROJECT_DIR$/simpleAdmin/admin/usersNew.php" />
         <option value="$PROJECT_DIR$/simpleAdmin/admin/includes/functions.inc.php" />
         <option value="$PROJECT_DIR$/simpleAdmin/admin/login.php" />
-        <option value="$PROJECT_DIR$/simpleAdmin/admin/newUser.php" />
-        <option value="$PROJECT_DIR$/simpleAdmin/admin/assets/css/adminStylesheet.css" />
-        <option value="$PROJECT_DIR$/simpleAdmin/admin/test.php" />
-        <option value="$PROJECT_DIR$/simpleAdmin/admin/confirmNewUser.php" />
         <option value="$PROJECT_DIR$/simpleAdmin/admin/includes/config.inc.php" />
-        <option value="$PROJECT_DIR$/simpleAdmin/admin/categorias.php" />
         <option value="$PROJECT_DIR$/simpleAdmin/admin/index.php" />
         <option value="$PROJECT_DIR$/simpleAdmin/assets/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/simpleAdmin/admin/includes/body.inc.php" />
-        <option value="$PROJECT_DIR$/simpleAdmin/assets/css/custom.css" />
         <option value="$PROJECT_DIR$/simpleAdmin/admin/users.php" />
+        <option value="$PROJECT_DIR$/simpleAdmin/admin/assets/css/adminStylesheet.css" />
+        <option value="$PROJECT_DIR$/simpleAdmin/admin/confirmLogin.php" />
+        <option value="$PROJECT_DIR$/simpleAdmin/admin/newUser.php" />
+        <option value="$PROJECT_DIR$/simpleAdmin/admin/confirmNewUser.php" />
+        <option value="$PROJECT_DIR$/simpleAdmin/admin/categorias.php" />
+        <option value="$PROJECT_DIR$/simpleAdmin/admin/test.php" />
+        <option value="$PROJECT_DIR$/simpleAdmin/assets/css/custom.css" />
+        <option value="$PROJECT_DIR$/simpleAdmin/admin/includes/body.inc.php" />
       </list>
     </option>
   </component>
@@ -166,10 +188,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-4" />
-    <option name="y" value="-4" />
-    <option name="width" value="1288" />
-    <option name="height" value="1004" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1296" />
+    <option name="height" value="1010" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -197,6 +219,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -243,64 +266,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PAP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PAP" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simpleAdmin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PAP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PAP" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simpleAdmin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PAP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PAP" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simpleAdmin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -324,60 +289,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="includes" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PAP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PAP" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simpleAdmin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PAP" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PAP" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simpleAdmin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -481,7 +397,10 @@
       <workItem from="1490021661699" duration="2326000" />
       <workItem from="1490093439184" duration="2371000" />
       <workItem from="1490107684776" duration="92000" />
-      <workItem from="1490180871884" duration="7833000" />
+      <workItem from="1490180871884" duration="7941000" />
+      <workItem from="1490345687977" duration="3276000" />
+      <workItem from="1490601096824" duration="5760000" />
+      <workItem from="1490622933903" duration="1911000" />
     </task>
     <task id="LOCAL-00001" summary="added logout func and verify session on backoffice">
       <created>1489057654656</created>
@@ -494,19 +413,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72810000" />
+    <option name="totallyTimeSpent" value="83865000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1288" height="1004" extended-state="6" />
+    <frame x="-8" y="-8" width="1296" height="1010" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2253635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25566342" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819384" sideWeight="0.5053346" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870865" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30734465" sideWeight="0.496875" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30637813" sideWeight="0.496875" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.49466538" order="7" side_tool="false" content_ui="tabs" />
@@ -583,29 +502,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/assets/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/loja.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/assets/js/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/index.html" />
     <entry file="file://$PROJECT_DIR$/simpleAdmin/assets/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -687,21 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/blank.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="73" column="25" selection-start-line="73" selection-start-column="25" selection-end-line="73" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="228" column="16" selection-start-line="228" selection-start-column="16" selection-end-line="228" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/common.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -748,13 +629,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/confirmLogin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -821,7 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="859">
           <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -829,54 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="553">
           <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/test.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="42" column="17" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-          <folding>
-            <marker date="1490187700567" expanded="true" signature="927:938" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/confirmNewUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-          <folding>
-            <marker date="1490187780279" expanded="true" signature="107:164" ph="SELECT * FRO... permissions" />
-            <marker date="1490187780279" expanded="true" signature="107:165" ph="SELECT * FRO... permissions" />
-            <marker date="1490187780279" expanded="true" signature="359:376" ph="INSERT INTO users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/assets/css/adminStylesheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="81" column="20" selection-start-line="81" selection-start-column="20" selection-end-line="81" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/newUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <marker date="1490095388601" expanded="true" signature="721:746" ph="SELECT * FRO... permissions" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/includes/config.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
           <folding />
         </state>
       </provider>
@@ -897,14 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/categorias.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simpleAdmin/assets/css/font-awesome.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15589">
@@ -913,37 +730,158 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/includes/body.inc.php">
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/bash.exe.stackdump">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="64" column="39" selection-start-line="64" selection-start-column="39" selection-end-line="64" selection-end-column="39" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/sh.exe.stackdump">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/assets/css/adminStylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/blank.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="78" column="21" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/block.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="84" column="16" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/Core.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="309" column="9" selection-start-line="309" selection-start-column="9" selection-end-line="309" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/includes/config.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/newUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="55" selection-end-column="21" />
           <folding>
-            <element signature="e#1650#1671#0#HTML" expanded="true" />
+            <marker date="1490604725530" expanded="true" signature="721:746" ph="SELECT * FRO... permissions" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/categorias.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="21" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1490623828482" expanded="true" signature="771:795" ph="SELECT * FRO... categorias" />
+            <marker date="1490623828482" expanded="true" signature="1558:1602" ph="SELECT * FRO... categorias" />
+            <marker date="1490623828482" expanded="true" signature="1558:1603" ph="SELECT * FRO... categorias" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/users.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <marker date="1490369117835" expanded="true" signature="224:243" ph="SELECT * FRO... users" />
+            <marker date="1490369117835" expanded="true" signature="1620:1666" ph="SELECT * FRO... permissions" />
+            <marker date="1490369117835" expanded="true" signature="1620:1667" ph="SELECT * FRO... permissions" />
+            <marker date="1490369117835" expanded="true" signature="2477:2496" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/confirmNewUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="39" selection-start-line="1" selection-start-column="39" selection-end-line="1" selection-end-column="39" />
+          <folding>
+            <marker date="1490623654758" expanded="true" signature="107:164" ph="SELECT * FRO... permissions" />
+            <marker date="1490623654758" expanded="true" signature="107:165" ph="SELECT * FRO... permissions" />
+            <marker date="1490623654758" expanded="true" signature="344:361" ph="INSERT INTO users... " />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simpleAdmin/assets/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
+        <state relative-caret-position="300">
+          <caret line="148" column="23" selection-start-line="148" selection-start-column="23" selection-end-line="148" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/users.php">
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/test.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="74" column="14" selection-start-line="74" selection-start-column="14" selection-end-line="74" selection-end-column="14" />
+        <state relative-caret-position="187">
+          <caret line="11" column="123" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="123" />
           <folding>
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#th#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1490188558599" expanded="true" signature="224:243" ph="SELECT * FRO... users" />
-            <marker date="1490188558599" expanded="true" signature="324:355" ph="SELECT * FRO... permissions" />
-            <marker date="1490188558599" expanded="true" signature="1688:1734" ph="SELECT * FRO... permissions" />
-            <marker date="1490188558599" expanded="true" signature="1688:1735" ph="SELECT * FRO... permissions" />
-            <marker date="1490188558599" expanded="true" signature="2545:2564" ph="..." />
-            <marker date="1490188558599" expanded="true" signature="2796:2983" ph="..." />
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#span#0;n#!!top" expanded="true" />
+            <marker date="1490624409148" expanded="true" signature="63:98" ph="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/confirmLogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <marker date="1490602206983" expanded="true" signature="105:159" ph="SELECT * FRO... users" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/includes/body.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="e#339#376#0#HTML" expanded="true" />
+            <element signature="e#571#636#0#HTML" expanded="true" />
+            <marker date="1490624777190" expanded="true" signature="163:195" ph="SELECT * FRO... users" />
+            <marker date="1490624777190" expanded="true" signature="163:197" ph="SELECT * FRO... users" />
+            <marker date="1490624777190" expanded="true" signature="163:198" ph="SELECT * FRO... users" />
+            <marker date="1490624777190" expanded="true" signature="163:326" ph="SELECT * FRO... users" />
           </folding>
         </state>
       </provider>

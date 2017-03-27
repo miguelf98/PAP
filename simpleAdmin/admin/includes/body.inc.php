@@ -1,7 +1,25 @@
 <?php
 include_once "config.inc.php";
 include_once "functions.inc.php";
-$con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
+
+
+
+function drawUserDiv(){
+    $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
+    $sql = "SELECT * FROM users WHERE userId = ". $_SESSION['userId'];
+    $query = mysqli_query($con,$sql);
+    $result = mysqli_fetch_array ($query);
+    ?>
+    <span class="logout-spn" style="position: absolute; right: 0;">
+        <div id="accountInfoContainer">
+             <img id="accountImage" src="../images/user.png">
+            <span id="accountNome"><?php echo $result['userName'];?></span>
+            <a style="float: right; position: relative; top: 50px; right: 30px;" href="logout.php">Logout</a>
+        </div>
+    </span>
+    <?php
+}
+
 
 function drawTop($pageId){
     ?>
@@ -19,15 +37,7 @@ function drawTop($pageId){
                 </div>
                  <span class="logout-spn" >
                 </span>
-                <?php if (isset($_SESSION['userId'])){ ?>
-                    <span class="logout-spn" style="position: absolute; right: 0;">
-                      <div id="accountInfoContainer" >
-                          <img id="accountImage" src="../images/user.png">
-                          <div id="accountNome">João Sousa</div>
-                          <a href="logout.php">Logout</a>
-                      </div>
-                    </span>
-                <?php }?>
+                <?php drawUserDiv(); ?>
             </div>
         </div>
 <?php

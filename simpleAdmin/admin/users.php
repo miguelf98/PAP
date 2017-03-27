@@ -10,7 +10,6 @@ $sql = "SELECT * FROM users";
 $query = mysqli_query($con,$sql);
 $count = mysqli_num_rows($query);
 
-$sql2 = "SELECT * FROM permissions WHERE "
 
 
 ?>
@@ -35,7 +34,7 @@ $sql2 = "SELECT * FROM permissions WHERE "
     </div>
 
 
-    <div id="adminContainer" style="border: 1px solid black; float: left;">
+    <div id="adminContainer" style="float: left;">
         <div class="tableContainer">
             <a href="newUser.php" class="button"> + Utilizador</a>
 

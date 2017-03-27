@@ -135,7 +135,6 @@ min-height: 115px;
 	
 	
     .navbar-side {
-        z-index: 1;
         position: absolute;
         width: 325px;
         height: 1100px;
@@ -147,6 +146,7 @@ min-height: 115px;
 }
 
 #accountInfoContainer{
+    border-radius: 3px;
     background-color: #fff;
     height: 90px;
     width: 250px;

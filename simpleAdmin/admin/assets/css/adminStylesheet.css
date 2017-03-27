@@ -1,9 +1,7 @@
 #adminContainer{
-	display: block;
 	position: absolute;
-	margin-left: 330px;
-	margin-top: 19px;
-	width: 70%;
+	left: 205px;
+	top: 120px;
 }
 
 .chartContainer{
@@ -13,7 +11,7 @@
 }
 
 .adminTable{
-
+	width:100%;
 }
 
 .adminTable th{
@@ -40,6 +38,8 @@
 	width: 100%;
 	border: 2px solid #4cae4c;
 	border-radius: 5px;
+	margin-left: 5px;
+	margin-top: 5px;
 }
 
 .cardTitle{
@@ -54,11 +54,12 @@
 }
 
 .cardTitle .cardTitleSpan{
-
+	width: 100%;
 	margin-left: 7px;
 }
 
 .cardContent{
+	width: 100%;
 	padding: 5px;
 	font-family: "Roboto", helvetica, arial, sans-serif;
 }

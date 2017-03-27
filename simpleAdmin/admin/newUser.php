@@ -29,16 +29,16 @@ $query = mysqli_query($con,$sql);
     <div id="adminContainer">
 
 
-        <div>
+        <div >
             <div class="cardDiv">
                 <div class="cardTitle"><span class="cardTitleSpan">Adicionar um novo utilizador</span></div>
 
                 <div class="cardContent">
                     <div class="loginmodal-container" style="background-color: inherit; box-shadow: none;">
                         <form action="confirmNewUser.php" method="post">
-                            <input type="text" name="user" placeholder="Username">
-                            <input type="password" name="pass" placeholder="Password">
-                            <select name="permission" id="permissions"><?php
+                            <input type="text" name="user" placeholder="Username" required>
+                            <input type="password" name="pass" placeholder="Password" required>
+                            <select name="permission" id="permissions" required><?php
                                 while($permission = mysqli_fetch_assoc($query)){
                                 echo '<option value="'.$permission['permissionId'].'">'.$permission['permissionName'].'</option>';
                                 }
