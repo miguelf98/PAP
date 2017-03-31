@@ -15,6 +15,7 @@
 
 </head>
 <?php
+$con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
 $sql = "SELECT * FROM permissions";
 $query = mysqli_query($con,$sql);
 ?>
