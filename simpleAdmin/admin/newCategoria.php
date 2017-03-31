@@ -48,6 +48,7 @@ $count = mysqli_num_rows($query);
             </div>
         </div>
         <?php if(isset($_SESSION['categUploadOK'])){?>
+            <input type="hidden" class="uploadOK" value="<?php echo $_SESSION['categUploadOK']?>">
             <div id="myModal" class="modal">
                 <div class="modal-content">
                     <span class="close">&times;</span>
@@ -60,23 +61,26 @@ $count = mysqli_num_rows($query);
     </div>
 
     <script>
-        var modal = document.getElementById('myModal');
+        if (document.getElementsByClassName("uploadOK").length) {
+            var modal = document.getElementById('myModal');
 
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
 
 
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
                 modal.style.display = "none";
             }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        }
         }</script>
     <script src="../assets/js/jquery-1.10.2.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
