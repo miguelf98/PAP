@@ -1,14 +1,30 @@
-<?php
-$con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
-$sql = "SELECT * FROM users WHERE userId = ".$_SESSION['userId'];
-$result = mysqli_query($con,$sql);
-print_r($sql);
-$adminUserName = mysqli_fetch_row($result);
-?>
-<span class="logout-spn" style="position: absolute; right: 0;">
-                      <div id="accountInfoContainer" >
-                          <img id="accountImage" src="../images/user.png">
-                          <div id="accountNome"><?php echo $adminUserName['userName'];?></div>
-                          <a style="float: right; position: relative; top: 50px; right: 30px;" href="logout.php">Logout</a>
-                      </div>
-                    </span>
+<?php ?>
+
+<style>
+    button{
+        height: 100px;
+        width: 100px;
+        margin: 50px;
+
+    }
+</style>
+
+<body>
+    <div style="border: 1px solid black; height: 100%; width: 50%;">
+        <span style="font-size: 28px;">Mock ticket</span>
+        <form action="formatTicket.php" method="post">
+            <input name="tosta" value="1" type="checkbox">tosta<br>
+            <input name="ucal" value="2" type="checkbox">ucal<br>
+            <input name="lean" value="3" type="checkbox">lean<br>
+            <input name="croissant" value="4" type="checkbox">croissant<br>
+            <input type="submit" value="submeter ticket">
+
+        </form>
+
+
+
+
+
+
+    </div>
+</body>

@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="assets/css/ticketStylesheet.css" type="text/css">
+        <script src="jquery-3.2.0.min.js"></script>
     </head>
     <style>
         body{
@@ -77,6 +78,25 @@
         }
 
     </style>
+    <script>
+        function actualizaMonitor() {
+            $.ajax({url: "AJAXorders.php", success: function(result){
+                $("#ticketContainer").html(result);
+            }});
+
+        }
+
+
+        $('document').ready(function () {
+            actualizaMonitor();
+            intervalo=setInterval('actualizaMonitor()',1000);
+
+        })
+        
+        
+    </script>
+    
+    
 
 <body>
     <div id="titleContainer">
@@ -84,21 +104,7 @@
         <div id="title2">A entregar</div>
     </div>
     <div id="ticketContainer" >
-        <div id="prepararTicketContainer">
-                <div class="ticketNumberContainer">Z95</div>
-                <div class="ticketNumberContainer">Z96</div>
-                <div class="ticketNumberContainer">Z97</div>
-                <div class="ticketNumberContainer">Z98</div>
-        </div>
 
-        <div class="divider"></div>
-
-        <div id="entregarTicketContainer">
-            <div class="ticketNumberContainer ">Z95</div>
-            <div class="ticketNumberContainer ">Z96</div>
-            <div class="ticketNumberContainer ">Z97</div>
-            <div class="ticketNumberContainer">Z98</div>
-        </div>
 
     </div>
 </body>

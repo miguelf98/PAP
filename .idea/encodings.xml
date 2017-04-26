@@ -12,6 +12,7 @@
     <file url="file://$PROJECT_DIR$/simpleAdmin/loja.php" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/simpleAdmin/test.php" charset="ISO-8859-1" />
     <file url="file://$PROJECT_DIR$/simpleAdmin/ticketDisplay.php" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/simpleAdmin/ticketDisplay/AJAXorders.php" charset="ISO-8859-1" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

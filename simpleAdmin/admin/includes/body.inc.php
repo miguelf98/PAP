@@ -58,7 +58,7 @@ function validateSession($userId){
 
 
 function drawSideBar($pageId){?>
-    <nav class="navbar-default navbar-side" role="navigation" style="width: 200px;">
+    <nav class="navbar-default navbar-side" role="navigation" style="width: 200px; height: 88.5%;">
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
                     <!-- SIDEBAR LINK 1 -->
@@ -75,7 +75,11 @@ function drawSideBar($pageId){?>
                     <li <?php if($pageId == CMENUCATEGORIAS){echo 'class="active-link"';}?>>
                         <a href="categorias.php"><i class="fa fa-table "></i>Categorias</a>
                     </li>
-                    <li class="active-link"></li>
+
+                    <!-- SIDEBAR LINK 4 -->
+                    <li <?php if($pageId == CMENUTICKETMANAGER){echo 'class="active-link"';}?>>
+                        <a href="ticketManager.php"><i class="fa fa-money "></i>Ticket Manager</a>
+                    </li>
                 </ul>
             </div>
         </nav>
