@@ -21,7 +21,6 @@ $query = mysqli_query($con,$sql);
 $count = mysqli_num_rows($query);
 
 
-
 ?>
 <body>
 <?php drawSideBar(CMENUTICKETMANAGER); ?>

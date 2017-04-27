@@ -1,7 +1,4 @@
 [prepare]
+A04
 A03
-A02
-A01
 [done]
-A09
-A08

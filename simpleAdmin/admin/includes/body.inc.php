@@ -3,7 +3,6 @@ include_once "config.inc.php";
 include_once "functions.inc.php";
 
 
-
 function drawUserDiv(){
     if(isset($_SESSION['userId'])){
 
@@ -84,4 +83,29 @@ function drawSideBar($pageId){?>
             </div>
         </nav>
 <?php
+}
+
+function getTicketNo(){
+    $textFile = fopen("ticket.txt", "r");
+    $ticketNo = fread($textFile,filesize("ticket.txt"));
+    fclose($textFile);
+    return $ticketNo;
+}
+
+function updateTicketNo(){
+    $textFile = fopen("ticket.txt", "w");
+
+}
+
+function generateTicketNumber()
+{
+    session_start();
+    if (isset($_SESSION['ticketNumber'])) {
+        $_SESSION['ticketNumber']++;
+
+    }
+    else
+        $_SESSION['ticketNumber'] = 1;
+
+    return $ticket=chr(65+($_SESSION['ticketNumber']/100)).($_SESSION['ticketNumber']%100<10?'0':'').($_SESSION['ticketNumber']%100);
 }
