@@ -66,9 +66,6 @@
 
 /* ************CARDS END *************** */
 
-.editLink{
-	background-image: url("../../images/edit-button.png");
-}
 
 
 .button {
@@ -76,13 +73,16 @@
 	width: 115px;
 	line-height: 24px;
 	background: #4cae4c;
-	border: 1px solid #5AD65A;
 	margin-bottom: 10px;
 	height: 25px;
 	text-align: center;
 	border-radius: 3px;
 	color: white;
 	font-weight: bold;
+}
+
+.button:hover{
+	background-color: #418B41;
 }
 
 

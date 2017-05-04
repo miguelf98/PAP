@@ -1,19 +1,8 @@
 <?php include_once "includes/body.inc.php"?>
 <?php session_start(); ?>
-<?php validateSession($_SESSION['userId']) ?>
+<?php validateSession($_SESSION['userId'])?>
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Administration</title>
-    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
-    <link href="../assets/css/font-awesome.css" rel="stylesheet" />
-    <link href="../assets/css/custom.css" rel="stylesheet" />
-    <link href="assets/css/adminStylesheet.css" rel="stylesheet" />
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
 
-</head>
 <?php
 $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
 $sql = "SELECT * FROM permissions";
@@ -28,15 +17,12 @@ $query = mysqli_query($con,$sql);
 
 
     <div id="adminContainer">
-
-
-        <div >
+        <div>
             <div class="cardDiv">
                 <div class="cardTitle"><span class="cardTitleSpan">Adicionar um novo utilizador</span></div>
-
                 <div class="cardContent">
                     <div class="loginmodal-container" style="background-color: inherit; box-shadow: none;">
-                        <form action="confirmNewUser.php" method="post">
+                        <form action="userConfirmNew.php" method="post">
                             <input type="text" name="user" placeholder="Username" required>
                             <input type="password" name="pass" placeholder="Password" required>
                             <select name="permission" id="permissions" required><?php
@@ -59,4 +45,3 @@ $query = mysqli_query($con,$sql);
     <script src="../assets/js/custom.js"></script>
 
 </body>
-</html>

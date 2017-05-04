@@ -2,6 +2,22 @@
 include_once "config.inc.php";
 include_once "functions.inc.php";
 
+?>
+    <!DOCTYPE html>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Administration</title>
+        <link href="../assets/css/bootstrap.css" rel="stylesheet" />
+        <link href="../assets/css/font-awesome.css" rel="stylesheet" />
+        <link href="../assets/css/custom.css" rel="stylesheet" />
+        <link href="assets/css/adminStylesheet.css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
+
+    </head>
+<body>
+<?php
+
 
 function drawUserDiv(){
     if(isset($_SESSION['userId'])){

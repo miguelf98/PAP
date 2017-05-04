@@ -4,7 +4,7 @@
 define("DBCON", "localhost");
 define("DBUSER", "root");
 define("DBPW", "");
-define("DBNAME", "mydb");
+define("DBNAME", "paptest");
 define("CMENUDASHBOARD", 1);
 define("CMENUUSERS", 2);
 define("CMENUCATEGORIAS", 3);

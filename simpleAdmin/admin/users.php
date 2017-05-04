@@ -14,19 +14,7 @@ $count = mysqli_num_rows($query);
 
 ?>
 
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <title>Administration</title>
-    <link href="../assets/css/bootstrap.css" rel="stylesheet" />
-    <link href="../assets/css/font-awesome.css" rel="stylesheet" />
-    <link href="../assets/css/custom.css" rel="stylesheet" />
-    <link href="assets/css/adminStylesheet.css" rel="stylesheet" />
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
 
-</head>
-<body>
     <?php drawSideBar(CMENUUSERS); ?>
 
     <div id="wrapper">
@@ -36,12 +24,12 @@ $count = mysqli_num_rows($query);
 
     <div id="adminContainer" style="float: left;">
         <div class="tableContainer">
-            <a href="newUser.php" class="button"> + Utilizador</a>
+            <a href="userNew.php" class="button"> + Utilizador</a>
 
             <table class="adminTable">
                 <tr>
-                    <th style="width: 100px;"></th>
-                    <th>userID</th>
+                    <th style="width: 76px;"></th>
+                    <th style="width: 100px;">userID</th>
                     <th>user Name</th>
                     <th>user PW</th>
                     <th>user Permission</th>
@@ -49,23 +37,24 @@ $count = mysqli_num_rows($query);
 
                 <?php
 
-                if ($count > 0){
+                if ($count > 0){ //SE HOUVER REGISTOS
                     while($user = mysqli_fetch_assoc($query)){
-                        $sql2 = "SELECT * FROM permissions WHERE permissionId = ". $user['userPermissionId'];
+                        $sql2 = "SELECT * FROM permissions WHERE permissionId = ". $user['userPermissionId']; //VAI BUSCAR PERMISSÕES DE CADA UTILIZADOR
                         $query2 = mysqli_query($con,$sql2);
                         $permission = mysqli_fetch_array($query2);
                         echo '<tr>';
-                        echo '<td> <a class="editLink" href="userEdit?id=' .$user['userId']. '">E</a> </td>';
-                        echo '<td><span>' .$user['userId']. '</span></td>';
-                        echo '<td>' .$user['userName']. '</td>';
-                        echo '<td>' .shortenPassword($user['userPW']). '...</td>';
-                        echo '<td>' .$permission['permissionName']. ' (' .$permission['permissionLevel']. ')</td>';
+                        echo '<td> <a href="userEdit.php?id=' .$user['userId']. '"><img src="images/edit-button.png" height="32" width="32"></a>'; //EDIT BUTTON
+                        echo '<a href="userDelete.php?id=' .$user['userId']. '"><img src="images/remove-button.png" height="32" width="32"></td>'; //REMOVE BUTTON
+                        echo '<td><span>' .$user['userId']. '</span></td>'; //DISPLAY USER ID
+                        echo '<td>' .$user['userName']. '</td>'; // DISPLAY USER NAME
+                        echo '<td>' .shortenPassword($user['userPw']). '...</td>'; //DISPLAY PASSWORD (HASHED, SHORTENED)
+                        echo '<td>' .$permission['permissionName']. ' (' .$permission['permissionLevel']. ')</td>'; //DISPLAY PERMISSION(PERMISSION LEVEL)
                         echo '</tr>';
 
                     }
                 }else{
                     echo '<tr>';
-                    echo '<td colspan="5" style="text-align: center;">N�o existem registos</td>';
+                    echo '<td colspan="5" style="text-align: center;">Não existem registos</td>';
                     echo '</tr>';
                 }
                 ?>
@@ -73,7 +62,6 @@ $count = mysqli_num_rows($query);
             <span><?php echo $count;?> registo<?php if($count > 1){echo 's';}?></span>
         </div>
     <div>
-
 
     <script src="../assets/js/jquery-1.10.2.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
