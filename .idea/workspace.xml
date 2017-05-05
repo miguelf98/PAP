@@ -2,35 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd85e1fb-4573-43ee-912e-39a122f6b3eb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/assets/img/store.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/assets/img/user.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/admin/categoriaConfirmEdit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/admin/categoriaConfirmNew.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/admin/categoriaDelete.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/admin/categoriaEdit.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/admin/categoriaNew.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simpleAdmin/admin/confirmNewCategoria.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simpleAdmin/admin/images/categoria.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simpleAdmin/admin/newCategoria.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simpleAdmin/assets/img/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simpleAdmin/images/000.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simpleAdmin/images/1234.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simpleAdmin/images/12344.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simpleAdmin/images/14444.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simpleAdmin/images/4444.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simpleAdmin/images/Inserir .jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simpleAdmin/images/ddd.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simpleAdmin/images/hjhj.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simpleAdmin/images/store.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/simpleAdmin/images/user.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/images/remove-button.png" afterPath="$PROJECT_DIR$/simpleAdmin/admin/images/remove-button.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/02052017.mwb" afterPath="$PROJECT_DIR$/sql/02052017.mwb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/02052017.mwb.bak" afterPath="$PROJECT_DIR$/sql/02052017.mwb.bak" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/jackson.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pap" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/categorias.php" afterPath="$PROJECT_DIR$/simpleAdmin/admin/categorias.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/includes/body.inc.php" afterPath="$PROJECT_DIR$/simpleAdmin/admin/includes/body.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/users.php" afterPath="$PROJECT_DIR$/simpleAdmin/admin/users.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/ticketDisplay/pedidos.txt" afterPath="$PROJECT_DIR$/simpleAdmin/ticketDisplay/pedidos.txt" />
     </list>
     <list id="0fd6f1d4-2f92-4eea-b545-e438901108fd" name="Failed commit: Default" comment="asd" />
     <ignored path="PAP.iws" />
@@ -66,9 +40,9 @@
             <state relative-caret-position="209">
               <caret line="35" column="37" lean-forward="false" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
               <folding>
-                <marker date="1493980724071" expanded="true" signature="182:206" ph="SELECT * FRO... categorias" />
-                <marker date="1493980724071" expanded="true" signature="1213:1258" ph="SELECT * FRO... categorias" />
-                <marker date="1493980724071" expanded="true" signature="2286:2322" ph="..." />
+                <marker date="1493981194014" expanded="true" signature="182:206" ph="SELECT * FRO... categorias" />
+                <marker date="1493981194014" expanded="true" signature="1213:1258" ph="SELECT * FRO... categorias" />
+                <marker date="1493981194014" expanded="true" signature="2286:2322" ph="..." />
               </folding>
             </state>
           </provider>
@@ -78,9 +52,9 @@
         <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/categoriaNew.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="612">
-              <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+              <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
               <folding>
-                <marker date="1493980724036" expanded="true" signature="183:207" ph="SELECT * FRO... categorias" />
+                <marker date="1493981194012" expanded="true" signature="183:207" ph="SELECT * FRO... categorias" />
               </folding>
             </state>
           </provider>
@@ -89,11 +63,11 @@
       <file leaf-file-name="categoriaDelete.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/categoriaDelete.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
               <folding>
-                <marker date="1493980896064" expanded="true" signature="81:143" ph="SELECT categ... categorias" />
-                <marker date="1493980896064" expanded="true" signature="359:402" ph="DELETE FROM " />
+                <marker date="1493981193997" expanded="true" signature="81:143" ph="SELECT categ... categorias" />
+                <marker date="1493981193997" expanded="true" signature="359:402" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -105,7 +79,7 @@
             <state relative-caret-position="17">
               <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="5" selection-end-column="30" />
               <folding>
-                <marker date="1493896152815" expanded="true" signature="103:136" ph="DELETE FROM " />
+                <marker date="1493981193093" expanded="true" signature="103:136" ph="DELETE FROM " />
               </folding>
             </state>
           </provider>
@@ -117,8 +91,8 @@
             <state relative-caret-position="527">
               <caret line="31" column="105" lean-forward="false" selection-start-line="31" selection-start-column="105" selection-end-line="31" selection-end-column="105" />
               <folding>
-                <marker date="1493911691042" expanded="true" signature="183:225" ph="SELECT * FRO... categorias" />
-                <marker date="1493911691042" expanded="true" signature="183:227" ph="SELECT * FRO... categorias" />
+                <marker date="1493981194010" expanded="true" signature="183:225" ph="SELECT * FRO... categorias" />
+                <marker date="1493981194010" expanded="true" signature="183:227" ph="SELECT * FRO... categorias" />
               </folding>
             </state>
           </provider>
@@ -130,14 +104,14 @@
             <state relative-caret-position="238">
               <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="25" />
               <folding>
-                <marker date="1493977341564" expanded="true" signature="210:272" ph="SELECT categ... categorias" />
-                <marker date="1493977341564" expanded="true" signature="1406:1522" ph="UPDATE categ... " />
-                <marker date="1493977341564" expanded="true" signature="2234:2271" ph="UPDATE categ... " />
-                <marker date="1493977341564" expanded="true" signature="2234:2287" ph="UPDATE categ... " />
-                <marker date="1493977341564" expanded="true" signature="2234:2312" ph="UPDATE categ... " />
-                <marker date="1493977341564" expanded="true" signature="2234:2347" ph="UPDATE categ... " />
-                <marker date="1493977341564" expanded="true" signature="2234:2348" ph="UPDATE categ... " />
-                <marker date="1493977341564" expanded="true" signature="2234:2349" ph="UPDATE categ... " />
+                <marker date="1493981193987" expanded="true" signature="210:272" ph="SELECT categ... categorias" />
+                <marker date="1493981193987" expanded="true" signature="1406:1522" ph="UPDATE categ... " />
+                <marker date="1493981193987" expanded="true" signature="2234:2271" ph="UPDATE categ... " />
+                <marker date="1493981193987" expanded="true" signature="2234:2287" ph="UPDATE categ... " />
+                <marker date="1493981193987" expanded="true" signature="2234:2312" ph="UPDATE categ... " />
+                <marker date="1493981193987" expanded="true" signature="2234:2347" ph="UPDATE categ... " />
+                <marker date="1493981193987" expanded="true" signature="2234:2348" ph="UPDATE categ... " />
+                <marker date="1493981193987" expanded="true" signature="2234:2349" ph="UPDATE categ... " />
               </folding>
             </state>
           </provider>
@@ -273,87 +247,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ticketDisplay" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pap" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simpleAdmin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pap" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simpleAdmin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pap" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simpleAdmin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pap" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simpleAdmin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="includes" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -364,8 +258,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
@@ -510,7 +403,7 @@
       <workItem from="1493200562323" duration="4023000" />
       <workItem from="1493291454267" duration="4372000" />
       <workItem from="1493906118595" duration="7601000" />
-      <workItem from="1493973761662" duration="6175000" />
+      <workItem from="1493973761662" duration="6527000" />
     </task>
     <task id="LOCAL-00001" summary="added logout func and verify session on backoffice">
       <created>1489057654656</created>
@@ -519,11 +412,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489057654656</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="asd">
+      <created>1493981136161</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1493981136161</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122437000" />
+    <option name="totallyTimeSpent" value="122789000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -539,13 +439,13 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10501066" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819384" sideWeight="0.5053346" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32870865" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30462864" sideWeight="0.496875" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30444205" sideWeight="0.496875" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -842,9 +742,9 @@
         <state relative-caret-position="204">
           <caret line="39" column="39" lean-forward="true" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="40" />
           <folding>
-            <marker date="1493909552939" expanded="true" signature="224:243" ph="SELECT * FRO... users" />
-            <marker date="1493909552939" expanded="true" signature="1295:1342" ph="SELECT * FRO... permissions" />
-            <marker date="1493909552939" expanded="true" signature="2581:2600" ph="..." />
+            <marker date="1493981194065" expanded="true" signature="224:243" ph="SELECT * FRO... users" />
+            <marker date="1493981194065" expanded="true" signature="1295:1342" ph="SELECT * FRO... permissions" />
+            <marker date="1493981194065" expanded="true" signature="2581:2600" ph="..." />
           </folding>
         </state>
       </provider>
@@ -862,8 +762,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1493895922233" expanded="true" signature="107:165" ph="SELECT permi... permissions" />
-            <marker date="1493895922233" expanded="true" signature="226:291" ph="UPDATE users... " />
+            <marker date="1493981193089" expanded="true" signature="107:165" ph="SELECT permi... permissions" />
+            <marker date="1493981193089" expanded="true" signature="226:291" ph="UPDATE users... " />
           </folding>
         </state>
       </provider>
@@ -881,7 +781,7 @@
         <state relative-caret-position="374">
           <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
-            <marker date="1493975822053" expanded="true" signature="857:892" ph="SELECT * FRO... users" />
+            <marker date="1493981194047" expanded="true" signature="857:892" ph="SELECT * FRO... users" />
           </folding>
         </state>
       </provider>
@@ -923,9 +823,9 @@
         <state relative-caret-position="209">
           <caret line="35" column="37" lean-forward="false" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
           <folding>
-            <marker date="1493980724071" expanded="true" signature="182:206" ph="SELECT * FRO... categorias" />
-            <marker date="1493980724071" expanded="true" signature="1213:1258" ph="SELECT * FRO... categorias" />
-            <marker date="1493980724071" expanded="true" signature="2286:2322" ph="..." />
+            <marker date="1493981194014" expanded="true" signature="182:206" ph="SELECT * FRO... categorias" />
+            <marker date="1493981194014" expanded="true" signature="1213:1258" ph="SELECT * FRO... categorias" />
+            <marker date="1493981194014" expanded="true" signature="2286:2322" ph="..." />
           </folding>
         </state>
       </provider>
@@ -933,30 +833,9 @@
     <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/categoriaNew.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="612">
-          <caret line="36" column="14" lean-forward="true" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+          <caret line="36" column="14" lean-forward="false" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
           <folding>
-            <marker date="1493980724036" expanded="true" signature="183:207" ph="SELECT * FRO... categorias" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/categoriaEdit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="105" lean-forward="false" selection-start-line="31" selection-start-column="105" selection-end-line="31" selection-end-column="105" />
-          <folding>
-            <marker date="1493911691042" expanded="true" signature="183:225" ph="SELECT * FRO... categorias" />
-            <marker date="1493911691042" expanded="true" signature="183:227" ph="SELECT * FRO... categorias" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/userDelete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="5" selection-end-column="30" />
-          <folding>
-            <marker date="1493896152815" expanded="true" signature="103:136" ph="DELETE FROM " />
+            <marker date="1493981194012" expanded="true" signature="183:207" ph="SELECT * FRO... categorias" />
           </folding>
         </state>
       </provider>
@@ -966,25 +845,46 @@
         <state relative-caret-position="238">
           <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="25" />
           <folding>
-            <marker date="1493977341564" expanded="true" signature="210:272" ph="SELECT categ... categorias" />
-            <marker date="1493977341564" expanded="true" signature="1406:1522" ph="UPDATE categ... " />
-            <marker date="1493977341564" expanded="true" signature="2234:2271" ph="UPDATE categ... " />
-            <marker date="1493977341564" expanded="true" signature="2234:2287" ph="UPDATE categ... " />
-            <marker date="1493977341564" expanded="true" signature="2234:2312" ph="UPDATE categ... " />
-            <marker date="1493977341564" expanded="true" signature="2234:2347" ph="UPDATE categ... " />
-            <marker date="1493977341564" expanded="true" signature="2234:2348" ph="UPDATE categ... " />
-            <marker date="1493977341564" expanded="true" signature="2234:2349" ph="UPDATE categ... " />
+            <marker date="1493981193987" expanded="true" signature="210:272" ph="SELECT categ... categorias" />
+            <marker date="1493981193987" expanded="true" signature="1406:1522" ph="UPDATE categ... " />
+            <marker date="1493981193987" expanded="true" signature="2234:2271" ph="UPDATE categ... " />
+            <marker date="1493981193987" expanded="true" signature="2234:2287" ph="UPDATE categ... " />
+            <marker date="1493981193987" expanded="true" signature="2234:2312" ph="UPDATE categ... " />
+            <marker date="1493981193987" expanded="true" signature="2234:2347" ph="UPDATE categ... " />
+            <marker date="1493981193987" expanded="true" signature="2234:2348" ph="UPDATE categ... " />
+            <marker date="1493981193987" expanded="true" signature="2234:2349" ph="UPDATE categ... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/userDelete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="5" selection-end-column="30" />
+          <folding>
+            <marker date="1493981193093" expanded="true" signature="103:136" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/categoriaEdit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="105" lean-forward="false" selection-start-line="31" selection-start-column="105" selection-end-line="31" selection-end-column="105" />
+          <folding>
+            <marker date="1493981194010" expanded="true" signature="183:225" ph="SELECT * FRO... categorias" />
+            <marker date="1493981194010" expanded="true" signature="183:227" ph="SELECT * FRO... categorias" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/categoriaDelete.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="17" column="2" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
           <folding>
-            <marker date="1493980896064" expanded="true" signature="81:143" ph="SELECT categ... categorias" />
-            <marker date="1493980896064" expanded="true" signature="359:402" ph="DELETE FROM " />
+            <marker date="1493981193997" expanded="true" signature="81:143" ph="SELECT categ... categorias" />
+            <marker date="1493981193997" expanded="true" signature="359:402" ph="DELETE FROM " />
           </folding>
         </state>
       </provider>
