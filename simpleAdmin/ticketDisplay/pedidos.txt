@@ -1,4 +1,12 @@
 [prepare]
+A10
+A09
+A08
+A07
+A06
+[done]
+A05
 A04
 A03
-[done]
+A02
+A01

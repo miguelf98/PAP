@@ -12,6 +12,18 @@ $count = mysqli_num_rows($query);
 
 
 ?>
+<script>
+    function hoverD(element){
+        element.setAttribute('src', 'images/remove-button-hover.png')
+    }
+
+    function unhoverD(element){
+        element.setAttribute('src', 'images/remove-button.png')
+    }
+
+</script>
+
+
 <body>
     <?php drawSideBar(CMENUCATEGORIAS); ?>
 
@@ -21,11 +33,11 @@ $count = mysqli_num_rows($query);
 
     <div id="adminContainer">
         <div class="tableContainer">
-            <a href="newCategoria.php" class="button"> + Categoria</a>
+            <a href="categoriaNew.php.php" class="button"> + Categoria</a>
             <table class="adminTable">
                 <tr>
-                    <th style="width: 100px;"></th>
-                    <th>categoriaId</th>
+                    <th style="width: 76px;"></th>
+                    <th style="width: 120px;">categoriaId</th>
                     <th>categoria Nome</th>
                     <th>categoria Image Path</th>
                 </tr>
@@ -36,9 +48,13 @@ $count = mysqli_num_rows($query);
                         $query2 = mysqli_query($con, $sql2);
                         ?>
                         <tr>
-                            <td></td>
+                            <?php
+                            echo '<td> <a href="categoriaEdit.php?id=' .$categ['categoriaId']. '"><img src="images/edit-button.png" height="32" width="32"></a>'; //EDIT BUTTON
+                            echo '<a href="categoriaDelete.php?id=' .$categ['categoriaId']. '"><img onmouseover="hoverD(this)" onmouseout="unhoverD(this)" src="images/remove-button.png" height="32" width="32"></td>'; //REMOVE BUTTON
+
+                            ?>
                             <td><?php echo $categ['categoriaId']; ?></td>
-                            <td><?php echo $categ['categoriaNome']; ?></td>
+                            <td><?php echo $categ['categoriaName']; ?></td>
                             <td><?php echo $categ['categoriaImagePath']; ?></td>
                         </tr>
                         <?php

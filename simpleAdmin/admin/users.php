@@ -14,7 +14,16 @@ $count = mysqli_num_rows($query);
 
 ?>
 
+<script>
+    function hoverD(element){
+        element.setAttribute('src', 'images/remove-button-hover.png')
+    }
 
+    function unhoverD(element){
+        element.setAttribute('src', 'images/remove-button.png')
+    }
+
+</script>
     <?php drawSideBar(CMENUUSERS); ?>
 
     <div id="wrapper">
@@ -44,7 +53,7 @@ $count = mysqli_num_rows($query);
                         $permission = mysqli_fetch_array($query2);
                         echo '<tr>';
                         echo '<td> <a href="userEdit.php?id=' .$user['userId']. '"><img src="images/edit-button.png" height="32" width="32"></a>'; //EDIT BUTTON
-                        echo '<a href="userDelete.php?id=' .$user['userId']. '"><img src="images/remove-button.png" height="32" width="32"></td>'; //REMOVE BUTTON
+                        echo '<a href="userDelete.php?id=' .$user['userId']. '"><img onmouseover="hoverD(this)" onmouseout="unhoverD(this)" src="images/remove-button.png" height="32" width="32"></td>'; //REMOVE BUTTON
                         echo '<td><span>' .$user['userId']. '</span></td>'; //DISPLAY USER ID
                         echo '<td>' .$user['userName']. '</td>'; // DISPLAY USER NAME
                         echo '<td>' .shortenPassword($user['userPw']). '...</td>'; //DISPLAY PASSWORD (HASHED, SHORTENED)

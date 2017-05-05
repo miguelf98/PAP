@@ -29,7 +29,7 @@ function drawUserDiv(){
         ?>
         <span class="logout-spn" style="position: absolute; right: 0;">
             <div id="accountInfoContainer">
-                 <img id="accountImage" src="../images/user.png">
+                 <img id="accountImage" src="../assets/img/user.png">
                 <span id="accountNome"><?php echo $result['userName'];?></span>
                 <a style="float: right; position: relative; top: 50px; right: 30px;" href="logout.php">Logout</a>
             </div>
@@ -50,7 +50,7 @@ function drawTop($pageId){
                         <span class="icon-bar"></span>
                     </button>
                     <a class="navbar-brand" href="#">
-                        <img src="../images/store.png" />
+                        <img src="../assets/img/store.png" />
                     </a>
                 </div>
                  <span class="logout-spn" >

@@ -26,7 +26,7 @@ $count = mysqli_num_rows($query);
 
                 <div class="cardContent">
                     <div class="loginmodal-container" style="background-color: inherit; box-shadow: none;">
-                        <form action="confirmNewCategoria.php" method="post" enctype="multipart/form-data">
+                        <form action="categoriaConfirmNew.php" method="post" enctype="multipart/form-data">
                             <input type="text" name="nameCategoria" placeholder="Nome da Categoria" required>
                             <input type="file" name="imageCategoria">
                             <input type="submit" name="login" class="login loginmodal-submit" value="Inserir" style="height: 50px; line-height: 1px; margin-top: 50px;">
