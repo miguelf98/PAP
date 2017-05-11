@@ -1,6 +1,7 @@
 <?php include_once "includes/body.inc.php"?>
 <?php session_start(); ?>
-<?php validateSession($_SESSION['userId'])?>
+<?php validateSession($_SESSION['userId']) ?>
+<?php validatePermission($_SESSION['permission']) ?>
 
 
 <?php

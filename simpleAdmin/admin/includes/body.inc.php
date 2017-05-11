@@ -11,9 +11,8 @@ include_once "functions.inc.php";
         <link href="../assets/css/font-awesome.css" rel="stylesheet" />
         <link href="../assets/css/custom.css" rel="stylesheet" />
         <link href="assets/css/adminStylesheet.css" rel="stylesheet" />
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
-
     </head>
 <body>
 <?php
@@ -66,10 +65,18 @@ function validateSession($userId){
     if (!isset($userId)){
         header('location: login.php');
     }
-    else{
+}
 
+function validatePermission($permission){
+    if ($permission > CMODERATOR){
+        header('location: login.php?err');
+    }
+    elseif ($permission == CMODERATOR) {
+        header('location: ticketManager.php');
     }
 }
+
+
 
 
 function drawSideBar($pageId){?>
@@ -90,11 +97,17 @@ function drawSideBar($pageId){?>
                     <li <?php if($pageId == CMENUCATEGORIAS){echo 'class="active-link"';}?>>
                         <a href="categorias.php"><i class="fa fa-table "></i>Categorias</a>
                     </li>
-
                     <!-- SIDEBAR LINK 4 -->
+                    <li <?php if($pageId == CMENUPRODUTOS){echo 'class="active-link"';}?>>
+                        <a href="produtos.php"><i class="fa fa-edit "></i>Produtos</a>
+                    </li>
+
+                    <!-- SIDEBAR LINK 5 -->
                     <li <?php if($pageId == CMENUTICKETMANAGER){echo 'class="active-link"';}?>>
                         <a href="ticketManager.php"><i class="fa fa-money "></i>Ticket Manager</a>
                     </li>
+
+
                 </ul>
             </div>
         </nav>

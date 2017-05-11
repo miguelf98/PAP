@@ -6,12 +6,13 @@ $pass = $_POST['pass'];
 $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
 $sql = "SELECT * FROM users WHERE userName = '". $username ."'";
 $result = mysqli_query($con,$sql);
-$dados = mysqli_fetch_row($result);
-$pwHash = $dados['2'];
-
+$dados = mysqli_fetch_assoc($result);
+$pwHash = $dados['userPw'];
+print_r($dados);
 if(password_verify($pass, $pwHash)){
     session_start();
-    $_SESSION['userId'] = $dados[0];
+    $_SESSION['userId'] = $dados['userId'];
+    $_SESSION['permission'] = $dados['userPermissionId'];
     header("location:index.php");
 }
 else{

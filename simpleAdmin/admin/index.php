@@ -1,7 +1,7 @@
 <?php include_once "includes/body.inc.php"?>
 <?php session_start(); ?>
 <?php validateSession($_SESSION['userId']) ?>
-
+<?php validatePermission($_SESSION['permission']) ?>
 
 
 <body>
@@ -15,6 +15,7 @@
     <div id="adminContainer">
         <div class="chartContainer">
             <?php print_r($_SESSION);?>
+
         </div>
     <div>
 

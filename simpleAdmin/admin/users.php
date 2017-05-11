@@ -2,6 +2,7 @@
 
 <?php session_start(); ?>
 <?php validateSession($_SESSION['userId']) ?>
+<?php validatePermission($_SESSION['permission']) ?>
 
 <!-- ************* SQL ************** -->
 <?php
@@ -33,15 +34,16 @@ $count = mysqli_num_rows($query);
 
     <div id="adminContainer" style="float: left;">
         <div class="tableContainer">
+            <div id="tableTituloContainer"><span id="tabelaTitulo">Utilizadores</span></div>
             <a href="userNew.php" class="button"> + Utilizador</a>
 
             <table class="adminTable">
                 <tr>
                     <th style="width: 76px;"></th>
-                    <th style="width: 100px;">userID</th>
-                    <th>user Name</th>
-                    <th>user PW</th>
-                    <th>user Permission</th>
+                    <th style="width: 100px;">ID</th>
+                    <th>Username</th>
+                    <th>Password</th>
+                    <th>Permission</th>
                 </tr>
 
                 <?php
@@ -76,5 +78,4 @@ $count = mysqli_num_rows($query);
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/custom.js"></script>
 
-</body>
-</html>
+

@@ -5,7 +5,7 @@ MAS mostramos no monitor ao CONTRÁrio (ou seja, o 1º pedido é o último do array)
 
 
 <?php
-    $f=fopen("pedidos.txt","r");
+    $f=fopen("pedidos.txt","r"); //abre ficheiro de texto
 
     function mostraPrepare()
     {

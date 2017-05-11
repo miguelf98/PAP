@@ -12,7 +12,12 @@ $count = mysqli_num_rows($query);
 
 ?>
 <body>
-<?php drawSideBar(CMENUTICKETMANAGER); ?>
+<?php
+if ($_SESSION['permission'] < CMODERATOR){
+    drawSideBar(CMENUTICKETMANAGER);
+}
+
+?>
 
 <div id="wrapper">
     <?php drawTop(1);?>
@@ -23,7 +28,6 @@ $count = mysqli_num_rows($query);
 
 <div id="adminContainer">
     <div class="tableContainer">
-        <a href="newCategoria.php" class="button"> + Categoria</a>
         <table class="adminTable">
             <tr>
                 <th style="width: 100px;"></th>

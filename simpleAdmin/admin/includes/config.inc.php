@@ -8,8 +8,15 @@ define("DBNAME", "paptest");
 define("CMENUDASHBOARD", 1);
 define("CMENUUSERS", 2);
 define("CMENUCATEGORIAS", 3);
-define("CMENUTICKETMANAGER", 4);
+define("CMENUPRODUTOS", 4);
+define("CMENUTICKETMANAGER", 5);
 define("CIMAGEFOLDERPATH", "images/");
+define("CIMAGEFOLDERPATHPROD", "images/produtos/");
+define("CADMINLEVEL",1);
+define("CSUPERUSER",2);
+define("CMODERATOR",3);
+define("CUSER",4);
+define("CGUEST",5);
 
 
 

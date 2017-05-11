@@ -1,7 +1,7 @@
 <?php include_once "includes/body.inc.php"?>
 <?php session_start(); ?>
 <?php validateSession($_SESSION['userId']) ?>
-
+<?php validatePermission($_SESSION['permission']) ?>
 
 <?php
 $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
@@ -33,13 +33,14 @@ $count = mysqli_num_rows($query);
 
     <div id="adminContainer">
         <div class="tableContainer">
-            <a href="categoriaNew.php.php" class="button"> + Categoria</a>
+            <div id="tableTituloContainer"><span id="tabelaTitulo">Categorias</span></div>
+            <a href="categoriaNew.php" class="button"> + Categoria</a>
             <table class="adminTable">
                 <tr>
                     <th style="width: 76px;"></th>
-                    <th style="width: 120px;">categoriaId</th>
-                    <th>categoria Nome</th>
-                    <th>categoria Image Path</th>
+                    <th style="width: 120px;">ID</th>
+                    <th>Nome</th>
+                    <th>Image Path</th>
                 </tr>
                 <?php
                 if ($count > 0){
@@ -65,6 +66,7 @@ $count = mysqli_num_rows($query);
                     }
                 ?>
             </table>
+            <span><?php echo $count;?> registo<?php if($count > 1){echo 's';}?></span>
         </div>
     </div>
 

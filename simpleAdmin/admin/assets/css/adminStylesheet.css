@@ -1,7 +1,13 @@
+body{
+	font-family: "Roboto", helvetica, arial, sans-serif;
+}
 #adminContainer{
-	position: absolute;
-	left: 205px;
-	top: 120px;
+	display: inline-block;
+	width: 83%;
+	margin-left: 215px;
+	margin-top: 25px;
+	position: relative;
+
 }
 
 .chartContainer{
@@ -9,6 +15,7 @@
 	height: 400px;
 	border: 1px solid black;
 }
+
 
 .adminTable{
 	width:100%;
@@ -71,14 +78,16 @@
 .button {
 	display: block;
 	width: 115px;
-	line-height: 24px;
+	line-height: 37px;
 	background: #4cae4c;
 	margin-bottom: 10px;
-	height: 25px;
+	height: 37px;
 	text-align: center;
 	border-radius: 3px;
 	color: white;
 	font-weight: bold;
+	float: right;
+
 }
 
 .button:hover{
@@ -127,10 +136,66 @@
 
 /**** MODAL END ****/
 
+.select-style {
+	border: 1px solid #ccc;
+	width: 120px;
+	border-radius: 3px;
+	overflow: hidden;
+	background: #fafafa no-repeat 90% 50%;
+}
 
+.select-style option {
+	padding: 5px 8px;
+	width: 130%;
+	border: none;
+	box-shadow: none;
+	background: transparent;
+	background-image: none;
+	-webkit-appearance: none;
+}
 
+.select-style option:focus {
+	outline: none;
+}
 
+input[type="file"] {
+	display: none;
+}
+.custom-file-upload {
+	border: 1px solid #ccc;
+	display: inline-block;
+	padding: 6px 12px;
+	cursor: pointer;
+}
 
+.custom-file-upload:required {
+	border: 1px solid darkred;
+}
+
+.currencyinput {
+	border: 1px inset #ccc;
+}
+.currencyinput input {
+	border: 0;
+}
+#tableTituloContainer{
+	border-radius: 4px;
+	width: 25%;
+	margin-bottom: 15px;
+	display: inline-block;
+
+}
+
+#tabelaTitulo{
+	color: #418B41;
+	margin: 7px;
+	font-size: 36px;
+}
+
+.inputBox{
+}
+
+/***********************************/
 
 
 

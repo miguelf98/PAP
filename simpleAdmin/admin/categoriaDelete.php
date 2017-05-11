@@ -1,18 +1,25 @@
 <?php
-include_once "includes/config.inc.php";
+include "includes/config.inc.php";
+include "includes/functions.inc.php";
+session_start();
+$state = validateSessions($_SESSION['userId']);
 
-$categId = $_GET['id'];
+if ($state == false){
+    header("location: login.php?err");
+}else {
 
-$sql0 = "SELECT categoriaImagePath FROM categorias WHERE categoriaId = ". $categId;
-$query = mysqli_query($con,$sql0);
-$result = mysqli_fetch_assoc($query);
-$fImagePath = "../".$result['categoriaImagePath'];
-unlink($fImagePath);
+    $categId = $_GET['id'];
 
-$con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
-$sql = "DELETE FROM categorias WHERE categoriaId = ".$categId;
-mysqli_query($con,$sql);
-header("location: categorias.php");
+    $sql0 = "SELECT categoriaImagePath FROM categorias WHERE categoriaId = " . $categId;
+    $query = mysqli_query($con, $sql0);
+    $result = mysqli_fetch_assoc($query);
+    $fImagePath = "../" . $result['categoriaImagePath'];
+    unlink($fImagePath);
 
+    $con = mysqli_connect(DBCON, DBUSER, DBPW, DBNAME);
+    $sql = "DELETE FROM categorias WHERE categoriaId = " . $categId;
+    mysqli_query($con, $sql);
+    header("location: categorias.php");
 
+}
 ?>
