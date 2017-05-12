@@ -35,7 +35,7 @@
                 <!-- TITULO END -->
 
                 <!-- CATEGORIAS DE PRODUTOS -->
-                <?php drawProducts(); ?>
+                <?php drawCategorias(); ?>
                 <!-- ICON END -->
             </div>
         </div>

@@ -1,5 +1,5 @@
 <?php
-include_once "../includes/config.inc.php";
+include_once "../admin/includes/config.inc.php";
 $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
 
 

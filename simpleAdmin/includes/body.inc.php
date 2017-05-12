@@ -12,12 +12,12 @@ function drawTopBar(){?>
                     <!-- PHP ICON <svg class="icon" id="logo">
                         <use xlink:href="#sandwich"/>
                     </svg> -->
-                    <img src="images/store.png">
+                    <img src="assets/img/store.png">
                 </a>
             </div>
                 <span class="logout-spn" >
                   <div id="accountInfoContainer">
-                      <img id="accountImage" src="images/user.png">
+                      <img id="accountImage" src="assets/img/user.png">
                       <div id="accountNome">João Sousa</div>
                       <div id="accountGuita">Saldo: <b>10&euro;</b></div>
                   </div>
@@ -80,8 +80,8 @@ function drawSideBar(){ ?>
 }
 
 
-function drawProducts(){?>
-    <div id="categoryContainer">
+function drawCategorias(){?>
+    <div id="categoriaContainer">
         <!-- PRODUCT ROW 1  (3 produtos por ROW)-->
         <div class="productRow" >
 

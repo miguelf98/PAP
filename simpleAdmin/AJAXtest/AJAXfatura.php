@@ -1,27 +1,24 @@
+
+
 <?php
-include_once "../includes/config.inc.php";
+include_once "../admin/includes/config.inc.php";
 $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
 
 $lines = file("produtos.txt", FILE_IGNORE_NEW_LINES);
 
-$preco = 0;
-
 $contents = file_get_contents(  "produtos.txt",FILE_USE_INCLUDE_PATH);
 
 $array_list = (explode("\r\n",$contents));
-
 $values = array_count_values($array_list);
 
 $count = array();
-
-
-
+$preco = 0;
 
 foreach($lines as $line){
     $sql = "SELECT * FROM produtos WHERE produtoId = ". $line;
     $query = mysqli_query($con,$sql);
     $prod = mysqli_fetch_assoc($query);
-    if (isset($values[$line])) { //passa valores para um array com qntd
+    if (isset($values[$line])) { //passa valores para um array com key e valor [produtoId][produtoQntd]
         $count[$line] = $values[$line];
         $preco = $preco + $prod['produtoPreco'];
     }
@@ -50,12 +47,28 @@ foreach($count as $key => $value){
 
    }
 ?>
+
 <tr>
-    <td colspan="4" style="border: none; text-align: right; font-weight: bolder;">total = <?php echo $preco;?></td>
+    <td colspan="2" style="border: none; text-align: left; font-weight: bolder;"><?php echo $num = (count($array_list)) - 1;?> prod</td>
+    <td colspan="2" style="border: none; text-align: right; font-weight: bolder;">total = <?php echo $preco;?></td>
 </tr>
 </table>
-<style>
+<div id="buttonContainer">
+    <button style="width: 100%; height: 45px;" onclick="clearFatura()">clear</button>
+    <button style="width: 100%; height: 45px;" id="openModal" onclick="setOrder()" <?php if(empty($lines)){ echo 'disabled';}?> >push order</button>
 
+</div>
+
+<style>
+    #buttonContainer{
+        border: 1px solid black;
+        height: 250px;
+        width: 100px;
+        float: right;
+        position: relative;
+        left: 45%;
+
+    }
     th{
         border: 1px solid black;
     }

@@ -11,7 +11,7 @@ $ticket=chr(65+($_SESSION['ticketNumber']/100)).($_SESSION['ticketNumber']%100<1
     $f=fopen("pedidos.txt","r");
     $arrP=array();
     $arrD=array();
-    array_push($arrP,$ticket); // RECEBE por GET o nº do pedido
+    array_push($arrP,$ticket); // RECEBE por GET o nï¿½ do pedido
 
     //ignorar linhas em branco
     $yes=true;

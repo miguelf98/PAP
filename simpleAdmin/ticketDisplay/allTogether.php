@@ -4,11 +4,11 @@
 
 <script src="jquery-3.2.0.min.js"></script>
 <script>
-function setOrder() {
-    $.ajax({url: "pushOrder.php", success: function(result){
-        ;
-    }});
-}
+    function setOrder() {
+        $.ajax({url: "pushOrder.php", success: function(result){
+            ;
+        }});
+    }
 function doneOrder() {
     $.ajax({url: "popPrepare.php", success: function(result){
         ;

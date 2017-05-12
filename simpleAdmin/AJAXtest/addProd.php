@@ -1,5 +1,5 @@
 <?php
-include_once "../includes/config.inc.php";
+include_once "../admin/includes/config.inc.php";
 $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
 
 if(isset($_GET['id'])){
@@ -20,7 +20,7 @@ if(isset($_GET['id'])){
     $sql = "SELECT produtoCategoriaId FROM produtos WHERE produtoId = ".$_GET['pr'];
     $query = mysqli_query ($con,$sql);
     $result = mysqli_fetch_assoc($query);
-    header("location: addProd?id=".$result['produtoCategoriaId']);
+    header("location: addProd.php?id=".$result['produtoCategoriaId']);
 }
 ?>
 
