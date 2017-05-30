@@ -7,7 +7,7 @@ $state = validateSessions($_SESSION['userId']);
 if ($state == false){
     header("location: login.php?err");
 }else {
-
+    $con = mysqli_connect(DBCON, DBUSER, DBPW, DBNAME);
     $categId = $_GET['id'];
 
     $sql0 = "SELECT categoriaImagePath FROM categorias WHERE categoriaId = " . $categId;
@@ -19,7 +19,8 @@ if ($state == false){
     $con = mysqli_connect(DBCON, DBUSER, DBPW, DBNAME);
     $sql = "DELETE FROM categorias WHERE categoriaId = " . $categId;
     mysqli_query($con, $sql);
-    header("location: categorias.php");
 
 }
+
+print_r(mysqli_error($con));
 ?>

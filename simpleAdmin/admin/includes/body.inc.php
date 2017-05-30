@@ -1,6 +1,14 @@
 <?php
 include_once "config.inc.php";
 include_once "functions.inc.php";
+/****PAGINATION OFFSET****/
+if(!(isset($_GET['p']))){
+    $currPage = 1;
+}else{
+    $currPage = $_GET['p'];
+}
+$offset = $currPage * CNUMROWS;
+$offset -= CNUMROWS;
 
 ?>
     <!DOCTYPE html>
@@ -105,6 +113,16 @@ function drawSideBar($pageId){?>
                     <!-- SIDEBAR LINK 5 -->
                     <li <?php if($pageId == CMENUTICKETMANAGER){echo 'class="active-link"';}?>>
                         <a href="ticketManager.php"><i class="fa fa-money "></i>Ticket Manager</a>
+                    </li>
+
+                    <!-- SIDEBAR LINK 6 -->
+                    <li <?php if($pageId == CMENUPESSOAS){echo 'class="active-link"';}?>>
+                        <a href="pessoas.php"><i class="fa fa-money "></i>Pessoas</a>
+                    </li>
+
+                    <!-- SIDEBAR LINK 7 -->
+                    <li <?php if($pageId == CMENUCARTOES){echo 'class="active-link"';}?>>
+                        <a href="cartoes.php"><i class="fa fa-money "></i>Cartoes</a>
                     </li>
 
 

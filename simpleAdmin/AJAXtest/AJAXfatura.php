@@ -5,8 +5,10 @@ include_once "../admin/includes/config.inc.php";
 $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
 
 $lines = file("produtos.txt", FILE_IGNORE_NEW_LINES);
+$countLine = count($lines);
 
 $contents = file_get_contents(  "produtos.txt",FILE_USE_INCLUDE_PATH);
+
 
 $array_list = (explode("\r\n",$contents));
 $values = array_count_values($array_list);
@@ -23,7 +25,6 @@ foreach($lines as $line){
         $preco = $preco + $prod['produtoPreco'];
     }
 }
-
 echo '<table>';
 echo '<tr>';
 echo '<th>prod id</th>';
@@ -55,7 +56,7 @@ foreach($count as $key => $value){
 </table>
 <div id="buttonContainer">
     <button style="width: 100%; height: 45px;" onclick="clearFatura()">clear</button>
-    <button style="width: 100%; height: 45px;" id="openModal" onclick="setOrder()" <?php if(empty($lines)){ echo 'disabled';}?> >push order</button>
+    <a href="generateOrder.php" class="button2 <?php if(empty($lines)){ echo 'not-active';}?>">push order</a>
 
 </div>
 
@@ -76,6 +77,18 @@ foreach($count as $key => $value){
         border: 1px solid black;
     }
 
+    a.button2 {
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        width: 100%;
+        height: 45px;
+        text-decoration: none;
+        color: initial;
+    }
+    .not-active {
+        pointer-events: none;
+        cursor: default;
+    }
 </style>
 
 

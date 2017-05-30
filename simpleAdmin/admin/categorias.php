@@ -4,6 +4,7 @@
 <?php validatePermission($_SESSION['permission']) ?>
 
 <?php
+
 $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
 $sql = "SELECT * FROM categorias";
 $query = mysqli_query($con,$sql);
@@ -66,7 +67,8 @@ $count = mysqli_num_rows($query);
                     }
                 ?>
             </table>
-            <span><?php echo $count;?> registo<?php if($count > 1){echo 's';}?></span>
+            <?php pagination("categorias"); //NOME DA TAB DE DADOS PRINCIPAL DA PÁGINA?>
+            <span class="countRegisto"><?php echo $count;?> registo<?php if($count > 1){echo 's';}?></span>
         </div>
     </div>
 

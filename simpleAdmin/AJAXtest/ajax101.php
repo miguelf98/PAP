@@ -1,11 +1,17 @@
 <?php
-
+include_once "functions.php";
+$lines = file("produtos.txt", FILE_IGNORE_NEW_LINES);
 session_start();
 
 /*************************/
 /*************************/
 /*************************/
+if(isset($_SESSION['ticketNumber']))
+    $_SESSION['ticketNumber']++;
+else
+    $_SESSION['ticketNumber']=1;
 
+echo $num = getTicketNo($_SESSION['ticketNumber']);
 ?>
 <script type="text/javascript" src="../assets/js/jquery-1.10.2.js" >
     function setOrder() {
@@ -77,7 +83,7 @@ session_start();
         display: inline-block;
     }
 </style>
-<h2>Ticket <AJAX></AJAX></h2>
+<h2>Ticket</h2>
 <div id="mainContainer">
 
     <div id="faturaContainer">
@@ -89,15 +95,7 @@ session_start();
 <div id="demo">
     <button type="button" onclick="loadCategs()">Passa cartao</button>
 </div>
-<div id="myModal" class="modal">
 
-    <!-- Modal content -->
-    <div class="modal-content">
-        <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
-    </div>
-
-</div>
 <script src="jquery-3.2.0.min.js"></script>
 <script>
     function setOrder() {
@@ -113,7 +111,7 @@ session_start();
     function reloadPage(){
         window.location.reload(false);
     }
-    setInterval(loadFatura, 750);
+    setInterval(loadFatura, 500);
 
     window.onload = loadFatura();
 </script>

@@ -43,6 +43,29 @@ function loadCategs() {
     xhttp.send();
 }
 
+function generateOrder() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("demo").innerHTML = this.responseText;
+        }
+    };
+    xhttp.open("GET", "generateOrder.php", true);
+    xhttp.send();
+}
+
+
+function setOrder() {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("demo").innerHTML = this.responseText;
+        }
+    };
+    xhttp.open("GET", "pushOrder.php", true);
+    xhttp.send();
+}
+
 function loadProdutos(id){
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
