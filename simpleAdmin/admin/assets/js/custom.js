@@ -1,29 +1,28 @@
-'use strict';
+function search(string){
+    if(string){
+        document.getElementById("searchBox").style.backgroundSize = "0 0";
+    }else{
+        document.getElementById("searchBox").style.backgroundSize = "21px 21px";
+    }
 
-;( function ( document, window, index )
-{
-    var inputs = document.querySelectorAll( '.inputfile' );
-    Array.prototype.forEach.call( inputs, function( input )
-    {
-        var label	 = input.nextElementSibling,
-            labelVal = label.innerHTML;
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("adminTable").innerHTML = this.responseText;
+        }
+    };
+    xhttp.open("POST", "pessoaAJAX.php", true);
 
-        input.addEventListener( 'change', function( e )
-        {
-            var fileName = '';
-            if( this.files && this.files.length > 1 )
-                fileName = ( this.getAttribute( 'data-multiple-caption' ) || '' ).replace( '{count}', this.files.length );
-            else
-                fileName = e.target.value.split( '\\' ).pop();
+    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
-            if( fileName )
-                label.querySelector( 'span' ).innerHTML = fileName;
-            else
-                label.innerHTML = labelVal;
-        });
+    xhttp.send(string);
+}
 
-        // Firefox bug fix
-        input.addEventListener( 'focus', function(){ input.classList.add( 'has-focus' ); });
-        input.addEventListener( 'blur', function(){ input.classList.remove( 'has-focus' ); });
-    });
-}( document, window, 0 ))
+function checkWidth(string){
+
+    var width = document.getElementById("searchBox").offsetWidth;
+    if ((width == 200) && (!(string == "" || string == null))){
+        document.getElementById("searchBox").style.width = "200";
+    }
+
+}

@@ -34,7 +34,7 @@ function pagination($dbTable){
     $num_rows = mysqli_num_rows($result);
     $pageCnt = $num_rows / CNUMROWS;
     ?>
-    <div class="pagination">
+    <div id="pagination">
         <a href="#">&laquo;</a>
         <?php for($i = 1; $i <= ceil($pageCnt); $i++){?>
             <a href="<?php echo $url; ?>?p=<?php echo $i;?>" <?php if($i == $thisPage) {echo 'class="active"';} ?>><?php echo $i; ?></a>
@@ -44,7 +44,22 @@ function pagination($dbTable){
 <?php
 }
 
-
+function search($dbTable){?>
+    <div id="searchContainer">
+        <a href="#" class="button search">Procura</a>
+        <input type="text" onkeyup="search(this.value)" id="searchBox" onblur="checkWidth(this.value)">
+        <div id="searchOptions">
+            <span class="text" style="color: #a8a8a8;">Procurar por...</span>
+            <span class="Chevron" ></span>
+            <select name="" id="" class="select-style">
+                <option value="">option 1</option>
+                <option value="">option 2</option>
+                <option value="">option 32</option>
+            </select>
+        </div>
+    </div>
+<?php
+}
 
 
 

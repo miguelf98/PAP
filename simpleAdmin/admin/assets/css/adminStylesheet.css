@@ -17,18 +17,18 @@ body{
 }
 
 
-.adminTable{
+#adminTable{
 	width:100%;
 }
 
-.adminTable th{
+#adminTable th{
 	background-color: #4caf50;
 	width: 250px;
 	padding-left: 10px;
 
 }
 
-.adminTable tr:hover{
+#adminTable tr:hover{
 	-webkit-box-shadow: 2px 1px 9px -2px rgba(43,43,43,0.62);
 	-moz-box-shadow: 2px 1px 9px -2px rgba(43,43,43,0.62);
 	box-shadow: 2px 1px 9px -2px rgba(43,43,43,0.62);
@@ -79,7 +79,6 @@ body{
 	display: block;
 	width: 115px;
 	line-height: 37px;
-	background: #4cae4c;
 	margin-bottom: 10px;
 	height: 37px;
 	text-align: center;
@@ -90,33 +89,33 @@ body{
 
 }
 
-.button:hover{
+.button.green{
+    background: #4cae4c;
+}
+
+.button.green:hover{
 	background-color: #418B41;
 }
 
-
-
-.select-style {
-	border: 1px solid #ccc;
-	width: 120px;
-	border-radius: 3px;
-	overflow: hidden;
-	background: #fafafa no-repeat 90% 50%;
+.button.search{
+    float: right;
+    background: #5bc0de;
+    width: 75px;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 4px;
 }
 
-.select-style option {
-	padding: 5px 8px;
-	width: 130%;
-	border: none;
-	box-shadow: none;
-	background: transparent;
-	background-image: none;
-	-webkit-appearance: none;
+.button.search:hover{
+    background: #5ab4d2;
+    border: 1px dotted #59a6c4;
+
 }
 
-.select-style option:focus {
-	outline: none;
-}
+
+
+
+
 
 input[type="file"] {
 	display: none;
@@ -279,11 +278,11 @@ input[type="file"] {
 	}
 }
 
-.pagination {
+#pagination {
 	display: inline-block;
 }
 
-.pagination a {
+#pagination a {
 	color: black;
 	float: left;
 	padding-right: 12px;
@@ -291,12 +290,12 @@ input[type="file"] {
 	text-decoration: none;
 }
 
-.pagination a.active {
+#pagination a.active {
 	background-color: #418B41;
 	color: white;
 }
 
-.pagination a:hover:not(.active) {background-color: #ddd;}
+#pagination a:hover:not(.active) {background-color: #ddd;}
 
 
 .countRegisto{
@@ -304,22 +303,106 @@ input[type="file"] {
 
 }
 
-.searchBox[type=text] {
+#searchBox[type=text] {
 	width: 130px;
-	height: 50px;
+	height: 30px;
+    border: 1px solid #ccc;
 	box-sizing: border-box;
-	border: 1px solid #ccc;
 	background-color: white;
 	background-image: url('../../images/searchicon.png');
-	background-position: 10px 10px;
+	background-position: 5px 4px;
 	background-repeat: no-repeat;
-	padding: 12px 20px 12px 40px;
-	-webkit-transition: width 0.4s ease-in-out;
-	transition: width 0.4s ease-in-out;
+	padding-left: 3px;
+    margin-right: 10px;
+    margin-top: 4px;
+    float: right;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
+
+#searchBox[type=text]:focus {
+    width: 200px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+    background-image: none;
 }
 
 
+#searchOptions{
+    float: right;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+}
 
+#searchOptions .text{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+
+}
+
+.Chevron{
+    position:absolute;
+    display:inline-block;
+    height:12px;/*height should be double border*/
+    margin-left: 70px;
+    margin-top: 12px;
+
+
+}
+.Chevron:before,
+.Chevron:after{
+    position:absolute;
+    display:block;
+    content:"";
+    border: 6px solid transparent;/*adjust size*/
+}
+/*Change four 'top' values below to rotate (top/right/bottom/left)*/
+.Chevron:before{
+    top:0;
+    border-top-color:#ccc;/*Chevron Color*/
+}
+.Chevron:after{
+    top:-10px;/*adjust thickness*/
+    border-top-color:#fff;/*Match background colour*/
+}
+
+.select-style {
+
+    min-width: 90px;
+    height: 30px;
+    margin-right: 15px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    box-shadow: none;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-style:focus {
+    outline: none;
+    background-image: none;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+    border: 1px solid rgba(81, 203, 238, 1);
+}
+
+#searchContainer{
+    float: right;
+    margin-right: 50px;
+    display: inline-block;
+}
 
 
 

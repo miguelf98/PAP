@@ -9,7 +9,7 @@ if(!(isset($_GET['p']))){
 }
 $offset = $currPage * CNUMROWS;
 $offset -= CNUMROWS;
-
+$searchQuery = "";
 ?>
     <!DOCTYPE html>
     <html xmlns="http://www.w3.org/1999/xhtml">
@@ -21,6 +21,7 @@ $offset -= CNUMROWS;
         <link href="assets/css/adminStylesheet.css" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
+
     </head>
 <body>
 <?php
