@@ -36,7 +36,7 @@ $count = mysqli_num_rows($query);
         <div class="tableContainer">
             <div id="tableTituloContainer"><span id="tabelaTitulo">Categorias</span></div>
             <a href="categoriaNew.php" class="button"> + Categoria</a>
-            <table class="adminTable">
+            <table id="adminTable">
                 <tr>
                     <th style="width: 76px;"></th>
                     <th style="width: 120px;">ID</th>

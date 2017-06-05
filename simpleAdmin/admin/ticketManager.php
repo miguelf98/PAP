@@ -28,7 +28,7 @@ if ($_SESSION['permission'] < CMODERATOR){
 
 <div id="adminContainer">
     <div class="tableContainer">
-        <table class="adminTable">
+        <table id="adminTable">
             <tr>
                 <th style="width: 100px;"></th>
                 <th>categoriaId</th>

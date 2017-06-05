@@ -57,7 +57,7 @@ $count = mysqli_num_rows($query);
         xhttp.send();
     }
 
-    document.onload(loadPessoas());
+    window.onload = loadPessoas();
 </script>
 <div id="adminContainer" style="float: left;">
     <div class="tableContainer">
@@ -70,13 +70,17 @@ $count = mysqli_num_rows($query);
         $queryS = mysqli_query($con,$sqlS);
         ?>
         <div id="searchContainer">
-            <a href="#" class="button search">Procura</a>
             <input type="text" onkeyup="search(this.value)" id="searchBox" onblur="checkWidth(this.value)">
-            <div id="searchOptions">
+            <div id="searchOptions" onload="test()">
                 <span class="text" style="color: #a8a8a8;">Procurar por...</span>
-                <select name="searchby" class="select-style"><?php
+                <select name="searchby" id="searchBy" class="select-style" onchange="selectSearch()"><?php
                     while($columnName = mysqli_fetch_assoc($queryS)){
-                        echo '<option value="'.$columnName['COLUMN_NAME'].'">'.$columnName['COLUMN_NAME'].'</option>';
+                        if (strpos($columnName['COLUMN_NAME'], 'Id') !== false) {
+                            $selected = "selected";
+                        }else{
+                            $selected = "";
+                        }
+                        echo '<option value="'.$columnName['COLUMN_NAME'].'" '.$selected.'> '.$columnName['COLUMN_NAME'].'</option>';
                     }
                     ?></select>
             </div>
@@ -86,7 +90,7 @@ $count = mysqli_num_rows($query);
         <table id="adminTable">
 
         </table>
-        <?php pagination("pessoas"); //NOME DA TAB DE DADOS PRINCIPAL DA PÁGINA. ESTA É A UNICA LINHA DE CÓDIGO NECESSÁRIA PARA A PAGINAÇÃO?>
+        <?php pagination("pessoas"); //NOME DA TAB DE DADOS PRINCIPAL DA PÁGINA?>
 
 
     </div>

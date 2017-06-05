@@ -6,13 +6,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd85e1fb-4573-43ee-912e-39a122f6b3eb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/admin/pessoaAJAX.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/admin/pessoaConfirmEdit.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/admin/pessoaDelete.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/simpleAdmin/admin/pessoaEdit.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/assets/css/adminStylesheet.css" afterPath="$PROJECT_DIR$/simpleAdmin/admin/assets/css/adminStylesheet.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/assets/js/custom.js" afterPath="$PROJECT_DIR$/simpleAdmin/admin/assets/js/custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/includes/body.inc.php" afterPath="$PROJECT_DIR$/simpleAdmin/admin/includes/body.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/includes/functions.inc.php" afterPath="$PROJECT_DIR$/simpleAdmin/admin/includes/functions.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/cartoes.php" afterPath="$PROJECT_DIR$/simpleAdmin/admin/cartoes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/categorias.php" afterPath="$PROJECT_DIR$/simpleAdmin/admin/categorias.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/includes/config.inc.php" afterPath="$PROJECT_DIR$/simpleAdmin/admin/includes/config.inc.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/pessoaAJAX.php" afterPath="$PROJECT_DIR$/simpleAdmin/admin/pessoaAJAX.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/pessoaConfirmNew.php" afterPath="$PROJECT_DIR$/simpleAdmin/admin/pessoaConfirmNew.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/pessoas.php" afterPath="$PROJECT_DIR$/simpleAdmin/admin/pessoas.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/produtos.php" afterPath="$PROJECT_DIR$/simpleAdmin/admin/produtos.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/ticketManager.php" afterPath="$PROJECT_DIR$/simpleAdmin/admin/ticketManager.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/simpleAdmin/admin/users.php" afterPath="$PROJECT_DIR$/simpleAdmin/admin/users.php" />
     </list>
     <list id="0fd6f1d4-2f92-4eea-b545-e438901108fd" name="Failed commit: Default" comment="asd" />
     <ignored path="PAP.iws" />
@@ -53,35 +60,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pessoas.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pessoas.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/pessoas.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="63" column="83" lean-forward="true" selection-start-line="63" selection-start-column="83" selection-end-line="63" selection-end-column="83" />
+            <state relative-caret-position="119">
+              <caret line="64" column="66" lean-forward="true" selection-start-line="64" selection-start-column="66" selection-end-line="64" selection-end-column="66" />
               <folding>
-                <marker date="1496241289025" expanded="true" signature="278:299" ph="SELECT * FRO... pessoas" />
-                <marker date="1496241289025" expanded="true" signature="278:305" ph="SELECT * FRO... pessoas" />
-                <marker date="1496241289025" expanded="true" signature="278:325" ph="SELECT * FRO... pessoas" />
-                <marker date="1496241289025" expanded="true" signature="278:326" ph="SELECT * FRO... pessoas" />
-                <marker date="1496241289025" expanded="true" signature="1994:2073" ph="SELECT * FRO... pessoas" />
-                <marker date="1496241289025" expanded="true" signature="2827:2829" ph="..." />
-                <marker date="1496241289025" expanded="true" signature="3057:3399" ph="..." />
-                <marker date="1496241289025" expanded="true" signature="3092:3388" ph="..." />
-                <marker date="1496241289025" expanded="true" signature="3132:3373" ph="..." />
-                <marker date="1496241289025" expanded="true" signature="3175:3292" ph="..." />
-                <marker date="1496241289025" expanded="true" signature="3330:3354" ph="..." />
-                <marker date="1496241289025" expanded="true" signature="3409:3415" ph="..." />
+                <marker date="1496655574110" expanded="true" signature="278:299" ph="SELECT * FRO... pessoas" />
+                <marker date="1496655574110" expanded="true" signature="278:305" ph="SELECT * FRO... pessoas" />
+                <marker date="1496655574110" expanded="true" signature="278:325" ph="SELECT * FRO... pessoas" />
+                <marker date="1496655574110" expanded="true" signature="278:326" ph="SELECT * FRO... pessoas" />
+                <marker date="1496655574110" expanded="true" signature="1993:2072" ph="SELECT * FRO... pessoas" />
+                <marker date="1496655574110" expanded="true" signature="3074:3076" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/assets/js/custom.js">
+      <file leaf-file-name="pessoaConfirmEdit.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/pessoaConfirmEdit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
-              <folding />
+            <state relative-caret-position="864">
+              <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+              <folding>
+                <marker date="1496656916056" expanded="true" signature="528:581" ph="SELECT categ... categorias" />
+                <marker date="1496656916056" expanded="true" signature="1773:1844" ph="UPDATE pesso... " />
+                <marker date="1496656916056" expanded="true" signature="1773:1968" ph="UPDATE pesso... " />
+                <marker date="1496656916056" expanded="true" signature="2741:2979" ph="UPDATE pesso... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pessoaEdit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/pessoaEdit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="33" column="64" lean-forward="false" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="64" />
+              <folding>
+                <marker date="1496654897050" expanded="true" signature="235:273" ph="SELECT * FRO... pessoas" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,13 +107,15 @@
       <file leaf-file-name="pessoaAJAX.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/pessoaAJAX.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="13" column="78" lean-forward="true" selection-start-line="13" selection-start-column="78" selection-end-line="13" selection-end-column="78" />
+            <state relative-caret-position="346">
+              <caret line="43" column="38" lean-forward="false" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
               <folding>
-                <marker date="1496241636140" expanded="true" signature="281:345" ph="SELECT * FRO... pessoas" />
-                <marker date="1496241636140" expanded="true" signature="367:415" ph="SELECT * FRO... pessoas" />
-                <marker date="1496241636140" expanded="true" signature="541:556" ph="..." />
-                <marker date="1496241636140" expanded="true" signature="1666:1685" ph="..." />
+                <marker date="1496654663809" expanded="true" signature="486:513" ph="SELECT * FRO... pessoas" />
+                <marker date="1496654663809" expanded="true" signature="486:514" ph="SELECT * FRO... pessoas" />
+                <marker date="1496654663809" expanded="true" signature="486:556" ph="SELECT * FRO... pessoas" />
+                <marker date="1496654663809" expanded="true" signature="665:713" ph="SELECT * FRO... pessoas" />
+                <marker date="1496654663809" expanded="true" signature="862:877" ph="..." />
+                <marker date="1496654663809" expanded="true" signature="1964:1983" ph="..." />
               </folding>
             </state>
           </provider>
@@ -104,60 +124,77 @@
       <file leaf-file-name="adminStylesheet.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/assets/css/adminStylesheet.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
-              <caret line="297" column="11" lean-forward="false" selection-start-line="297" selection-start-column="11" selection-end-line="297" selection-end-column="11" />
+            <state relative-caret-position="6919">
+              <caret line="407" column="0" lean-forward="true" selection-start-line="407" selection-start-column="0" selection-end-line="407" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="functions.inc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/includes/functions.inc.php">
+      <file leaf-file-name="categorias.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/categorias.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="36" column="11" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+            <state relative-caret-position="247">
+              <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="22" />
               <folding>
-                <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-                <marker date="1496241712323" expanded="true" signature="679:692" ph="SELECT * FRO... " />
-                <marker date="1496241712323" expanded="true" signature="679:693" ph="SELECT * FRO... ${$dbTable}" />
+                <marker date="1496655391356" expanded="true" signature="235:259" ph="SELECT * FRO... categorias" />
+                <marker date="1496655391356" expanded="true" signature="1321:1366" ph="SELECT * FRO... categorias" />
+                <marker date="1496655391356" expanded="true" signature="2394:2430" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pessoaModalInfo.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/pessoaModalInfo.php">
+      <file leaf-file-name="cartoes.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/cartoes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="48" />
+            <state relative-caret-position="394">
+              <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
               <folding>
-                <marker date="1495620630695" expanded="true" signature="103:141" ph="SELECT * FRO... pessoas" />
-                <marker date="1495620630695" expanded="true" signature="103:142" ph="SELECT * FRO... pessoas" />
-                <marker date="1495620630695" expanded="true" signature="244:288" ph="SELECT * FRO... cartoes" />
-                <marker date="1495620630695" expanded="true" signature="244:289" ph="SELECT * FRO... cartoes" />
+                <marker date="1496655434511" expanded="true" signature="277:298" ph="SELECT * FRO... cartoes" />
+                <marker date="1496655434511" expanded="true" signature="2662:2681" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="body.inc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/includes/body.inc.php">
+      <file leaf-file-name="produtos.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/produtos.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <state relative-caret-position="191">
+              <caret line="39" column="18" lean-forward="false" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
               <folding>
-                <marker date="1496241139947" expanded="true" signature="1028:1063" ph="SELECT * FRO... users" />
+                <marker date="1496655434439" expanded="true" signature="234:256" ph="SELECT * FRO... produtos" />
+                <marker date="1496655434439" expanded="true" signature="1323:1368" ph="SELECT * FRO... categorias" />
+                <marker date="1496655434439" expanded="true" signature="2566:2602" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.inc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/includes/config.inc.php">
+      <file leaf-file-name="users.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/users.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="309">
+              <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
+              <folding>
+                <marker date="1496655434482" expanded="true" signature="277:296" ph="SELECT * FRO... users" />
+                <marker date="1496655434482" expanded="true" signature="1429:1476" ph="SELECT * FRO... permissions" />
+                <marker date="1496655434482" expanded="true" signature="2715:2734" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ticketManager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/ticketManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding>
+                <marker date="1496655434399" expanded="true" signature="182:206" ph="SELECT * FRO... categorias" />
+                <marker date="1496655434399" expanded="true" signature="884:929" ph="SELECT * FRO... categorias" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -174,7 +211,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>$categ</find>
       <find>return</find>
       <find>z-index</find>
       <find>categ</find>
@@ -201,6 +237,10 @@
       <find>styl</find>
       <find>.adminTable</find>
       <find>.pagination</find>
+      <find>bootstrap.css.map</find>
+      <find>assets/css/adminStylesheet.css</find>
+      <find>card</find>
+      <find>$categNome</find>
     </findStrings>
     <replaceStrings>
       <replace>$prod</replace>
@@ -210,6 +250,7 @@
       <replace>$pessoa</replace>
       <replace>#adminTable</replace>
       <replace>#pagination</replace>
+      <replace>$pessoaNome</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -218,11 +259,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sandbox/test1.php" />
-        <option value="$PROJECT_DIR$/simpleAdmin/admin/test1.php" />
-        <option value="$PROJECT_DIR$/simpleAdmin/admin/addProd.php" />
-        <option value="$PROJECT_DIR$/simpleAdmin/admin/ajax101.php" />
-        <option value="$PROJECT_DIR$/simpleAdmin/admin/AJAXtest/test1.php" />
         <option value="$PROJECT_DIR$/simpleAdmin/admin/AJAXtest/pushProd.php" />
         <option value="$PROJECT_DIR$/simpleAdmin/admin/AJAXtest/addProd.php" />
         <option value="$PROJECT_DIR$/simpleAdmin/admin/AJAXtest/clearFatura.php" />
@@ -255,20 +291,25 @@
         <option value="$PROJECT_DIR$/simpleAdmin/pessoaModalInfo.php" />
         <option value="$PROJECT_DIR$/simpleAdmin/admin/test.php" />
         <option value="$PROJECT_DIR$/simpleAdmin/admin/pessoaModalInfo.php" />
-        <option value="$PROJECT_DIR$/simpleAdmin/admin/cartoes.php" />
         <option value="$PROJECT_DIR$/simpleAdmin/admin/pessoaNew.php" />
-        <option value="$PROJECT_DIR$/simpleAdmin/admin/pessoaConfirmNew.php" />
         <option value="$PROJECT_DIR$/simpleAdmin/admin/categoriaDelete.php" />
-        <option value="$PROJECT_DIR$/simpleAdmin/assets/css/custom.css" />
-        <option value="$PROJECT_DIR$/simpleAdmin/admin/includes/config.inc.php" />
-        <option value="$PROJECT_DIR$/simpleAdmin/admin/categorias.php" />
-        <option value="$PROJECT_DIR$/simpleAdmin/admin/produtos.php" />
-        <option value="$PROJECT_DIR$/simpleAdmin/admin/assets/js/custom.js" />
-        <option value="$PROJECT_DIR$/simpleAdmin/admin/includes/body.inc.php" />
-        <option value="$PROJECT_DIR$/simpleAdmin/admin/pessoas.php" />
-        <option value="$PROJECT_DIR$/simpleAdmin/admin/pessoaAJAX.php" />
-        <option value="$PROJECT_DIR$/simpleAdmin/admin/assets/css/adminStylesheet.css" />
         <option value="$PROJECT_DIR$/simpleAdmin/admin/includes/functions.inc.php" />
+        <option value="$PROJECT_DIR$/simpleAdmin/admin/assets/js/custom.js" />
+        <option value="$PROJECT_DIR$/simpleAdmin/admin/includes/config.inc.php" />
+        <option value="$PROJECT_DIR$/simpleAdmin/admin/pessoaConfirmNew.php" />
+        <option value="$PROJECT_DIR$/simpleAdmin/admin/pessoaDelete.php" />
+        <option value="$PROJECT_DIR$/simpleAdmin/admin/pessoaAJAX.php" />
+        <option value="$PROJECT_DIR$/simpleAdmin/admin/pessoaEdit.php" />
+        <option value="$PROJECT_DIR$/simpleAdmin/admin/assets/css/adminStylesheet.css" />
+        <option value="$PROJECT_DIR$/simpleAdmin/admin/includes/body.inc.php" />
+        <option value="$PROJECT_DIR$/simpleAdmin/assets/css/custom.css" />
+        <option value="$PROJECT_DIR$/simpleAdmin/admin/categorias.php" />
+        <option value="$PROJECT_DIR$/simpleAdmin/admin/cartoes.php" />
+        <option value="$PROJECT_DIR$/simpleAdmin/admin/produtos.php" />
+        <option value="$PROJECT_DIR$/simpleAdmin/admin/users.php" />
+        <option value="$PROJECT_DIR$/simpleAdmin/admin/ticketManager.php" />
+        <option value="$PROJECT_DIR$/simpleAdmin/admin/pessoas.php" />
+        <option value="$PROJECT_DIR$/simpleAdmin/admin/pessoaConfirmEdit.php" />
       </list>
     </option>
   </component>
@@ -280,10 +321,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="181" />
-    <option name="y" value="108" />
-    <option name="width" value="1731" />
-    <option name="height" value="923" />
+    <option name="x" value="178" />
+    <option name="y" value="113" />
+    <option name="width" value="1732" />
+    <option name="height" value="926" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -301,6 +342,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -324,28 +367,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="simpleAdmin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pap" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simpleAdmin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -403,7 +424,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="AJAXtest" />
+              <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -424,11 +445,61 @@
               <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="includes" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pap" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simpleAdmin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pap" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simpleAdmin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -604,7 +675,10 @@
       <workItem from="1495640498294" duration="1717000" />
       <workItem from="1495788880160" duration="13819000" />
       <workItem from="1496134145261" duration="11035000" />
-      <workItem from="1496219865335" duration="14225000" />
+      <workItem from="1496219865335" duration="14265000" />
+      <workItem from="1496306450829" duration="11906000" />
+      <workItem from="1496392506610" duration="12738000" />
+      <workItem from="1496651844068" duration="5064000" />
     </task>
     <task id="LOCAL-00001" summary="added logout func and verify session on backoffice">
       <created>1489057654656</created>
@@ -624,7 +698,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="342033000" />
+    <option name="totallyTimeSpent" value="371781000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -636,17 +710,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="181" y="108" width="1731" height="923" extended-state="0" />
+    <frame x="178" y="113" width="1732" height="926" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14183123" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1471292" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32740214" sideWeight="0.5021322" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882607" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32827735" sideWeight="0.4978678" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30140486" sideWeight="0.496875" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30126584" sideWeight="0.496875" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -707,41 +781,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/ticketDisplay/base.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/ticketDisplay/pushPrepare.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/ticketDisplay/testeTicket.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/ticketDisplay/allTogether.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-80">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/ticketDisplay/popOrder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="4" lean-forward="false" selection-start-line="1" selection-start-column="4" selection-end-line="1" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simpleAdmin/ticketDisplay/popPrepare.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -901,28 +940,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/cartoes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="35" lean-forward="false" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
-          <folding>
-            <marker date="1495624918540" expanded="true" signature="277:298" ph="SELECT * FRO... cartoes" />
-            <marker date="1495624918540" expanded="true" signature="2665:2684" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/ticketManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="34" lean-forward="false" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <marker date="1493991525605" expanded="true" signature="182:206" ph="SELECT * FRO... categorias" />
-            <marker date="1493991525605" expanded="true" signature="887:932" ph="SELECT * FRO... categorias" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/categoriaConfirmNew.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -939,10 +956,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/assets/css/font-awesome.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3128">
+          <caret line="184" column="41" lean-forward="false" selection-start-line="184" selection-start-column="41" selection-end-line="184" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/ui.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="116" column="24" lean-forward="true" selection-start-line="116" selection-start-column="24" selection-end-line="116" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/assets/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="2731" column="1" lean-forward="false" selection-start-line="2731" selection-start-column="1" selection-end-line="2731" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/AJAXtest/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="45" column="26" lean-forward="false" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/includes/functions.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="42" column="10" lean-forward="false" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
+          <folding>
+            <marker date="1496307397820" expanded="true" signature="679:692" ph="SELECT * FRO... " />
+            <marker date="1496307397820" expanded="true" signature="679:693" ph="SELECT * FRO... ${$dbTable}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/assets/js/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="23" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/categoriaDelete.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+          <caret line="8" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="25" selection-end-column="2" />
           <folding>
             <marker date="1495792101329" expanded="true" signature="312:374" ph="SELECT categ... categorias" />
             <marker date="1495792101329" expanded="true" signature="621:664" ph="DELETE FROM " />
@@ -950,23 +1014,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/includes/config.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/pessoaConfirmNew.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="55" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="55" />
+        <state relative-caret-position="323">
+          <caret line="19" column="96" lean-forward="true" selection-start-line="19" selection-start-column="96" selection-end-line="19" selection-end-column="96" />
           <folding>
-            <marker date="1495792029507" expanded="true" signature="817:871" ph="INSERT INTO pessoas... " />
-            <marker date="1495792029507" expanded="true" signature="817:891" ph="INSERT INTO pessoas... " />
-            <marker date="1495792029507" expanded="true" signature="817:934" ph="INSERT INTO pessoas... " />
+            <marker date="1496653634716" expanded="true" signature="929:983" ph="INSERT INTO pessoas... " />
+            <marker date="1496653634716" expanded="true" signature="929:1003" ph="INSERT INTO pessoas... " />
+            <marker date="1496653634716" expanded="true" signature="929:1046" ph="INSERT INTO pessoas... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/assets/css/font-awesome.css">
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/pessoaModalInfo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3128">
-          <caret line="184" column="41" lean-forward="false" selection-start-line="184" selection-start-column="41" selection-end-line="184" selection-end-column="41" />
+        <state relative-caret-position="470">
+          <caret line="29" column="5" lean-forward="false" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+          <folding>
+            <marker date="1495620630695" expanded="true" signature="103:141" ph="SELECT * FRO... pessoas" />
+            <marker date="1495620630695" expanded="true" signature="103:142" ph="SELECT * FRO... pessoas" />
+            <marker date="1495620630695" expanded="true" signature="244:288" ph="SELECT * FRO... cartoes" />
+            <marker date="1495620630695" expanded="true" signature="244:289" ph="SELECT * FRO... cartoes" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/pessoaDelete.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="53" lean-forward="true" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
+          <folding>
+            <marker date="1496654017564" expanded="true" signature="313:366" ph="SELECT pesso... pessoas" />
+            <marker date="1496654017564" expanded="true" signature="611:648" ph="DELETE FROM " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/categoriaEdit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/includes/body.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="19" lean-forward="true" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <marker date="1496655225180" expanded="true" signature="1028:1063" ph="SELECT * FRO... users" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -980,157 +1086,135 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/simpleAdmin/assets/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="96" column="1" lean-forward="true" selection-start-line="96" selection-start-column="1" selection-end-line="96" selection-end-column="1" />
+        <state relative-caret-position="164">
+          <caret line="240" column="23" lean-forward="true" selection-start-line="240" selection-start-column="23" selection-end-line="240" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/assets/css/adminStylesheet.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6919">
+          <caret line="407" column="0" lean-forward="true" selection-start-line="407" selection-start-column="0" selection-end-line="407" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/categorias.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="69" column="40" lean-forward="false" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+        <state relative-caret-position="247">
+          <caret line="38" column="22" lean-forward="true" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="22" />
           <folding>
-            <marker date="1496152542875" expanded="true" signature="235:259" ph="SELECT * FRO... categorias" />
-            <marker date="1496152542875" expanded="true" signature="1324:1369" ph="SELECT * FRO... categorias" />
-            <marker date="1496152542875" expanded="true" signature="2397:2433" ph="..." />
+            <marker date="1496655391356" expanded="true" signature="235:259" ph="SELECT * FRO... categorias" />
+            <marker date="1496655391356" expanded="true" signature="1321:1366" ph="SELECT * FRO... categorias" />
+            <marker date="1496655391356" expanded="true" signature="2394:2430" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/cartoes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="49" column="18" lean-forward="false" selection-start-line="49" selection-start-column="18" selection-end-line="49" selection-end-column="18" />
+          <folding>
+            <marker date="1496655434511" expanded="true" signature="277:298" ph="SELECT * FRO... cartoes" />
+            <marker date="1496655434511" expanded="true" signature="2662:2681" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/produtos.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state relative-caret-position="191">
+          <caret line="39" column="18" lean-forward="false" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
           <folding>
-            <marker date="1496152835701" expanded="true" signature="234:256" ph="SELECT * FRO... produtos" />
-            <marker date="1496152835701" expanded="true" signature="1326:1371" ph="SELECT * FRO... categorias" />
-            <marker date="1496152835701" expanded="true" signature="2569:2605" ph="..." />
+            <marker date="1496655434439" expanded="true" signature="234:256" ph="SELECT * FRO... produtos" />
+            <marker date="1496655434439" expanded="true" signature="1323:1368" ph="SELECT * FRO... categorias" />
+            <marker date="1496655434439" expanded="true" signature="2566:2602" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/includes/config.inc.php">
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/ticketManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/ui.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="116" column="24" lean-forward="true" selection-start-line="116" selection-start-column="24" selection-end-line="116" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/assets/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="2731" column="1" lean-forward="false" selection-start-line="2731" selection-start-column="1" selection-end-line="2731" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/pessoaModalInfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="48" />
+        <state relative-caret-position="119">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding>
-            <marker date="1495620630695" expanded="true" signature="103:141" ph="SELECT * FRO... pessoas" />
-            <marker date="1495620630695" expanded="true" signature="103:142" ph="SELECT * FRO... pessoas" />
-            <marker date="1495620630695" expanded="true" signature="244:288" ph="SELECT * FRO... cartoes" />
-            <marker date="1495620630695" expanded="true" signature="244:289" ph="SELECT * FRO... cartoes" />
+            <marker date="1496655434399" expanded="true" signature="182:206" ph="SELECT * FRO... categorias" />
+            <marker date="1496655434399" expanded="true" signature="884:929" ph="SELECT * FRO... categorias" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/AJAXtest/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="45" column="26" lean-forward="false" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="64" column="21" lean-forward="true" selection-start-line="51" selection-start-column="19" selection-end-line="64" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/includes/body.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        <state relative-caret-position="309">
+          <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="22" selection-end-line="39" selection-end-column="22" />
           <folding>
-            <marker date="1496241139947" expanded="true" signature="1028:1063" ph="SELECT * FRO... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/assets/css/adminStylesheet.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="297" column="11" lean-forward="false" selection-start-line="297" selection-start-column="11" selection-end-line="297" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/includes/functions.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="36" column="11" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-            <marker date="1496241712323" expanded="true" signature="679:692" ph="SELECT * FRO... " />
-            <marker date="1496241712323" expanded="true" signature="679:693" ph="SELECT * FRO... ${$dbTable}" />
+            <marker date="1496655434482" expanded="true" signature="277:296" ph="SELECT * FRO... users" />
+            <marker date="1496655434482" expanded="true" signature="1429:1476" ph="SELECT * FRO... permissions" />
+            <marker date="1496655434482" expanded="true" signature="2715:2734" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/pessoaAJAX.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="13" column="78" lean-forward="true" selection-start-line="13" selection-start-column="78" selection-end-line="13" selection-end-column="78" />
+        <state relative-caret-position="346">
+          <caret line="43" column="38" lean-forward="false" selection-start-line="43" selection-start-column="38" selection-end-line="43" selection-end-column="38" />
           <folding>
-            <marker date="1496241636140" expanded="true" signature="281:345" ph="SELECT * FRO... pessoas" />
-            <marker date="1496241636140" expanded="true" signature="367:415" ph="SELECT * FRO... pessoas" />
-            <marker date="1496241636140" expanded="true" signature="541:556" ph="..." />
-            <marker date="1496241636140" expanded="true" signature="1666:1685" ph="..." />
+            <marker date="1496654663809" expanded="true" signature="486:513" ph="SELECT * FRO... pessoas" />
+            <marker date="1496654663809" expanded="true" signature="486:514" ph="SELECT * FRO... pessoas" />
+            <marker date="1496654663809" expanded="true" signature="486:556" ph="SELECT * FRO... pessoas" />
+            <marker date="1496654663809" expanded="true" signature="665:713" ph="SELECT * FRO... pessoas" />
+            <marker date="1496654663809" expanded="true" signature="862:877" ph="..." />
+            <marker date="1496654663809" expanded="true" signature="1964:1983" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/assets/js/custom.js">
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/categoriaConfirmEdit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="43" lean-forward="true" selection-start-line="8" selection-start-column="43" selection-end-line="8" selection-end-column="43" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/pessoas.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="63" column="83" lean-forward="true" selection-start-line="63" selection-start-column="83" selection-end-line="63" selection-end-column="83" />
+        <state relative-caret-position="119">
+          <caret line="64" column="66" lean-forward="true" selection-start-line="64" selection-start-column="66" selection-end-line="64" selection-end-column="66" />
           <folding>
-            <marker date="1496241289025" expanded="true" signature="278:299" ph="SELECT * FRO... pessoas" />
-            <marker date="1496241289025" expanded="true" signature="278:305" ph="SELECT * FRO... pessoas" />
-            <marker date="1496241289025" expanded="true" signature="278:325" ph="SELECT * FRO... pessoas" />
-            <marker date="1496241289025" expanded="true" signature="278:326" ph="SELECT * FRO... pessoas" />
-            <marker date="1496241289025" expanded="true" signature="1994:2073" ph="SELECT * FRO... pessoas" />
-            <marker date="1496241289025" expanded="true" signature="2827:2829" ph="..." />
-            <marker date="1496241289025" expanded="true" signature="3057:3399" ph="..." />
-            <marker date="1496241289025" expanded="true" signature="3092:3388" ph="..." />
-            <marker date="1496241289025" expanded="true" signature="3132:3373" ph="..." />
-            <marker date="1496241289025" expanded="true" signature="3175:3292" ph="..." />
-            <marker date="1496241289025" expanded="true" signature="3330:3354" ph="..." />
-            <marker date="1496241289025" expanded="true" signature="3409:3415" ph="..." />
+            <marker date="1496655574110" expanded="true" signature="278:299" ph="SELECT * FRO... pessoas" />
+            <marker date="1496655574110" expanded="true" signature="278:305" ph="SELECT * FRO... pessoas" />
+            <marker date="1496655574110" expanded="true" signature="278:325" ph="SELECT * FRO... pessoas" />
+            <marker date="1496655574110" expanded="true" signature="278:326" ph="SELECT * FRO... pessoas" />
+            <marker date="1496655574110" expanded="true" signature="1993:2072" ph="SELECT * FRO... pessoas" />
+            <marker date="1496655574110" expanded="true" signature="3074:3076" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/pessoaEdit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="33" column="64" lean-forward="false" selection-start-line="33" selection-start-column="53" selection-end-line="33" selection-end-column="64" />
+          <folding>
+            <marker date="1496654897050" expanded="true" signature="235:273" ph="SELECT * FRO... pessoas" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simpleAdmin/admin/pessoaConfirmEdit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="864">
+          <caret line="51" column="4" lean-forward="false" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+          <folding>
+            <marker date="1496656916056" expanded="true" signature="528:581" ph="SELECT categ... categorias" />
+            <marker date="1496656916056" expanded="true" signature="1773:1844" ph="UPDATE pesso... " />
+            <marker date="1496656916056" expanded="true" signature="1773:1968" ph="UPDATE pesso... " />
+            <marker date="1496656916056" expanded="true" signature="2741:2979" ph="UPDATE pesso... " />
           </folding>
         </state>
       </provider>

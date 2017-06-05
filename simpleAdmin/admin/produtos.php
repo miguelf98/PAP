@@ -37,7 +37,7 @@ $count = mysqli_num_rows($query);
 
         <a href="produtoNew.php" class="button"> + Produto</a>
 
-        <table class="adminTable">
+        <table id="adminTable">
             <tr>
                 <th style="width: 76px;"></th>
                 <th style="width: 120px;">ID</th>

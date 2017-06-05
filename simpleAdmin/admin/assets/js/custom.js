@@ -11,11 +11,16 @@ function search(string){
             document.getElementById("adminTable").innerHTML = this.responseText;
         }
     };
-    xhttp.open("POST", "pessoaAJAX.php", true);
 
-    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    var e = document.getElementById("searchBy");
+    var strUser = e.options[e.selectedIndex].value;
 
-    xhttp.send(string);
+    if(strUser === null){
+        alert("empty");
+    }
+
+    xhttp.open("GET", "pessoaAJAX.php?srch=" + string + "&sb=" + strUser , true);
+    xhttp.send();
 }
 
 function checkWidth(string){
@@ -24,5 +29,12 @@ function checkWidth(string){
     if ((width == 200) && (!(string == "" || string == null))){
         document.getElementById("searchBox").style.width = "200";
     }
+
+}
+function test(){
+    var e = document.getElementById("searchBy");
+    console.log(e);
+}
+function selectSearch(){
 
 }
