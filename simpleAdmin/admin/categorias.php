@@ -6,7 +6,13 @@
 <?php
 
 $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
-$sql = "SELECT * FROM categorias";
+if(!(isset($_GET['p']))){
+    $pageNum = 1;
+}else{
+    $pageNum = $_GET['p'];
+}
+$offset = $pageNum['p'] * CNUMROWS;
+$sql = "SELECT * FROM categorias LIMIT ".CNUMROWS." OFFSET ".$offset; //LIMIT E OFFSET AJUDAM NA PAGINAÇÃO";
 $query = mysqli_query($con,$sql);
 $count = mysqli_num_rows($query);
 
@@ -35,7 +41,7 @@ $count = mysqli_num_rows($query);
     <div id="adminContainer">
         <div class="tableContainer">
             <div id="tableTituloContainer"><span id="tabelaTitulo">Categorias</span></div>
-            <a href="categoriaNew.php" class="button"> + Categoria</a>
+            <a href="categoriaNew.php" class="button green"> + Categoria</a>
             <table id="adminTable">
                 <tr>
                     <th style="width: 76px;"></th>
@@ -53,7 +59,6 @@ $count = mysqli_num_rows($query);
                             <?php
                             echo '<td> <a href="categoriaEdit.php?id=' .$categ['categoriaId']. '"><img src="images/edit-button.png" height="32" width="32"></a>'; //EDIT BUTTON
                             echo '<a href="categoriaDelete.php?id=' .$categ['categoriaId']. '"><img onmouseover="hoverD(this)" onmouseout="unhoverD(this)" src="images/remove-button.png" height="32" width="32"></td>'; //REMOVE BUTTON
-
                             ?>
                             <td><?php echo $categ['categoriaId']; ?></td>
                             <td><?php echo $categ['categoriaName']; ?></td>

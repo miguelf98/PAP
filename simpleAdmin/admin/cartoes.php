@@ -7,10 +7,15 @@
 <!-- ************* SQL ************** -->
 <?php
 $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
-$sql = "SELECT * FROM cartoes";
+if(!(isset($_GET['p']))){
+    $pageNum = 1;
+}else{
+    $pageNum = $_GET['p'];
+}
+$offset = $pageNum['p'] * CNUMROWS;
+$sql = "SELECT * FROM cartoes LIMIT ".CNUMROWS." OFFSET ". $offset; //LIMIT E OFFSET AJUDAM NA PAGINAÇÃO";
 $query = mysqli_query($con,$sql);
 $count = mysqli_num_rows($query);
-
 
 
 ?>
@@ -30,43 +35,33 @@ $count = mysqli_num_rows($query);
 <div id="wrapper">
     <?php drawTop(1);?>
 </div>
-<script>
-    function loadPessoaInfo(id){
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("modal-body").innerHTML = this.responseText;
-            }
-        };
-        xhttp.open("GET", "pessoaModalInfo.php?id=" + id, true);
-        xhttp.send();
-    }
-</script>
+
 <div id="adminContainer" style="float: left;">
     <div class="tableContainer">
         <div id="tableTituloContainer"><span id="tabelaTitulo">Cartões</span></div>
-        <a href="pessoaNew.php" class="button"> + Cartão</a>
+        <a href="cartaoNew.php" class="button green"> + Cartão</a>
 
         <table id="adminTable">
             <tr>
-                <th style="width: 76px;"></th>
-                <th style="width: 100px;">ID</th>
-                <th>Pessoa Nome</th>
-                <th>Pessoa Rua</th>
-                <th>Pessoa Telefone</th>
+                <th style="width: 5%;"></th>
+                <th style="width: 50px;">ID</th>
+                <th style="width: 150px;">Saldo</th>
+                <th>Pessoa Associada</th>
             </tr>
 
             <?php
 
             if ($count > 0){ //SE HOUVER REGISTOS
-                while($pessoa = mysqli_fetch_assoc($query)){
-                    echo '<tr data-toggle="modal" data-target="#myModal" onclick="loadPessoaInfo('.$pessoa["pessoaId"].')">';
-                    echo '<td> <a href="userEdit.php?id=' .$pessoa['pessoaId']. '"><img src="images/edit-button.png" height="32" width="32"></a>'; //EDIT BUTTON
-                    echo '<a href="userDelete.php?id=' .$pessoa['pessoaId']. '"><img onmouseover="hoverD(this)" onmouseout="unhoverD(this)" src="images/remove-button.png" height="32" width="32"></td>'; //REMOVE BUTTON
-                    echo '<td><span>' .$pessoa['pessoaId']. '</span></td>';
-                    echo '<td>' .$pessoa['pessoaNome']. '</td>';
-                    echo '<td>' .$pessoa['pessoaMorada']. '</td>';
-                    echo '<td>' .$pessoa['pessoaTelefone']. '</td>';
+                while($cartao = mysqli_fetch_assoc($query)){
+                    $sql2 = "SELECT pessoaNome FROM pessoas WHERE pessoaId = ".$cartao['cartaoPessoaId'];
+                    $query2 = mysqli_query($con,$sql2);
+                    $pessoa = mysqli_fetch_assoc($query2);
+                    echo '<tr data-toggle="modal" data-target="#myModal" onclick="loadPessoaInfo('.$cartao["cartaoId"].')">';
+                    echo '<td> <a href="userEdit.php?id=' .$cartao['cartaoId']. '"><img src="images/edit-button.png" height="32" width="32"></a>'; //EDIT BUTTON
+                    echo '<a href="userDelete.php?id=' .$cartao['cartaoId']. '"><img onmouseover="hoverD(this)" onmouseout="unhoverD(this)" src="images/remove-button.png" height="32" width="32"></td>'; //REMOVE BUTTON
+                    echo '<td><span>' .$cartao['cartaoId']. '</span></td>';
+                    echo '<td>' .$cartao['cartaoSaldo']. ' &euro;</td>';
+                    echo '<td>'.$pessoa['pessoaNome'].' ('.$cartao['cartaoPessoaId'].')</td>';
                     echo '</tr>';
 
                 }
@@ -77,7 +72,8 @@ $count = mysqli_num_rows($query);
             }
             ?>
         </table>
-        <span><?php echo $count;?> registo<?php if($count > 1){echo 's';}?></span>
+        <span class="countRegisto"><?php echo $count;?> registo<?php if($count > 1){echo 's';}?></span>
+        <?php pagination("cartoes");?>
     </div>
     <div id="myModal" class="modal fade" role="dialog">
         <div class="modal-dialog">

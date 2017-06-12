@@ -35,7 +35,7 @@ $count = mysqli_num_rows($query);
     <div class="tableContainer">
         <div id="tableTituloContainer"><span id="tabelaTitulo">Produtos</span></div>
 
-        <a href="produtoNew.php" class="button"> + Produto</a>
+        <a href="produtoNew.php" class="button green"> + Produto</a>
 
         <table id="adminTable">
             <tr>
@@ -74,7 +74,7 @@ $count = mysqli_num_rows($query);
             ?>
         </table>
         <?php pagination("produtos"); //NOME DA TAB DE DADOS PRINCIPAL DA PÁGINA?>
-        <span style="float: right;"><?php echo $count;?> registo<?php if($count > 1){echo 's';}?></span>
+        <span class="countRegisto"><?php echo $count;?> registo<?php if($count > 1){echo 's';}?></span>
     </div>
 </div>
 

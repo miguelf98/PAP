@@ -14,8 +14,9 @@ if ($state == false){
     $query = mysqli_query($con, $sql0);
     $result = mysqli_fetch_assoc($query);
     $fImagePath = "../" . $result['pessoaImagePath'];
-    unlink($fImagePath);
-
+    if(file_exists($fImagePath)){
+        unlink($fImagePath);
+    }
     $con = mysqli_connect(DBCON, DBUSER, DBPW, DBNAME);
     $sql = "DELETE FROM pessoas WHERE pessoaId = " . $pessoaId;
     mysqli_query($con, $sql);

@@ -44,21 +44,11 @@ function pagination($dbTable){
 <?php
 }
 
-function search($dbTable){?>
-    <div id="searchContainer">
-        <a href="#" class="button search">Procura</a>
-        <input type="text" onkeyup="search(this.value)" id="searchBox" onblur="checkWidth(this.value)">
-        <div id="searchOptions">
-            <span class="text" style="color: #a8a8a8;">Procurar por...</span>
-            <span class="Chevron" ></span>
-            <select name="" id="" class="select-style">
-                <option value="">option 1</option>
-                <option value="">option 2</option>
-                <option value="">option 32</option>
-            </select>
-        </div>
-    </div>
-<?php
+function debugToConsole($data){
+    $output = $data;
+    if(is_array($output) )
+    $output = implode( ',',$output);
+    echo "<script>console.log( '" . $output . "' );</script>";
 }
 
 

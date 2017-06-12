@@ -45,13 +45,17 @@ $cartao = mysqli_fetch_assoc($queryC);
         padding-right: 15px;
         padding-bottom: 15px;
     }
-
-    #cartaoContainer{
+    #photoContainer{
+        max-height: 160px;
+        max-width: 120px;
         float: right;
-        height: 160px;
-        width: 150px;
-        border: 1px solid #e5e5e5;
+        margin-right: 150px;
     }
+    #photoContainer img{
+        max-width: 120px;
+    }
+
+
 </style>
 
 <div id="infoContainer">
@@ -66,7 +70,10 @@ $cartao = mysqli_fetch_assoc($queryC);
         <p class="infoText"><?php echo $pessoa['pessoaMorada']?></p>
         <p class="infoText"><?php echo $pessoa['pessoaTelefone']?></p>
         <p class="infoText"><?php echo $cartao['cartaoSaldo']?> &euro; (ID: <?php echo $cartao['cartaoId']?>)</p>
-
+    </div>
+    
+    <div id="photoContainer">
+        <img src="../<?php echo $pessoa['pessoaImagePath']?>" alt="">
     </div>
 
     <div id="closeContainer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div>

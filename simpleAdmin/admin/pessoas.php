@@ -46,6 +46,17 @@ $count = mysqli_num_rows($query);
         xhttp.send();
     }
 
+    function loadConfirmDelete(id){
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("modal-body").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "pessoaModalConfirmDelete.php?id=" + id, true); //wow comprido
+        xhttp.send();
+    }
+
    function loadPessoas(){
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
@@ -95,7 +106,7 @@ $count = mysqli_num_rows($query);
 
     </div>
 
-    <div id="myModal" class="modal fade" role="dialog">
+    <div id="modalInfo" class="modal fade" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">

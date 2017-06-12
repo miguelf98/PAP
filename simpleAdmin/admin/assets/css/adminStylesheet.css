@@ -35,6 +35,8 @@ body{
 	border-bottom: none;
 }
 
+
+
 .tableContainer{
 	margin: 25px;
 }
@@ -403,7 +405,61 @@ input[type="file"] {
     margin-right: 50px;
     display: inline-block;
 }
+.inputBoxCurrency{
+	display: inline-block;
+	float: left;
+	width: 253px !important;
 
+}
+.input-group span{
+	font-size: 16px;
+	display: inline-block;
+	line-height: 44px;
+	float: right;
+	border: 1px solid #cccccc;
+	border-left: none;
+	background-color: #f3f3f3;
+	height: 44px;
+	width: 34px;
+	color: #8b8b8b;
+	padding-left: 12px;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently*/
+}
 
+#namePicker{
+	width: 100%;
+	height: 160px;
+
+}
+
+#namePicker .inputHolder{
+	display:inline-block;
+}
+
+#selectHolder{
+	width: 170px;
+	height: 150px;
+	outline: none;
+	border: 1px solid #DDDDDD;
+	float: right;
+	display: inline-block;
+}
+
+#selectHolder:hover{
+	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+
+	border: 1px solid rgba(81, 203, 238, 1);
+}
+
+#selectHolder select{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
 
 

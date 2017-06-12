@@ -30,8 +30,8 @@ $query = mysqli_query($con,$sql);
                     <form action="produtoConfirmNew.php" method="post" enctype="multipart/form-data">
                         <input type="text" name="nameProduto" placeholder="Nome do produto" required>
                         <div class="input-group">
-                            <input type="text" class="form-control" placeholder="0.00" name="precoProduto" required/>
-                            <span class="input-group-addon" style="height:50px;">&euro;</span>
+                            <input type="text" placeholder="0.00" name="precoProduto" class="inputBoxCurrency" required/>
+                            <span>&euro;</span>
                         </div>
                         <select name="categoriaId" class="select-style" required><?php
                             while($categ = mysqli_fetch_assoc($query)){

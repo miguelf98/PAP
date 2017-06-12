@@ -7,7 +7,13 @@
 <!-- ************* SQL ************** -->
 <?php
 $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
-$sql = "SELECT * FROM users";
+if(!(isset($_GET['p']))){
+    $pageNum = 1;
+}else{
+    $pageNum = $_GET['p'];
+}
+$offset = $pageNum['p'] * CNUMROWS;
+$sql = "SELECT * FROM users LIMIT ".CNUMROWS." OFFSET ". $offset; //LIMIT E OFFSET AJUDAM NA PAGINAÇÃO";
 $query = mysqli_query($con,$sql);
 $count = mysqli_num_rows($query);
 
@@ -35,7 +41,7 @@ $count = mysqli_num_rows($query);
     <div id="adminContainer" style="float: left;">
         <div class="tableContainer">
             <div id="tableTituloContainer"><span id="tabelaTitulo">Utilizadores</span></div>
-            <a href="userNew.php" class="button"> + Utilizador</a>
+            <a href="userNew.php" class="button green"> + Utilizador</a>
 
             <table id="adminTable">
                 <tr>
@@ -70,7 +76,8 @@ $count = mysqli_num_rows($query);
                 }
                 ?>
             </table>
-            <span><?php echo $count;?> registo<?php if($count > 1){echo 's';}?></span>
+            <span class="countRegisto"><?php echo $count;?> registo<?php if($count > 1){echo 's';}?></span>
+            <?php pagination("users");?>
         </div>
     <div>
 

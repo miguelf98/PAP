@@ -25,9 +25,10 @@ if ($state == false){
     if ($_FILES["imagePessoa"]["error"] == 0) { //ATUALIZA A IMAGEM E O PATH DA IMAGEM
 
         $fImagePath = "../" . $imgPathQuery['pessoaImagePath'];                              /*                              */
-        unlink($fImagePath);                                                            /*     DELETE EXISTING IMAGE    */
-
-        $extensionRaw = $_FILES['pessoaImagePath']['name'];                              /*                                 */
+        if(file_exists($fImagePath)){
+            unlink($fImagePath);
+        }                                                            /*     DELETE EXISTING IMAGE    */
+        $extensionRaw = $_FILES['imagePessoa']['name'];                              /*                                 */
         $file_extension = pathinfo($extensionRaw, PATHINFO_EXTENSION);          /*      GET NEW FILE EXTENSION     */
         $file_path = CIMAGEPATHPESSOAS . $pessoaNome . "." . $file_extension;             /*      $file_path is new file path*/
         move_uploaded_file($_FILES["imagePessoa"]["tmp_name"], "../" . $file_path); /*      uploads new file                    */
