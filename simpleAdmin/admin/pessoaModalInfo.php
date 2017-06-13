@@ -11,49 +11,6 @@ $cartao = mysqli_fetch_assoc($queryC);
 
 ?>
 <style>
-    #infoContainer{
-        border-left: 1px solid #e5e5e5;
-        min-height: 200px;
-    }
-
-    #textContainer{
-        width: 100px;
-        display: inline-block;
-        float: left;
-        height: 150px;
-        margin-left: 10px;
-    }
-
-    .infoText{
-        margin-top: 16px;
-        border-bottom: 1px solid #e5e5e5;
-    }
-
-    #textContainer  .infoText {
-        font-size: 22px;
-    }
-
-    #infoTextContainer{
-        height: 160px;
-        display: inline-block;
-    }
-
-    #closeContainer{
-        right: 0;
-        bottom: 0;
-        position: fixed;
-        padding-right: 15px;
-        padding-bottom: 15px;
-    }
-    #photoContainer{
-        max-height: 160px;
-        max-width: 120px;
-        float: right;
-        margin-right: 150px;
-    }
-    #photoContainer img{
-        max-width: 120px;
-    }
 
 
 </style>
@@ -69,9 +26,16 @@ $cartao = mysqli_fetch_assoc($queryC);
         <p class="infoText"><?php echo $pessoa['pessoaNome']?></p>
         <p class="infoText"><?php echo $pessoa['pessoaMorada']?></p>
         <p class="infoText"><?php echo $pessoa['pessoaTelefone']?></p>
-        <p class="infoText"><?php echo $cartao['cartaoSaldo']?> &euro; (ID: <?php echo $cartao['cartaoId']?>)</p>
+        <p class="infoText">
+            <?php
+            if(!(isset($cartao))){
+                echo "Esta pessoa não tem cartão associado";
+            }else {
+                echo $cartao['cartaoSaldo'] ?> &euro; (ID: <?php echo $cartao['cartaoId'] ?> ) <?php
+            }
+            ?>
+        </p>
     </div>
-    
     <div id="photoContainer">
         <img src="../<?php echo $pessoa['pessoaImagePath']?>" alt="">
     </div>

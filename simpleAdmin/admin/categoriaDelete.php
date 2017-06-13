@@ -14,7 +14,10 @@ if ($state == false){
     $query = mysqli_query($con, $sql0);
     $result = mysqli_fetch_assoc($query);
     $fImagePath = "../" . $result['categoriaImagePath'];
-    unlink($fImagePath);
+    if(file_exists($fImagePath)){
+        unlink($fImagePath);
+    }
+
 
     $con = mysqli_connect(DBCON, DBUSER, DBPW, DBNAME);
     $sql = "DELETE FROM categorias WHERE categoriaId = " . $categId;
@@ -22,5 +25,5 @@ if ($state == false){
 
 }
 
-print_r(mysqli_error($con));
+header("location: categorias.php");
 ?>

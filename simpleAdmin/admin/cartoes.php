@@ -57,8 +57,8 @@ $count = mysqli_num_rows($query);
                     $query2 = mysqli_query($con,$sql2);
                     $pessoa = mysqli_fetch_assoc($query2);
                     echo '<tr data-toggle="modal" data-target="#myModal" onclick="loadPessoaInfo('.$cartao["cartaoId"].')">';
-                    echo '<td> <a href="userEdit.php?id=' .$cartao['cartaoId']. '"><img src="images/edit-button.png" height="32" width="32"></a>'; //EDIT BUTTON
-                    echo '<a href="userDelete.php?id=' .$cartao['cartaoId']. '"><img onmouseover="hoverD(this)" onmouseout="unhoverD(this)" src="images/remove-button.png" height="32" width="32"></td>'; //REMOVE BUTTON
+                    echo '<td> <a href="cartaoEdit.php?id=' .$cartao['cartaoId']. '"><img src="images/edit-button.png" height="32" width="32"></a>'; //EDIT BUTTON
+                    echo '<a href="cartaoDelete.php?id=' .$cartao['cartaoId']. '"><img onmouseover="hoverD(this)" onmouseout="unhoverD(this)" src="images/remove-button.png" height="32" width="32"></td>'; //REMOVE BUTTON
                     echo '<td><span>' .$cartao['cartaoId']. '</span></td>';
                     echo '<td>' .$cartao['cartaoSaldo']. ' &euro;</td>';
                     echo '<td>'.$pessoa['pessoaNome'].' ('.$cartao['cartaoPessoaId'].')</td>';

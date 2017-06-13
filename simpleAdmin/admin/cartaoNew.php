@@ -28,7 +28,7 @@ $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
                 document.getElementById("selectHolder").innerHTML = this.responseText;
             }
         };
-        xhttp.open("GET", "testAJAX.php?srch=" + string, true);
+        xhttp.open("GET", "cartaoNewAJAX.php?srch=" + string, true);
         xhttp.send();
     }
 
@@ -36,10 +36,10 @@ $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                document.getElementById("asd123").innerHTML = this.responseText;
+                document.getElementById("pessoaInfo").innerHTML = this.responseText;
             }
         };
-        xhttp.open("GET", "testAJAX2.php?id=" + id, true);
+        xhttp.open("GET", "pessoaSelectAJAX.php?id=" + id, true);
         xhttp.send();
     }
 </script>
@@ -47,32 +47,46 @@ $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
     <div>
         <div class="cardDiv">
             <div class="cardTitle"><span class="cardTitleSpan">Adicionar um novo cartão</span></div>
-            <div class="cardContent">
-                <div class="loginmodal-container" style="background-color: inherit; box-shadow: none;">
-                    <form action="pessoaConfirmNew.php" method="post" enctype="multipart/form-data">
-                        <div class="input-group">
-                            <input type="text" placeholder="0.00" name="precoProduto" class="inputBoxCurrency" value="0" required/>
-                            <span>&euro;</span>
-                        </div>
-                        <div id="namePicker" >
-
-                            <div class="inputHolder">
-                                <input type="text" onkeyup="loadNames(this.value)" placeholder="Procurar pessoa" style="width: 215px;">
+            <div class="cardContent" style="">
+                <div class="newFormContainer" style="background-color: inherit; box-shadow: none;">
+                    <form action="cartaoConfirmNew.php" method="post" enctype="multipart/form-data">
+                        <div class="cell1">
+                            <div class="input-group">
+                                <input type="text" placeholder="0.00" name="saldoCartao" class="inputBoxCurrency" value="0" required/>
+                                <span>&euro;</span>
                             </div>
+                            <div id="namePicker" >
 
+                                <div class="inputHolder">
+                                    <input  type="text" onkeyup="loadNames(this.value)" placeholder="Procurar pessoa" style="width: 215px;">
+                                </div>
+
+
+
+                            </div>
                             <div id="selectHolder">
 
                             </div>
-                            <div>
+                            <input type="submit" name="login" class="login loginmodal-submit" value="Adicionar Novo Cartão" style="height: 25px; line-height: 1px; margin: 0 auto; margin-top: 25px; width: 200px;">
+                        </div>
+                        <div class="cell2">
+                            <div id="pessoaInfo" style="height: 327px;">
 
                             </div>
                         </div>
-                        <input type="submit" name="login" class="login loginmodal-submit" value="Adicionar Novo Cartão" style="height: 25px; line-height: 1px; margin-top: 25px;">
+                        <div class="cell3">
+                            <div id="pessoaInfo" style="height: 327px;">
+
+                            </div>
+                        </div>
                     </form>
+
                 </div>
             </div>
+
         </div>
     </div>
+
 
     <div>
 
