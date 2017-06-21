@@ -7,10 +7,10 @@ $state = validateSessions($_SESSION['userId']);
 if ($state == false){
     header("location: login.php?err");
 }else {
-    print_r($_POST);
+    $sql = "INSERT INTO cartoes VALUES (0, '".$_POST['saldoCartao']."',(SELECT pessoaId FROM pessoas WHERE pessoaId = ".$_POST['idPessoa']."))";
+    mysqli_query($con,$sql);
 }
-echo '<pre>';
-//header("location: pessoas.php");
+header("location: cartoes.php");
 
 
 ?>

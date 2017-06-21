@@ -469,7 +469,7 @@ input[type="file"] {
 	width: 100px;
 	display: inline-block;
 	float: left;
-	height: 150px;
+	height: 200px;
 	margin-left: 10px;
 }
 
@@ -478,13 +478,31 @@ input[type="file"] {
 	border-bottom: 1px solid #e5e5e5;
 }
 
+.infoTextInput{
+	height: 31px;
+	margin-top: 16px;
+	background-color: inherit;
+	border-bottom: 1px solid #e5e5e5;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	display: inline-flex;
+}
+
+.infoTextInput:focus{
+	transition: 300ms;
+	border-bottom: 1px solid #888888;
+
+}
+
 #textContainer  .infoText {
 	font-size: 22px;
 }
 
 #infoTextContainer{
-	height: 160px;
+	height: 200px;
 	display: inline-block;
+	width: 200px;
 }
 
 #closeContainer{
@@ -496,9 +514,18 @@ input[type="file"] {
 }
 #photoContainer{
 	max-height: 160px;
-	max-width: 120px;
+	max-width: 200px;
 	float: right;
-	margin-right: 150px;
+}
+
+#photoContainer img{
+
+	float: right;
+}
+
+#photoContainer input[type="submit"]{
+	margin-top: 35px;
+	margin-right: 15px;
 }
 #photoContainer img{
 	max-width: 120px;

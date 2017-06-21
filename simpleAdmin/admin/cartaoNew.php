@@ -41,6 +41,8 @@ $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
         };
         xhttp.open("GET", "pessoaSelectAJAX.php?id=" + id, true);
         xhttp.send();
+
+        document.getElementById("idPessoa").value = id;
     }
 </script>
 <div id="adminContainer">
@@ -67,11 +69,17 @@ $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
                             <div id="selectHolder">
 
                             </div>
+                            <input type="hidden" value="" id="idPessoa" name="idPessoa">
                             <input type="submit" name="login" class="login loginmodal-submit" value="Adicionar Novo Cartão" style="height: 25px; line-height: 1px; margin: 0 auto; margin-top: 25px; width: 200px;">
                         </div>
                         <div class="cell2">
                             <div id="pessoaInfo" style="height: 327px;">
-
+                                <div id="textContainer">
+                                    <p class="infoText">Nome</p>
+                                    <p class="infoText">Morada</p>
+                                    <p class="infoText">Telefone</p>
+                                    <p class="infoText">Cartão</p>
+                                </div>
                             </div>
                         </div>
                         <div class="cell3">

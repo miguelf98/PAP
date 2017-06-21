@@ -1,42 +1,50 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Food 4 All</title>
-	<!-- BOOTSTRAP STYLES-->
-    <link href="assets/css/bootstrap.css" rel="stylesheet" />
-     <!-- FONTAWESOME STYLES-->
-    <link href="assets/css/font-awesome.css" rel="stylesheet" />
-        <!-- CUSTOM STYLES-->
-    <link href="assets/css/custom.css" rel="stylesheet" />
-     <!-- GOOGLE FONTS-->
-   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
-</head>
+<?php
+include_once "includes/body.inc.php";
+session_start();
 
+$valid = validateSession($_SESSION);
+if($valid != 0){
+    header("location: index.php");
+}
+
+
+drawHeader();
+?>
+<script>
+    function loadCategs(){
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("page-inner").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "AJAXcategorias.php", true);
+        xhttp.send();
+    }
+
+    function loadProdutos(id){
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("page-inner").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "AJAXprodutos.php?id=" + id, true);
+        xhttp.send();
+    }
+
+    window.onload = loadCategs();
+</script>
 <body>
-
-    <?php include_once "food.svg";?>
-    <?php include_once "includes/body.inc.php";?>
-
-    <div id="wrapper">
-         <?php drawTopBar(); ?>
+        <?php drawTopBar(); ?>
         <!-- /. NAV TOP  -->
         <?php drawSideBar(); ?>
         <!-- /. NAV SIDE  -->
         <div id="page-wrapper" style="margin-top: 100px;">
             <div id="page-inner">
-                <!-- TITULO DA P?GINA A SER USADA (categorias, bebidas, comida quente) -->
-                <div class="row">
-                    <div class="col-lg-12" style="margin-left:5px;">
-                     <h2>Categorias</h2>
-                    </div>
-                </div>
-                <hr/>
-                <!-- TITULO END -->
 
-                <!-- CATEGORIAS DE PRODUTOS -->
-                <?php drawCategorias(); ?>
-                <!-- ICON END -->
+
+
             </div>
         </div>
     <div class="footer">

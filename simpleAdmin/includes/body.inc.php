@@ -1,30 +1,55 @@
 <?php
-function drawTopBar(){?>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="adjust-nav">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                    <!-- PHP ICON <svg class="icon" id="logo">
-                        <use xlink:href="#sandwich"/>
-                    </svg> -->
-                    <img src="assets/img/store.png">
-                </a>
-            </div>
+include_once "config.inc.php";
+include_once "functions.inc.php";
+function drawHeader(){
+
+    ?>
+    <!DOCTYPE html>
+    <head>
+        <title>Food 4 All</title>
+        <link href="assets/css/bootstrap.css" rel="stylesheet" />
+        <link href="assets/css/font-awesome.css" rel="stylesheet" />
+        <link href="assets/css/custom.css" rel="stylesheet" />
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+    </head>
+<?php
+}
+
+
+
+function drawTopBar(){
+$con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
+$sql1 = "SELECT pessoaNome, pessoaImagePath, cartaoSaldo FROM pessoas INNER JOIN cartoes ON pessoaId = cartaoPessoaId WHERE pessoaId = ". $_SESSION['pId'];
+$query1 = mysqli_query($con,$sql1);
+$pessoa = mysqli_fetch_assoc($query1);
+?>
+<div id="wrapper">
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="adjust-nav">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">
+                        <!-- PHP ICON <svg class="icon" id="logo">
+                            <use xlink:href="#sandwich"/>
+                        </svg> -->
+                        <img src="assets/img/store.png">
+                    </a>
+                </div>
                 <span class="logout-spn" >
                   <div id="accountInfoContainer">
-                      <img id="accountImage" src="assets/img/user.png">
-                      <div id="accountNome">João Sousa</div>
-                      <div id="accountGuita">Saldo: <b>10&euro;</b></div>
+                      <img id="accountImage" src="<?php echo $pessoa['pessoaImagePath']?>">
+                      <div id="accountNome"><?php echo $pessoa['pessoaNome']?></div>
+                      <div id="accountGuita">Saldo: <b><?php echo $pessoa['cartaoSaldo'] ?>&euro;</b></div>
+                      <a href="endSession.php">Logout</a>
                   </div>
 
                 </span>
+            </div>
         </div>
-    </div>
 <?php
 }
 

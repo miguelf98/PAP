@@ -6,7 +6,7 @@ function shortenPassword ($pw){
     return $pwReturn = substr($pw, 0, -30);
 }
 
-function validateSessions($userId){
+function validateSessions($userId){ //TODO: substituir esta merda por algo mais complicado
     $state = false;
     if (!isset($userId)){
         $state = false;
@@ -18,7 +18,7 @@ function validateSessions($userId){
     return $state;
 }
 
-function pagination($dbTable){
+function pagination($dbTable){ //A B S T R A C T
     global $con;
     $query = $_SERVER['PHP_SELF'];
     $path = pathinfo($query);
@@ -50,7 +50,6 @@ function debugToConsole($data){
     $output = implode( ',',$output);
     echo "<script>console.log( '" . $output . "' );</script>";
 }
-
 
 
 ?>

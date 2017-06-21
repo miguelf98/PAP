@@ -20,9 +20,16 @@ if ($state == false){
     /******************/
     $sql0 = "SELECT pessoaImagePath FROM pessoas WHERE pessoaId = " . $pessoaId; /*                               */
     $query = mysqli_query($con, $sql0);                                                  /*    GET EXISTING FILE PATH     */
-    $imgPathQuery = mysqli_fetch_assoc($query);                                               /*                               */
+    $imgPathQuery = mysqli_fetch_assoc($query);
+    /*                               */
     /******************/
-    if ($_FILES["imagePessoa"]["error"] == 0) { //ATUALIZA A IMAGEM E O PATH DA IMAGEM
+    if(isset($_POST['modalCheck'])){ //verifica se o form vem do modal (pessoaModalInfo.php) ou pela página de edição da pessoa (pessoaEdit.php)
+        $saldo = preg_replace('/\D/', '', $_POST['saldoCartaoPessoa']); //devolve os nºs na string mandada por $_POST
+        $sqlC = "UPDATE cartoes SET cartaoSaldo = ". $saldo ." WHERE cartaoPessoaId = ".$pessoaId;
+        $query = mysqli_query($con,$sqlC);
+    }
+
+    if (isset($_FILES["imagePessoa"])) { //ATUALIZA A IMAGEM E O PATH DA IMAGEM
 
         $fImagePath = "../" . $imgPathQuery['pessoaImagePath'];                              /*                              */
         if(file_exists($fImagePath)){
@@ -48,7 +55,6 @@ if ($state == false){
         $sql2 .= " WHERE pessoaId = " . $pessoaId;
         mysqli_query($con, $sql2);
     }
-
 
     header("location: pessoas.php");
 }

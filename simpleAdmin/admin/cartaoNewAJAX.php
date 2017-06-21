@@ -1,7 +1,7 @@
 <?php
 include_once "includes/config.inc.php";
 $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
-$sql = "SELECT pessoaId, pessoaNome FROM pessoas WHERE pessoaNome LIKE '%". $_GET['srch'] ."%'";
+$sql = "SELECT pessoaId, pessoaNome FROM pessoas WHERE pessoaNome LIKE '%". $_GET['srch'] ."%' AND pessoaNome NOT IN (SELECT pessoaNome FROM cartoes LEFT JOIN pessoas ON cartaoPessoaId = pessoaId)";
 $query = mysqli_query($con,$sql);
 
 echo '<select size="12">';

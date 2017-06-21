@@ -1,41 +1,22 @@
 <?php
-
-
-
-
-
-
-
-
+include_once "includes/functions.inc.php";
+$con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
+$sql = "SELECT * FROM categorias";
+$query = mysqli_query($con,$sql);
 ?>
-
-<div id="categoryContainer">
-    <!-- PRODUCT ROW 1  (3 produtos por ROW)-->
+<div class="row">
+    <div class="col-lg-12" style="margin-left:5px;">
+        <h2>Categorias</h2>
+    </div>
+</div>
+<hr/>
+<div id="squareContainer">
     <div class="productRow" >
-
-        <!-- PRODUTO 1 -->
-        <div class="div-square">
-            <a href="index.php?id=1" >
-                <svg><use xlink:href="#sandwich"></use></svg>
-                <h4>Sandes</h4>
-            </a>
+        <?php while($categ = (mysqli_fetch_assoc($query))){ ?>
+        <div class="div-square" onclick="loadProdutos(<?php echo $categ['categoriaId'] ?>)">
+            <img src="<?php echo $categ['categoriaImagePath'] ?>" alt="">
+            <h4><?php echo $categ['categoriaName'] ?></h4>
         </div>
-
-        <!-- PRODUTO 2 -->
-        <div class="div-square">
-            <a href="index.php?id=2" >
-                <svg><use xlink:href="#can"></use></svg>
-                <h4>Bebidas Enlatadas</h4>
-            </a>
-            <div class="categoryBadge">Novos Produtos</div>
-        </div>
-
-        <!-- PRODUTO 3 -->
-        <div class="div-square">
-            <a href="index.php?id=3" >
-                <svg><use xlink:href="#food"></use></svg>
-                <h4>Croissaints</h4>
-            </a>
-        </div>
+        <?php }?>
     </div>
 </div>

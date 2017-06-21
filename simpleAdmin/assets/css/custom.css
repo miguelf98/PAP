@@ -339,11 +339,12 @@ td.text-right {
 
 .div-square {
     padding:5px;
-    border: 1px solid #ebebeb;
+    border: 1px solid #cccccc;
     margin:5px;
     height: 150px;
     width: 280px;
     float: left;
+    cursor: pointer;
 }
 
 .div-square .categoryBadge{
@@ -374,13 +375,14 @@ td.text-right {
     height: auto;
 }
 
-.productRow svg{
-    width: 278px;
+.productRow img{
     height: 100px;
+    margin-left: 60px;
 }
 
 .productRow h4{
     text-align: center;
+
 }
 
 
@@ -390,7 +392,7 @@ td.text-right {
 }
 
 .div-square:hover{
-    transition:.27s;
+    transition: 75ms;
     box-shadow: 0 1px 3px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
@@ -497,8 +499,7 @@ td.text-right {
 
 
 
-#categoriaContainer{
-    border: 1px solid black;
+#squareContainer{
     height: 165px;
 }
 
@@ -515,14 +516,12 @@ td.text-right {
 }
 
 .newFormContainer .cell1{
-    border: 1px solid crimson;
     width: 33%;
     display: inline-block;
     float: left;
 }
 
 .newFormContainer .cell2{
-    border: 1px solid crimson;
     width: 33%;
     display: inline-block;
     float: left;
