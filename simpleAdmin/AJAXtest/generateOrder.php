@@ -50,7 +50,7 @@ for($i = 1; $i <= 5; $i++){
 $sql = "INSERT INTO orders ";
 $sql .= "VALUES (0, '".$orderNum."', '".$orderProd[1]."', '".$orderProd[2]."', '".$orderProd[3]."', '".$orderProd[4]."', '".$orderProd[5]."', '".date("Y-m-d h:i:s")."',)";
 
-echo
+
 
 
 

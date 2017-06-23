@@ -3,7 +3,13 @@
 <?php validateSession($_SESSION['userId']) ?>
 <?php validatePermission($_SESSION['permission']) ?>
 
-
+<style>
+    #ticketViewer{
+        border: 1px solid maroon;
+        height: 200px;
+        width: 100%;
+    }
+</style>
 <body>
     <?php drawSideBar(CMENUDASHBOARD); ?>
 
@@ -15,7 +21,10 @@
     <div id="adminContainer">
         <div class="chartContainer">
             <?php print_r($_SESSION);?>
+            <div id="ticketViewer">
 
+
+            </div>
         </div>
     <div>
 

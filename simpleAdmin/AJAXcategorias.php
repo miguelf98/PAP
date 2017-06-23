@@ -10,7 +10,7 @@ $query = mysqli_query($con,$sql);
     </div>
 </div>
 <hr/>
-<div id="squareContainer">
+<div id="squareContainer" onmouseenter="loadFatura()">
     <div class="productRow" >
         <?php while($categ = (mysqli_fetch_assoc($query))){ ?>
         <div class="div-square" onclick="loadProdutos(<?php echo $categ['categoriaId'] ?>)">

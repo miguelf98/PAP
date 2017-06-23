@@ -18,6 +18,7 @@ drawHeader();
                 document.getElementById("page-inner").innerHTML = this.responseText;
             }
         };
+
         xhttp.open("GET", "AJAXcategorias.php", true);
         xhttp.send();
     }
@@ -29,33 +30,93 @@ drawHeader();
                 document.getElementById("page-inner").innerHTML = this.responseText;
             }
         };
+        loadFatura();
         xhttp.open("GET", "AJAXprodutos.php?id=" + id, true);
         xhttp.send();
     }
 
+    function addProduto(id){
+        document.getElementById("finalizarContainer").style.display = 'block';
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("page-inner").innerHTML = this.responseText;
+            }
+        };
+
+        loadFatura();
+        xhttp.open("GET", "AJAXprodutos.php?pr=" + id, true);
+        xhttp.send();
+    }
+
+    function loadFatura(){
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("faturaContainer").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "AJAXfatura.php", true);
+        xhttp.send();
+    }
+
+    function clearFatura(){
+        document.getElementById("finalizarContainer").style.display = 'none';
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("faturaContainer").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "clearFatura.php", true);
+        xhttp.send();
+    }
+
+    function loadFinalizar(){
+        //document.getElementById("finalizarContainer").style.display = 'none';
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("page-inner").innerHTML = this.responseText;
+            }
+        };
+        xhttp.open("GET", "AJAXfinalizar.php", true);
+        xhttp.send();
+    }
+
     window.onload = loadCategs();
+    window.onload = loadFatura();
+
 </script>
 <body>
-        <?php drawTopBar(); ?>
-        <!-- /. NAV TOP  -->
-        <?php drawSideBar(); ?>
+    <!-- /. NAV TOP  -->
+    <?php drawTopBar(); ?>
+
+    <nav class="navbar-side" role="navigation" style="background-color: #fff;" >
+        <div class="sidebar-collapse">
+            <div id="faturaContainer">
+
+            </div>
+        </div>
+
+        </nav>
         <!-- /. NAV SIDE  -->
-        <div id="page-wrapper" style="margin-top: 100px;">
+        <div id="page-wrapper" style="margin-top: 100px;" >
             <div id="page-inner">
 
 
 
             </div>
         </div>
-    <div class="footer">
-      
-    
-            <div class="row">
-                <div class="col-lg-12" >
-                     Yeezy 4 Prez 2020 <a href="http://binarytheme.com" style="color:#fff;" target="_blank">www.binarytheme.com</a>
-                </div>
-            </div>
+    <?php ?>
+
+    <div id="finalizarContainer">
+        <div id="button" style="margin-top: 8px; margin-left: 30px;" onclick="loadFinalizar()">
+            <img src="images/checkmark.png" alt="">
+            <span>Confirmar compra</span>
         </div>
+    </div>
+
 
 
 

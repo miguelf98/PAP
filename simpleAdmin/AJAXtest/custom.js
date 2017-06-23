@@ -73,8 +73,11 @@ function loadProdutos(id){
             document.getElementById("demo").innerHTML = this.responseText;
         }
     };
+    loadFatura();
     xhttp.open("GET", "addProd.php?id=" + id, true);
     xhttp.send();
+
+
 }
 
 function addProduto(id){

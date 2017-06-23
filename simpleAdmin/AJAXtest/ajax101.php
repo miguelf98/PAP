@@ -111,7 +111,6 @@ echo $num = getTicketNo($_SESSION['ticketNumber']);
     function reloadPage(){
         window.location.reload(false);
     }
-    setInterval(loadFatura, 500);
 
     window.onload = loadFatura();
 </script>

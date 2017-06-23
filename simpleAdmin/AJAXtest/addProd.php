@@ -13,7 +13,7 @@ $countLine = count($lines);
         echo '<h3 onclick="loadCategs()">Produtos</h3>';
         while($prod = mysqli_fetch_assoc($query)){
             ?>
-            <a onclick="addProduto(<?php echo $prod['produtoId']?>)" class="button"><?php echo $prod['produtoName']?></a><span style="margin-left: 10px; padding: 4px; border:1px solid red;"><?php echo $prod['produtoPreco']?>&euro;</span><br>
+            <a onclick="addProduto(<?php echo $prod['produtoId']?>)" onmouseenter="loadFatura()" class="button"><?php echo $prod['produtoName']?></a><span style="margin-left: 10px; padding: 4px; border:1px solid red;"><?php echo $prod['produtoPreco']?>&euro;</span><br>
             <?php
         }
     }elseif(isset($_GET['pr'])){
