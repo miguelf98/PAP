@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once "includes/config.inc.php";
 $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
 $lines = file("orderProdutos.txt", FILE_IGNORE_NEW_LINES);
@@ -20,9 +21,9 @@ foreach($lines as $line){
         $preco = $preco + $prod['produtoPreco'];
     }
 }
-
+$_SESSION['total'] = $preco;
 print_r($count);
-print_r($preco);
+print_r($_SESSION['total']);
 ?>
 
 <table class="table-fill">

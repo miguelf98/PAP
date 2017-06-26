@@ -7,6 +7,7 @@ function drawHeader(){
     <!DOCTYPE html>
     <head>
         <title>Food 4 All</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
         <link href="assets/css/bootstrap.css" rel="stylesheet" />
         <link href="assets/css/font-awesome.css" rel="stylesheet" />
         <link href="assets/css/custom.css" rel="stylesheet" />

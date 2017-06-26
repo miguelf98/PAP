@@ -4,6 +4,10 @@ include_once "includes/body.inc.php";
 session_start();
 include_once "includes/config.inc.php";
 include_once "includes/functions.inc.php";
+
+require __DIR__.'/vendor/autoload.php';
+
+use Spipu\Html2Pdf\Html2Pdf;
 $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
 $orderNum = $_SESSION['ticket_number'];
 $lines = file("orderProdutos.txt", FILE_IGNORE_NEW_LINES);
@@ -48,7 +52,7 @@ for($i = 1; $i <= 5; $i++){
 }
 
 $sql = "INSERT INTO orders ";
-$sql .= "VALUES (0, '".$orderNum."', '".$orderPreco."', '".$orderProd[1]."', '".$orderProd[2]."', '".$orderProd[3]."', '".$orderProd[4]."', '".$orderProd[5]."', '".date("Y-m-d h:i:s")."', 0 , ";
+$sql .= "VALUES (0, '".$orderNum."', '".$orderPreco."', '".$orderProd[1]."', '".$orderProd[2]."', '".$orderProd[3]."', '".$orderProd[4]."', '".$orderProd[5]."', '".date("Y-m-d h:i:s")."', 0, ";
 $sql .= "(SELECT cartaoId FROM pessoas INNER JOIN cartoes ON pessoaId = cartaoPessoaId WHERE pessoaId =  ".$_SESSION['pId']."))";
 
 //clearFatura();
@@ -58,36 +62,19 @@ drawHeader();
 ?>
     <body>
     <!-- /. NAV TOP  -->
-    <?php drawTopBar(); ?>
-
-    <nav class="navbar-side" role="navigation" style="background-color: #fff;" >
-        <div class="sidebar-collapse">
-            <div id="faturaContainer">
-
-            </div>
-        </div>
-
-        </nav>
-    <!-- /. NAV SIDE  -->
-        <div id="page-wrapper" style="margin-top: 100px;" >
+        <?php drawTopBar(); ?>
+        <div id="page-wrapper" style="margin-left: 0; margin-top: 100px;" >
             <div id="page-inner">
-
-<?php var_dump($orderProd);
-print_r($orderPreco);
-print_r($_SESSION);
-echo $sql;?>
-
-
+                <?php
+                    var_dump($orderProd);
+                    print_r($orderPreco);
+                    print_r($_SESSION);
+                    echo $sql;
+                ?>
             </div>
         </div>
     <?php ?>
 
-    <div id="finalizarContainer">
-        <div id="button" style="margin-top: 8px; margin-left: 30px;" onclick="loadFinalizar()">
-            <img src="images/checkmark.png" alt="">
-            <span>Confirmar compra</span>
-        </div>
-    </div>
 
 
 
@@ -97,4 +84,4 @@ echo $sql;?>
     <script src="assets/js/custom.js"></script>
 
 </body>
-    </html>
+</html>

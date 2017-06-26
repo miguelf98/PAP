@@ -4,7 +4,7 @@ include_once "includes/functions.inc.php";
 /* STARTING SESSION */
 $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
 
-$sql1 = "SELECT pessoaId FROM pessoas WHERE pessoaId = ". $_POST['id_pessoa'];
+$sql1 = "SELECT pessoaId, cartaoSaldo FROM pessoas INNER JOIN cartoes ON pessoaId = cartaoPessoaId WHERE pessoaId = ". $_POST['id_pessoa'];
 $query1 = mysqli_query($con,$sql1);
 $pessoa = mysqli_fetch_assoc($query1);
 
@@ -34,6 +34,7 @@ if(isset($pessoa)){
     $id_session = mysqli_fetch_assoc($query2);
     $_SESSION['session_id'] =  $id_session['sessionId'];
     $_SESSION['pId'] =  $pessoa['pessoaId'];
+    $_SESSION['pSaldo'] =  $pessoa['cartaoSaldo'];
     $_SESSION['token'] =  $_POST['session_token'];
     $_SESSION['ticket_number'] =  $ticketNo;
     header("location: loja.php");

@@ -10,7 +10,7 @@ if($valid != 0){
 
 drawHeader();
 ?>
-<script>
+<script type="text/javascript">
     function loadCategs(){
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
@@ -18,7 +18,6 @@ drawHeader();
                 document.getElementById("page-inner").innerHTML = this.responseText;
             }
         };
-
         xhttp.open("GET", "AJAXcategorias.php", true);
         xhttp.send();
     }
@@ -30,7 +29,6 @@ drawHeader();
                 document.getElementById("page-inner").innerHTML = this.responseText;
             }
         };
-        loadFatura();
         xhttp.open("GET", "AJAXprodutos.php?id=" + id, true);
         xhttp.send();
     }
@@ -44,7 +42,6 @@ drawHeader();
             }
         };
 
-        loadFatura();
         xhttp.open("GET", "AJAXprodutos.php?pr=" + id, true);
         xhttp.send();
     }
@@ -84,8 +81,10 @@ drawHeader();
         xhttp.send();
     }
 
+    setInterval(loadFatura, 330);
     window.onload = loadCategs();
     window.onload = loadFatura();
+
 
 </script>
 <body>
@@ -117,7 +116,18 @@ drawHeader();
         </div>
     </div>
 
-
+    <div id="modalInfo" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div id="modal-body">
+                    Não tens saldo suficiente para adicionar este produto.
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <script src="assets/js/jquery-1.10.2.js"></script>

@@ -21,8 +21,10 @@ foreach($lines as $line){
     }
 }
 
+
 print_r($count);
 print_r($preco);
+
 ?>
 <style>
     #faturaFinalizadaContainer{
