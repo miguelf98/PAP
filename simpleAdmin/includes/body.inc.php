@@ -45,7 +45,7 @@ $pessoa = mysqli_fetch_assoc($query1);
                       <img id="accountImage" src="<?php echo $pessoa['pessoaImagePath']?>">
                       <div id="accountNome"><?php echo $pessoa['pessoaNome']?></div>
                       <div id="accountGuita">Saldo: <b><?php echo $pessoa['cartaoSaldo'] ?>&euro;</b></div>
-                      <a href="endSession.php">Logout</a>
+                      <a href="terminateSession.php">Logout</a>
                   </div>
 
                 </span>

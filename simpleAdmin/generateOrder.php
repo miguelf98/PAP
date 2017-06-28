@@ -29,12 +29,14 @@ foreach($lines as $line){
         $count[$line] = $values[$line];
     }
 }
+
+print_r($count);
 $cnt = count($count);
 foreach($count as $id => $row){
     $sql = "SELECT * FROM produtos WHERE produtoId = ". $id;
     $query = mysqli_query($con,$sql);
     $prod = mysqli_fetch_assoc($query);
-    $tempArr = $id.", ".$row;
+    $tempArr = "[".$id."] => (".$row.")";
     $orderPreco += $prod['produtoPreco'] * $count[$id];
     for($i = 1; $i <= $cnt; $i++){
         $orderProd[$j] = $tempArr;
@@ -45,31 +47,31 @@ foreach($count as $id => $row){
 $orderCount = count($orderProd);
 
 
-for($i = 1; $i <= 5; $i++){
+for($i = 1; $i <= 8; $i++){
     if(!(isset($orderProd[$i]))){
         $orderProd[$i] = "0";
     }
 }
-
-$sql = "INSERT INTO orders ";
-$sql .= "VALUES (0, '".$orderNum."', '".$orderPreco."', '".$orderProd[1]."', '".$orderProd[2]."', '".$orderProd[3]."', '".$orderProd[4]."', '".$orderProd[5]."', '".date("Y-m-d h:i:s")."', 0, ";
-$sql .= "(SELECT cartaoId FROM pessoas INNER JOIN cartoes ON pessoaId = cartaoPessoaId WHERE pessoaId =  ".$_SESSION['pId']."))";
-
+$prods = implode(", ",$orderProd);
+$sqlO = "INSERT INTO orders ";
+$sqlO .= "VALUES (0, '".$orderNum."', '".$orderPreco."', '".$prods."', '".date("Y-m-d h:i:s")."', 0, ";
+$sqlO .= "(SELECT cartaoId FROM pessoas INNER JOIN cartoes ON pessoaId = cartaoPessoaId WHERE pessoaId =  ".$_SESSION['pId']."))";
+mysqli_query($con,$sqlO)
 //clearFatura();
 ?>
 <?php
 drawHeader();
 ?>
-    <body>
+    <body onLoad="setTimeout(location.href='endSession.php', '5000')">
     <!-- /. NAV TOP  -->
         <?php drawTopBar(); ?>
         <div id="page-wrapper" style="margin-left: 0; margin-top: 100px;" >
             <div id="page-inner">
                 <?php
-                    var_dump($orderProd);
-                    print_r($orderPreco);
-                    print_r($_SESSION);
-                    echo $sql;
+                    preg_match_all("/\[([^\]]*)\]/", $prods, $matches);
+                    print_r($matches[1]);
+                    echo '<br>'.$sqlO;
+                    echo '<h3>ok</h3>';
                 ?>
             </div>
         </div>

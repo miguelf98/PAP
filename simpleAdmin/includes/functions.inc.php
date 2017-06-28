@@ -1,6 +1,6 @@
 <?php
 include_once "config.inc.php";
-
+$con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
 function randStr($length = 24) {
     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
     $charactersLength = strlen($characters);
@@ -29,24 +29,17 @@ function getTicketNo($num){
 }
 
 function checkBalance($pr){
-    $lines = file("orderProdutos.txt", FILE_IGNORE_NEW_LINES);
-    $countLine = count($lines);
+    global $con;
+    $sql = "SELECT produtoPreco FROM produtos WHERE produtoId = ".$_GET['pr'];
+    $query = mysqli_query ($con,$sql);
+    $result = mysqli_fetch_assoc($query);
 
-    $contents = file_get_contents(  "orderProdutos.txt",FILE_USE_INCLUDE_PATH);
-    $array_list = (explode("\r\n",$contents));
-    $values = array_count_values($array_list);
+    $precoT = $result['produtoPreco'] + $_SESSION['total'];
 
-    $count = array();
-    $preco = 0;
 
-    foreach($lines as $line){
-        $sql = "SELECT * FROM produtos WHERE produtoId = ". $line;
-        $query = mysqli_query($con,$sql);
-        $prod = mysqli_fetch_assoc($query);
-        if (isset($values[$line])) { //passa valores para um array com key e valor [produtoId][produtoQntd]
-            $count[$line] = $values[$line];
-            $preco = $preco + $prod['produtoPreco'];
-        }
+    if($_SESSION['pSaldo'] > $precoT){
+        return true;
+    }else{
+        return false;
     }
-    return true;
 }

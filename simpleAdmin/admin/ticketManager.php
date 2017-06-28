@@ -5,7 +5,7 @@
 
 <?php
 $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
-$sql = "SELECT * FROM categorias";
+$sql = "SELECT * FROM orders";
 $query = mysqli_query($con,$sql);
 $count = mysqli_num_rows($query);
 
@@ -15,6 +15,43 @@ $count = mysqli_num_rows($query);
 <?php
 if ($_SESSION['permission'] < CMODERATOR){
     drawSideBar(CMENUTICKETMANAGER);
+    ?>
+    <style>
+        #adminContainer{
+            width: 88%;
+        }
+        .pedidoButton{
+            display: inline-flex;
+            width: 48%;
+            min-height: 75px;
+            background-color: inherit;
+            border-radius: 5px;
+            font-size: 1.25vw;
+            padding-left: 6px;
+            line-height: 70px;
+        }
+    </style>
+
+    <?php
+
+}else{?>
+    <style>
+        #adminContainer{
+            margin-left: 0px;
+            width: 100%;
+        }
+        .pedidoButton{
+            display: inline-flex;
+            width: 49%;
+            min-height: 75px;
+            background-color: inherit;
+            border-radius: 5px;
+            font-size: 25px;
+            padding-left: 15px;
+            line-height: 70px;
+        }
+    </style>
+    <?php
 }
 
 ?>
@@ -22,36 +59,26 @@ if ($_SESSION['permission'] < CMODERATOR){
 <div id="wrapper">
     <?php drawTop(1);?>
 </div>
-<style>
-
-</style>
-
-<div id="adminContainer">
-    <div class="tableContainer">
-        <table id="adminTable">
-            <tr>
-                <th style="width: 100px;"></th>
-                <th>categoriaId</th>
-                <th>categoria Nome</th>
-                <th>categoria Image Path</th>
-            </tr>
-            <?php
-            if ($count > 0){
-                while($categ = mysqli_fetch_assoc($query)){
-                    $sql2 = "SELECT * FROM categorias WHERE categoriaId = ". $categ['categoriaId'];
-                    $query2 = mysqli_query($con,$sql2);
-                    ?>
-                    <tr>
-                        <td></td>
-                        <td><?php echo $categ['categoriaId'];?></td>
-                        <td><?php echo $categ['categoriaNome'];?></td>
-                        <td><?php echo $categ['categoriaImagePath'];?></td>
-                    </tr>
-                    <?php
-                }
+<script>
+    function loadOrders(){
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("adminTable").innerHTML = this.responseText;
             }
+        };
+        xhttp.open("GET", "ticketAJAX.php", true);
+        xhttp.send();
+    }
 
-            ?>
+    window.onload = loadOrders();
+</script>
+
+<div id="adminContainer" style="">
+    <div class="tableContainer">
+        <div id="tableTituloContainer"><span id="tabelaTitulo">Encomendas</span></div>
+        <table id="adminTable">
+
         </table>
     </div>
 </div>
