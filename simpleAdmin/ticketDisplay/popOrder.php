@@ -1,4 +1,14 @@
 <?php
+include_once "../admin/includes/config.inc.php";
+$con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
+$sql = "SELECT orderNumber FROM orders WHERE orderId = ".$_GET['id'];
+$query = mysqli_query($con,$sql);
+$orderNum = mysqli_fetch_assoc($query);
+
+$sql2 = "UPDATE orders SET orderStatus = 2 WHERE orderId = ".$_GET['id'];
+mysqli_query($con,$sql2);
+
+
     $f=fopen("pedidos.txt","r");
     $arrP=array();
     $arrD=array();
@@ -26,12 +36,19 @@
 
     while($line=trim(fgets($f))){
         array_push($arrD,$line);
+
+
     }
 
+    foreach($arrD as $id => $num){
+        if($num == $orderNum['orderNumber']){
+            echo $num;
+            unset($arrD[$id]);
 
+        }
+    }
     fclose($f);
     // entrega ao cliente
-    array_pop($arrD); // retira o elemento da lista
 
 
 
@@ -54,5 +71,5 @@
 fclose($f2);
 
     //*******************************************************************************
-?>
+?>*/
 

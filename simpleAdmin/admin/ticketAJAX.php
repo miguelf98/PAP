@@ -4,81 +4,58 @@ include_once "includes/functions.inc.php";
 $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
 $sql = "SELECT * FROM  orders";
 $query = mysqli_query($con,$sql);
+$j = 0;
 ?>
-
-
-<style>
-
-
-
-    .red{
-        border:2px solid #ce0000;
-        color: #ce0000;
-    }
-
-    .green{
-        border:2px solid #4caf50;
-        color: #2ba117;
-    }
-
-    td{
-        font-size: 17px;
-    }
-
-    .ticketProdutosContainer{
-        height: 85px;
-        width: 100%;
-        border-left: 1px solid #c9c9c9;
-        border-bottom: 1px solid #c9c9c9;
-    }
-
-    .ticketProdutosContainer .produto{
-        height: 98%;
-        max-width: 17.5%;
-        border-right: 1px solid #c9c9c9;
-
-    }
-
-    .produto img{
-        max-height: 82px;
-        display: inline-flex;
-    }
-
-
-    .produto span{
-        display: inline-flex;
-        padding-left: 15px;
-        width: 35%;
-        font-size: 1vw;
-    }
-</style>
-<script>
-
-</script>
 <tr >
     <th style="width: 15%;"></th>
     <th style="width: 7.5%;">ID</th>
     <th style="width: 7.5%;">Número</th>
     <th>Produtos</th>
 </tr>
+
 <?php
-while($order = mysqli_fetch_assoc($query)) {?>
+while($order = mysqli_fetch_assoc($query)) {
+    if($order['orderStatus'] != 2){?>
 <tr style="height: 90px;">
-    <td>
-        <div class="pedidoButton red" onclick="">Concluir</div>
-        <div class="pedidoButton green">Entregar</div>
+    <td onclick="<?php if($order['orderStatus'] == 0){echo "doneOrder(".$order['orderId'].",".$j.")";}else{echo "deliverOrder(".$order['orderId'].",".$j.")";}?>">
+        <div style="<?php if($order['orderStatus'] == 0){echo "display: inline-flex;";}else{echo "display:none";}?>" class="pedidoButton red" onclick="">Concluir</div>
+        <div style="<?php if($order['orderStatus'] == 1){echo "display: inline-flex;";}else{echo "display:none";}?>" class="pedidoButton green">Entregar</div>
     </td>
     <td><?php echo $order['orderId'];?></td>
     <td><?php echo $order['orderNumber'];?></td>
-    <td>
-        <div class="ticketProdutosContainer">
+    <td><div class="ticketProdutosContainer">
+        <?php
+        $prods = $order['orderProdutosArray'];
+        preg_match_all("/\[([^\]]*)\]/", $prods, $matches);
+        $count2 = 0;
+        preg_match_all("#\((([^()]+|(?R))*)\)#", $prods, $matchesQntd);
+        $tempArr2 = array();
+        $produtos = array();
+        foreach($matches[1] as $id => $row){
+            $tempArr2[$row] = $matchesQntd[1][$id];
+        }
+
+        foreach($tempArr2 as $id => $row){
+            $sqlPr = "SELECT * FROM produtos WHERE produtoId = ". $id;
+            $queryPr = mysqli_query($con,$sqlPr);
+            $prod = mysqli_fetch_assoc($queryPr);
+            ?>
             <div class="produto">
-                <img src="../images/produtos/ucal.jpg" alt="">
-                <span>Tosta Mista</span>
+                <img src="../<?php echo $prod['produtoImagePath']?>" alt="">
+                <div class="produtoName">
+                    <span><?php echo $prod['produtoName']?> (<?php echo $row;?>)</span>
+                </div>
             </div>
+            <?php
+        }
+        ?>
+
+
         </div>
     </td>
 </tr>
 <?php
+    $j++;
+    }
 }
 ?>

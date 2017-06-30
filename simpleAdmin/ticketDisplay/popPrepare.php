@@ -1,4 +1,13 @@
 <?php
+include_once "../admin/includes/config.inc.php";
+$con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
+$sql = "SELECT orderNumber FROM orders WHERE orderId = ".$_GET['id'];
+$query = mysqli_query($con,$sql);
+$orderNum = mysqli_fetch_assoc($query);
+
+$sql2 = "UPDATE orders SET orderStatus = 1 WHERE orderId = ".$_GET['id'];
+mysqli_query($con,$sql2);
+
     $f=fopen("pedidos.txt","r");
     $arrP=array();
     $arrD=array();
@@ -9,53 +18,35 @@
     $yes=true;
     while($yes) {
         $line = fgets($f);
+
         if (trim($line) == "[prepare]") $yes = false;
+
     }
 
     $yes=true;
     while($yes){
         $line = trim(fgets($f));
-        if (trim($line) == "[done]")
+        if (trim($line) == "[done]"){
+
+
             $yes = false;
+        }
         else
         {
             array_push($arrP,$line);
         }
 
     }
-    array_push($arrD,$arrP[count($arrP)-1]);
-
-    //actualizar o array das entregas
+    foreach($arrP as $id => $num){
+        if($num == $orderNum['orderNumber']){
+            array_push($arrD,$arrP[$id]);
+            unset($arrP[$id]);
+        }
+    }
     while($line=trim(fgets($f))){
         array_push($arrD,$line);
     }
-
-
-    array_pop($arrP);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    //actualizar o array das entregas
 
 
 // volta a escrever no ficheiro de texto *******************************
@@ -75,6 +66,7 @@ foreach ($arrD as &$value) {
 }
 
 fclose($f2);
+
 
 //*******************************************************************************
 ?>

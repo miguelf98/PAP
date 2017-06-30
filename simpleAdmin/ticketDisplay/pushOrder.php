@@ -1,17 +1,12 @@
 <?php
 session_start();
-if(isset($_SESSION['ticketNumber']))
-    $_SESSION['ticketNumber']++;
-else
-    $_SESSION['ticketNumber']=1;
 
-$ticket=chr(65+($_SESSION['ticketNumber']/100)).($_SESSION['ticketNumber']%100<10?'0':'').($_SESSION['ticketNumber']%100);
 
 
     $f=fopen("pedidos.txt","r");
     $arrP=array();
     $arrD=array();
-    array_push($arrP,$ticket); // RECEBE por GET o n� do pedido
+    array_push($arrP,$_SESSION['ticket_number']); // RECEBE por GET o n� do pedido
 
     //ignorar linhas em branco
     $yes=true;
@@ -54,7 +49,7 @@ $ticket=chr(65+($_SESSION['ticketNumber']/100)).($_SESSION['ticketNumber']%100<1
     }
 
 fclose($f2);
-
+header("location: ../endSession.php");
 //*******************************************************************************
 
 ?>

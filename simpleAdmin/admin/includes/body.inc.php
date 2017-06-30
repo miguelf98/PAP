@@ -12,7 +12,7 @@ $offset -= CNUMROWS;
 $searchQuery = "";
 ?>
     <!DOCTYPE html>
-    <html xmlns="http://www.w3.org/1999/xhtml">
+    <html>
     <head>
         <title>Administration</title>
         <link href="../assets/css/bootstrap.css" rel="stylesheet" />
@@ -23,7 +23,6 @@ $searchQuery = "";
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.js"></script>
 
     </head>
-<body>
 <?php
 
 

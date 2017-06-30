@@ -1,4 +1,4 @@
-<link href="../assets/css/adminStylesheet.css" rel="stylesheet" />
+
 <?php
 include_once "config.inc.php";
 $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);

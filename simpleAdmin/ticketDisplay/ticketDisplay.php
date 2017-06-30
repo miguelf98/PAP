@@ -1,7 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="assets/css/ticketStylesheet.css" type="text/css">
-        <script src="jquery-3.2.0.min.js"></script>
+        <script src="../admin/assets/js/jquery-3.2.0.min.js"></script>
     </head>
     <style>
         body{
