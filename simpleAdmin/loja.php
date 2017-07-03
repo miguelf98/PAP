@@ -81,7 +81,20 @@ drawHeader();
         xhttp.send();
     }
 
-    setInterval(loadFatura, 330);
+    function removeProd(id){
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", "removeProd.php?id=" + id, true);
+        xhttp.send();
+    }
+
+    function removeProdFin(id){
+        loadFinalizar();
+        var xhttp = new XMLHttpRequest();
+        xhttp.open("GET", "removeProd.php?id=" + id, true);
+        xhttp.send();
+    }
+
+    setInterval(loadFatura,500);
     window.onload = loadCategs();
     window.onload = loadFatura();
 

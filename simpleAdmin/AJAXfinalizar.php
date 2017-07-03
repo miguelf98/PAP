@@ -62,6 +62,12 @@ print_r($preco);
         line-height: 75px;
         padding-left: 10px;
     }
+    .deleteFinalizar{
+    }
+
+    .deleteFinalizar img{
+        height: 35px;
+    }
 </style>
 <div style="border: 1px solid black; margin-bottom: 25px;"></div>
 <div id="faturaFinalizadaContainer">
@@ -85,7 +91,10 @@ print_r($preco);
                 <td style="width: 120px;"><img style="height: 96px;" src="<?php echo $prod['produtoImagePath']?>" alt=""></td>
                 <td class="text-left"><?php echo $prod['produtoName']?></td>
                 <td class="text-center"><?php echo $value;?></td>
-                <td class="text-center"><?php echo $prod['produtoPreco']?> <div class="deleteProd"><img  src="images/delete.png" alt=""></div> </td>
+                <td class="text-center">
+                    <span style="position: relative; float: left; padding-left: 35px;"><?php echo $prod['produtoPreco']?></span>
+                    <div onclick="removeProdFin(<?php echo $prod['produtoId'] ?>)" class="deleteFinalizar"><img src="images/delete.png" alt=""></div>
+                </td>
             </tr>
 
             <?php

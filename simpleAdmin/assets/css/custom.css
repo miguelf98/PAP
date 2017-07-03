@@ -190,6 +190,7 @@ min-height: 115px;
     min-height: 500px;
     margin-top: 25px;
     width: 100%;
+    margin-left: 12px;
 }
 
 .faturaFooter{
@@ -625,14 +626,13 @@ td.text-right {
 }
 
 .deleteProd{
-    border: 1px solid black;
-    width: 27px;
-    height: 27px;
+    position: absolute;
+    right: 7px;
 }
 
 .deleteProd img{
-    height: 25px;
-    position: relative;
+    height: 27px;
+
 }
 
 .modal-open {

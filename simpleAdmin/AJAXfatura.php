@@ -3,6 +3,7 @@ session_start();
 include_once "includes/config.inc.php";
 $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
 $lines = file("orderProdutos.txt", FILE_IGNORE_NEW_LINES);
+$lines = array_map('trim',$lines);
 $countLine = count($lines);
 
 $contents = file_get_contents(  "orderProdutos.txt",FILE_USE_INCLUDE_PATH);
@@ -41,10 +42,13 @@ print_r($_SESSION['total']);
         $prod = mysqli_fetch_assoc($query);
         $id = $prod['produtoId'] . " ";
        ?>
-        <tr>
+        <tr onclick="removeProd(<?php echo $prod['produtoId'] ?>)">
             <td class="text-left"><?php echo $prod['produtoName']?></td>
             <td class="text-center"><?php echo $value;?></td>
-            <td class="text-center"><?php echo $prod['produtoPreco']?> <div class="deleteProd"><img  src="images/delete.png" alt=""></div> </td>
+            <td class="text-center">
+                <span style="position: relative; float: left; padding-left: 35px;"><?php echo $prod['produtoPreco']?></span>
+                <div onclick="removeProd(<?php echo $prod['produtoId'] ?>)" class="deleteProd"><img src="images/delete.png" alt=""></div>
+            </td>
         </tr>
 
         <?php
@@ -60,4 +64,4 @@ print_r($_SESSION['total']);
     </tbody>
 </table>
 
-<a onclick="clearFatura()">FUCK YOU</a>
+<a onclick="clearFatura()">Limpar Fatura</a>

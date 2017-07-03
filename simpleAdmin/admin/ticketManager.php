@@ -36,6 +36,7 @@ $count = mysqli_num_rows($query);
     .ticketProdutosContainer .produto{
         height: 98%;
         max-width: 20%;
+        min-width: 15%;
         border-right: 1px solid #c9c9c9;
         display: inline-flex;
 
@@ -43,19 +44,20 @@ $count = mysqli_num_rows($query);
 
     .produto img{
         max-height: 82px;
+        max-width: 82px;
         display: inline-flex;
     }
     .produtoName{
         display: inline-flex;
         top: 10px;
-        width: 35%;
-        margin-left: 5px;
+        width: 45%;
+        margin-left: 3%;
     }
 
     .produtoName span{
 
 
-        font-size: 1vw;
+        font-size: 0.8vw;
     }
 </style>
 <body>
