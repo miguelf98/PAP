@@ -1,10 +1,4 @@
 <?php
-session_start();
-if(isset($_SESSION)){
-    session_abort();
-}else{
-    session_abort();
-}
 include_once "food.svg";?>
 <?php include_once "includes/body.inc.php";?>
 

@@ -4,7 +4,6 @@
     <data-source name="MySQL - aaaaa@localhost" uuid="0a2e0bdf-d599-4331-87d7-d91a023ae1d6">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
       <first-sync>true</first-sync>
-      <introspection-schemas>*:</introspection-schemas>
     </data-source>
     <data-source name="@localhost" uuid="1b3838c5-dbc4-4545-9e6e-6fafb511cf54">
       <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />

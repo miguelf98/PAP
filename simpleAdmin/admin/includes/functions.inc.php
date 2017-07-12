@@ -9,7 +9,7 @@ function shortenPassword ($pw){
 function validateSessions($userId){ //TODO: substituir esta merda por algo mais complicado
     $state = false;
     if (!isset($userId)){
-        $state = false;
+        $state = true;
 
     }else{
         $state = true;

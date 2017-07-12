@@ -71,12 +71,12 @@ if ($_SESSION['permission'] < CMODERATOR){
         }
         .pedidoButton{
 
-            width: 48%;
+            width: 99%;
             min-height: 75px;
             background-color: inherit;
             border-radius: 5px;
             font-size: 1.25vw;
-            padding-left: 6px;
+            padding-left: 28%;
             line-height: 70px;
         }
     </style>
