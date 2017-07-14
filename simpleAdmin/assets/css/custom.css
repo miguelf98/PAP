@@ -343,7 +343,7 @@ td.text-right {
     border: 1px solid #cccccc;
     margin:5px;
     height: 150px;
-    width: 280px;
+    width: 30%;
     cursor: pointer;
     display: inline-block;
 }
@@ -604,7 +604,7 @@ td.text-right {
     display: inline-flex;
     background-color: #fff;
     height: 50px;
-    width: 25%;
+    width: 35%;
 
 }
 

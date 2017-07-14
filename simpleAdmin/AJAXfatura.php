@@ -47,7 +47,7 @@ print_r($_SESSION['total']);
             <td class="text-center"><?php echo $value;?></td>
             <td class="text-center">
                 <span style="position: relative; float: left; padding-left: 35px;"><?php echo $prod['produtoPreco']?></span>
-                <div onclick="removeProd(<?php echo $prod['produtoId'] ?>)" class="deleteProd"><img src="images/delete.png" alt=""></div>
+                <div class="deleteProd"><img src="images/delete.png" alt=""></div>
             </td>
         </tr>
 

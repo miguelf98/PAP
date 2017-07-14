@@ -4,11 +4,8 @@ include_once "includes/body.inc.php";
 session_start();
 include_once "includes/config.inc.php";
 include_once "includes/functions.inc.php";
-/*require __DIR__.'/vendor/autoload.php';
-use Spipu\Html2Pdf\Html2Pdf;
-$html2pdf = new Html2Pdf('P','A8','en');
-$html2pdf->writeHTML('<page backleft="13mm"><h1>'.$_SESSION['ticket_number'].'</h1></page>');
-$html2pdf->output('/assets/pdfs/'.$_SESSION['token'].'.pdf', 'F');*/
+
+
 
 $con = mysqli_connect(DBCON,DBUSER,DBPW,DBNAME);
 $orderNum = $_SESSION['ticket_number'];
@@ -22,6 +19,7 @@ $count = array();
 $orderPreco = 0;
 $tempArr = "";
 $orderProd = array();
+$tckNum = $_SESSION['ticket_number'];
 
 foreach($lines as $line){
     $sql = "SELECT * FROM produtos WHERE produtoId = ". $line;
@@ -91,11 +89,20 @@ drawHeader();
             </div>
         </div>
     <?php
+    ob_start();
+    require __DIR__.'/vendor/autoload.php';
+    use Spipu\Html2Pdf\Html2Pdf;
+    $html2pdf = new Html2Pdf('P','A8','en');
+    $html2pdf->writeHTML('<page backleft="13mm"><h1>'.$tckNum.'</h1></page>');
+    $html2pdf->output();
+
+
+    ob_end_flush();
     ?>
     <script>
         window.setTimeout(function(){
             window.location.href = "ticketDisplay/pushOrder.php";
-            }, 3500);
+            }, 3500000);
     </script>
 
 

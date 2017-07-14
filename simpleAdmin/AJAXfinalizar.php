@@ -20,15 +20,11 @@ foreach($lines as $line){
         $preco = $preco + $prod['produtoPreco'];
     }
 }
-
-
-print_r($count);
-print_r($preco);
-
 ?>
 <style>
     #faturaFinalizadaContainer{
         width: 50%;
+        padding-top: 12.5%;
         margin: 0 auto;
     }
 
@@ -69,7 +65,6 @@ print_r($preco);
         height: 35px;
     }
 </style>
-<div style="border: 1px solid black; margin-bottom: 25px;"></div>
 <div id="faturaFinalizadaContainer">
     <table class="table-fill">
         <thead>
@@ -104,7 +99,7 @@ print_r($preco);
 
 
         <tr class="faturaFooter">
-            <td colspan="2" ><?php echo $num = (count($array_list)) - 1;?> produtos</td>
+            <td colspan="3" ><?php echo $num = (count($array_list)) - 1;?> produtos</td>
             <td class="text-center"><?php echo $preco;?>&euro;</td>
         </tr>
         </tbody>
